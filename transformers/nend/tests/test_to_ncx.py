@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 '''
-test_ncx.py
+test_to_ncx.py
 
 Created by Keith Fahlgren on Fri Jun 17 21:42:52 PDT 2011
 Copyright (c) 2011 Threepress Consulting Inc. All rights reserved.
@@ -24,7 +24,7 @@ import nend.ncx
 log = logging.getLogger(__name__)
 
 
-class TestNCX(object):
+class TestToNCX(object):
     def setup(self):
         self.testfiles_dir = os.path.join(os.path.dirname(__file__), 'files')
 
