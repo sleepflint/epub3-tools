@@ -1,3 +1,4 @@
 env-nend
 *.pyc
 *.swp
+.coverage

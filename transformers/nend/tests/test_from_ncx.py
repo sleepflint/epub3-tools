@@ -35,8 +35,10 @@ class TestFromNCX(object):
             expected_ncx_fn = os.path.join(self.testfiles_dir, end_docname + '.ncx')
             expected_ncx = etree.parse(expected_ncx_fn)
 
+            log.debug(end_fn)
             end = etree.parse(end_fn)
-            nx = nend.ncx.from_end(end)
+            ncx = nend.ncx.from_end(end)
+            log.debug(etree.tostring(ncx))
             # Ensure the output is valid before testing the exact representation
             assert(nend.ncx_validate(ncx))
             try:
@@ -56,7 +58,7 @@ class TestFromNCX(object):
     def test_ncx_nend_output_valid_smoke(self):
         '''All EPUB Navigation Documents collected for smoketesting should be able to be transformed into a valid NCX Document'''
         smoketests_dir = os.path.join(self.testfiles_dir, 'smoketests')
-        for fn in glob.glob(smoketests_dir + '/*.html'):
+        for end_fn in glob.glob(smoketests_dir + '/*.html'):
             log.debug('\nSmoke testing transformation and validation of %s' % end_fn)
             end = etree.parse(end_fn)
             ncx = nend.ncx.from_end(end)

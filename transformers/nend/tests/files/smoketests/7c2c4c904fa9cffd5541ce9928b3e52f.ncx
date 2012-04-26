@@ -210,7 +210,7 @@
       <content src="gyldendal-kolofon.xhtml"/>
 
 
-    <navPoint id="ex28" playOrder="28">
+    <navPoint id="colo" playOrder="28">
       <navLabel>
         <text>Kolofon</text>
       </navLabel>

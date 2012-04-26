@@ -35,11 +35,13 @@ SCHEMAS = os.path.join(os.path.dirname(__file__),
 NAV_RNC = os.path.join(SCHEMAS, 'epub-nav-30.rnc')
 NAV_SCH_FN = os.path.join(SCHEMAS, 'epub-nav-30.sch')
 NAV_SCHEMATRON = isoschematron.Schematron(etree.parse(NAV_SCH_FN), store_report=True)
+NCX_DTD_FN = os.path.join(os.path.dirname(__file__), 'externals', 'schemas', 'ncx-2005-1.dtd')
 PACKAGE_RNC = os.path.join(SCHEMAS, 'package-30.rnc')
 PACKAGE_SCH_XSL = os.path.join(SCHEMAS, 'package-30.sch.xsl')
 
 NSS={'svrl': "http://purl.oclc.org/dsdl/svrl",
     }
+
 
 
 def nav_validate(nav_doc):
@@ -48,6 +50,15 @@ def nav_validate(nav_doc):
     jing_result = jing_validate(nav_doc, NAV_RNC)
     sch_result = schematron_xslt1_validate(nav_doc, NAV_SCHEMATRON)
     return (jing_result and sch_result)
+
+def ncx_validate(ncx_doc):
+    """Validate the supplied NCX Document (as etree) against the NCX 2005-1 DTD Returns boolean. Writes warnings
+       to this classes' log stream."""
+    dtd = etree.DTD(NCX_DTD_FN)
+    result = dtd.validate(ncx_doc)
+    for error in dtd.error_log:
+        log.warn(error)
+    return result
 
 def package_validate(package_doc):
     """Validate the supplied EPUB Navigation Document (as etree) against the RELAX NG Compact and Schematron schemas. Returns boolean. Writes warnings

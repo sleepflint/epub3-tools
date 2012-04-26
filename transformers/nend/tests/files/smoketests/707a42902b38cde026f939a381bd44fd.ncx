@@ -65,7 +65,7 @@ including those conforming to the relaxed constraints of OPS 2.0 -->
         <navLabel><text>Main Body</text></navLabel>
         <content src="part-002.html"/>
         
-                  <navPoint id="chapter-002" playOrder="9">
+                  <navPoint id="chapter-002b" playOrder="9">
               <navLabel><text>CHAPTER I: THERE IS NO ONE LEFT </text></navLabel>
               <content src="chapter-002.html"/>
           </navPoint>
