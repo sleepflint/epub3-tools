@@ -1,0 +1,663 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"><head><title>Programming ASP.NET 3.5, Fourth Edition</title></head><body>
+  
+  
+  <nav id="toc" epub:type="toc"><h1>Contents</h1><ol>
+<li id="id2631829"><a href="index.html">Programming ASP.NET 3.5, Fourth Edition</a><ol>
+<li id="id2660892"><a href="pr01.html">Preface</a><ol>
+<li id="id2635592"><a href="pr01.html#learning_or_programming">Learning or Programming?</a><ol>
+<li id="id2635635"><a href="pr01.html#visual_basic_versus_csharp">Visual Basic Versus C#</a></li></ol></li>
+<li id="id2635679"><a href="pr01s02.html">How This Book Is Organized</a></li>
+<li id="id2650164"><a href="pr01s03.html">What You Need to Use This Book</a></li>
+<li id="id2650225"><a href="pr01s04.html">Conventions Used in This Book</a></li>
+<li id="id2650297"><a href="pr01s05.html">Using Code Examples</a></li>
+<li id="id2650341"><a href="pr01s06.html">We'd Like to Hear from You</a></li>
+<li id="id2640956"><a href="pr01s07.html">Safari® Books Online</a></li>
+<li id="id2640982"><a href="pr01s08.html">Acknowledgments</a><ol>
+<li id="id2640988"><a href="pr01s08.html#from_jesse_liberty">From Jesse Liberty</a></li>
+<li id="id2641002"><a href="pr01s08.html#from_dan_hurwitz">From Dan Hurwitz</a></li>
+<li id="id2641016"><a href="pr01s08.html#from_dan_maharry">From Dan Maharry</a></li></ol></li></ol></li>
+<li id="id2641047"><a href="ch01.html">1. Web Development in 2008</a><ol>
+<li id="id2641070"><a href="ch01.html#ajax">AJAX</a></li>
+<li id="id2641230"><a href="ch01s02.html">.NET Framework 3.0 and 3.5</a></li>
+<li id="id2639626"><a href="ch01s03.html">Visual Studio 2008</a></li>
+<li id="id2660636"><a href="ch01s04.html">Internet Information Services 7.0</a></li>
+<li id="id2660676"><a href="ch01s05.html">Beyond 2008</a><ol>
+<li id="id2660108"><a href="ch01s05.html#the_silverlight_stack">The Silverlight Stack</a></li>
+<li id="id2660172"><a href="ch01s05.html#the_dynamic_languages_stack">The Dynamic Languages Stack</a></li>
+<li id="id2660215"><a href="ch01s05.html#the_data_futures_stack">The Data Futures Stack</a></li></ol></li>
+<li id="id2660324"><a href="ch01s06.html">On to VS2008</a></li></ol></li>
+<li id="id2660342"><a href="ch02.html">2. Visual Studio 2008</a><ol>
+<li id="id2656554"><a href="ch02.html#first_sight_the_start_page">First Sight: The Start Page</a></li>
+<li id="id2656709"><a href="ch02s02.html">Creating Your First Web Page</a></li>
+<li id="id2627372"><a href="ch02s03.html">Projects and Solutions</a><ol>
+<li id="id2627640"><a href="ch02s03.html#solutions">Solutions</a></li>
+<li id="id2627850"><a href="ch02s03.html#projects_and_files">Projects and Files</a></li>
+<li id="id2656135"><a href="ch02s03.html#templates">Templates</a><ol>
+<li id="id2656280"><a href="ch02s03.html#project_names">Project names</a></li></ol></li></ol></li>
+<li id="id2612550"><a href="ch02s04.html">The Integrated Development Environment</a><ol>
+<li id="id2612598"><a href="ch02s04.html#layout">Layout</a></li>
+<li id="id2613221"><a href="ch02s04.html#building_and_running">Building and Running</a></li>
+<li id="id2613259"><a href="ch02s04.html#menus_and_toolbars">Menus and Toolbars</a></li>
+<li id="id2613364"><a href="ch02s04.html#file_menu">File Menu</a><ol>
+<li id="id2613396"><a href="ch02s04.html#new">New</a></li>
+<li id="id2638511"><a href="ch02s04.html#open">Open</a></li>
+<li id="id2638693"><a href="ch02s04.html#add">Add</a></li>
+<li id="id2638703"><a href="ch02s04.html#advanced_save_options">Advanced Save Options</a></li>
+<li id="id2638762"><a href="ch02s04.html#export_template">Export Template</a></li>
+<li id="id2638807"><a href="ch02s04.html#source_control">Source Control</a></li></ol></li>
+<li id="id2638830"><a href="ch02s04.html#edit_menu">Edit Menu</a><ol>
+<li id="id2638851"><a href="ch02s04.html#cycle_clipboard_ring_ctrl-shift-v">Cycle Clipboard Ring (Ctrl-Shift-V)</a></li>
+<li id="id2638889"><a href="ch02s04.html#finding_and_replacing">Finding and replacing</a></li>
+<li id="id2614033"><a href="ch02s04.html#go_to_ctrl-g">Go To (Ctrl-G)</a></li>
+<li id="id2614092"><a href="ch02s04.html#insert_file_as_text">Insert File As Text</a></li>
+<li id="id2614120"><a href="ch02s04.html#advanced">Advanced</a></li>
+<li id="id2614284"><a href="ch02s04.html#incremental_search_ctrl-i">Incremental search (Ctrl-I)</a></li>
+<li id="id2614403"><a href="ch02s04.html#bookmarks">Bookmarks</a></li>
+<li id="id2614740"><a href="ch02s04.html#outlining">Outlining</a></li>
+<li id="id2615063"><a href="ch02s04.html#intellisense">IntelliSense</a></li></ol></li>
+<li id="id2641353"><a href="ch02s04.html#view_menu">View Menu</a><ol>
+<li id="id2641459"><a href="ch02s04.html#solution_explorer_ctrl-alt-l">Solution Explorer (Ctrl-Alt-L)</a></li>
+<li id="id2642198"><a href="ch02s04.html#server_explorer_ctrl-alt-s">Server Explorer (Ctrl-Alt-S)</a></li>
+<li id="id2642326"><a href="ch02s04.html#properties_window_f4">Properties window (F4)</a></li>
+<li id="id2642517"><a href="ch02s04.html#visible_aids">Visible Aids</a></li>
+<li id="id2642551"><a href="ch02s04.html#formatting_marks">Formatting Marks</a></li>
+<li id="id2642572"><a href="ch02s04.html#object_browser_ctrl-w_j">Object Browser (Ctrl-W, J)</a></li>
+<li id="id2642630"><a href="ch02s04.html#error_list_ctrl-w_e">Error List (Ctrl-W, E)</a></li>
+<li id="id2642654"><a href="ch02s04.html#task_list_ctrl-w_t">Task List (Ctrl-W, T)</a></li>
+<li id="id2642718"><a href="ch02s04.html#toolbox_ctrl-w_x">Toolbox (Ctrl-W, X)</a></li>
+<li id="id2642766"><a href="ch02s04.html#class_view_ctrl-w_c">Class View (Ctrl-W, C)</a></li>
+<li id="id2642913"><a href="ch02s04.html#output_ctrl-w_o">Output (Ctrl-W, O)</a></li>
+<li id="id2642951"><a href="ch02s04.html#other_windows">Other windows</a></li></ol></li>
+<li id="id2643176"><a href="ch02s04.html#refactor_menu">Refactor Menu</a></li>
+<li id="id2643553"><a href="ch02s04.html#website_menu">Website Menu</a><ol>
+<li id="id2643645"><a href="ch02s04.html#start_options">Start Options</a></li>
+<li id="id2643705"><a href="ch02s04.html#copy_web_site">Copy Web Site</a></li>
+<li id="id2643807"><a href="ch02s04.html#aspnet_configuration">ASP.NET Configuration</a></li></ol></li>
+<li id="id2643846"><a href="ch02s04.html#project_menu">Project Menu</a><ol>
+<li id="id2643928"><a href="ch02s04.html#add_new_item_ctrl-shift-a">Add New Item (Ctrl-Shift-A)</a></li>
+<li id="id2643958"><a href="ch02s04.html#add_existing_item_shift-alt-a">Add Existing Item (Shift-Alt-A)</a></li>
+<li id="id2643983"><a href="ch02s04.html#add_new_solution_folder">Add New Solution Folder</a></li>
+<li id="id2644024"><a href="ch02s04.html#set_startup_projects">Set StartUp Projects</a></li>
+<li id="id2644057"><a href="ch02s04.html#project_dependencies_and_project_build_o">Project Dependencies and Project Build Order</a></li></ol></li>
+<li id="id2644123"><a href="ch02s04.html#build_menu">Build Menu</a></li>
+<li id="id2644163"><a href="ch02s04.html#debug_menu">Debug Menu</a></li>
+<li id="id2644216"><a href="ch02s04.html#data_menu">Data Menu</a></li>
+<li id="id2644248"><a href="ch02s04.html#format_menu">Format Menu</a></li>
+<li id="id2644382"><a href="ch02s04.html#tools_menu">Tools Menu</a><ol>
+<li id="id2644415"><a href="ch02s04.html#connect_to_device">Connect to Device</a></li>
+<li id="id2644436"><a href="ch02s04.html#connect_to_database">Connect to Database</a></li>
+<li id="id2644461"><a href="ch02s04.html#code_snippets_manager_ctrl-k_b">Code Snippets Manager (Ctrl-K, B)</a></li>
+<li id="id2644486"><a href="ch02s04.html#choose_toolbox_items">Choose Toolbox Items</a></li>
+<li id="id2644637"><a href="ch02s04.html#macros">Macros</a></li>
+<li id="id2644970"><a href="ch02s04.html#external_tools">External Tools</a></li>
+<li id="id2645026"><a href="ch02s04.html#import_and_export_settings">Import and Export Settings</a></li>
+<li id="id2645060"><a href="ch02s04.html#customize">Customize</a></li>
+<li id="id2645231"><a href="ch02s04.html#options">Options</a></li></ol></li>
+<li id="id2645255"><a href="ch02s04.html#window_menu">Window Menu</a></li>
+<li id="id2645534"><a href="ch02s04.html#help_menu">Help Menu</a><ol>
+<li id="id2645567"><a href="ch02s04.html#dynamic_help_ctrl-f1_d">Dynamic Help (Ctrl-F1, D)</a></li>
+<li id="id2645603"><a href="ch02s04.html#contents_ctrl-f1_i_index_ctrl-f1_i_and_">Contents (Ctrl-F1, I), Index (Ctrl-F1, I), and Search (Ctrl-F1, S)</a></li>
+<li id="id2645670"><a href="ch02s04.html#index_results_ctrl-f1_t">Index Results (Ctrl-F1, T)</a></li>
+<li id="id2645685"><a href="ch02s04.html#check_for_updates">Check for Updates</a></li></ol></li></ol></li></ol></li>
+<li id="id2645712"><a href="ch03.html">3. Controls: Fundamental Concepts</a><ol>
+<li id="id2646324"><a href="ch03.html#events">Events</a><ol>
+<li id="id2646504"><a href="ch03.html#aspnet_events">ASP.NET Events</a></li>
+<li id="id2646654"><a href="ch03.html#event_arguments">Event Arguments</a></li>
+<li id="id2646781"><a href="ch03.html#application_and_session_events">Application and Session Events</a></li>
+<li id="id2646904"><a href="ch03.html#page_and_control_events">Page and Control Events</a></li>
+<li id="id2647153"><a href="ch03.html#postback_versus_nonpostback_events">Postback Versus Nonpostback Events</a></li>
+<li id="id2661164"><a href="ch03.html#types_of_postback">Types of Postback</a></li>
+<li id="id2661442"><a href="ch03.html#ispostback">IsPostBack</a></li>
+<li id="id2661501"><a href="ch03.html#events_in_visual_studio_2008">Events in Visual Studio 2008</a></li>
+<li id="id2662391"><a href="ch03.html#multiple_controls_to_one_event_handler">Multiple Controls to One Event Handler</a></li></ol></li>
+<li id="id2662471"><a href="ch03s02.html">ASP.NET Server Controls</a><ol>
+<li id="id2662867"><a href="ch03s02.html#a_simple_demonstration">A Simple Demonstration</a></li>
+<li id="id2664143"><a href="ch03s02.html#aspnet_and_browsers">ASP.NET and Browsers</a></li>
+<li id="id2664502"><a href="ch03s02.html#aspnet_server_control_class_hierarchy">ASP.NET Server Control Class Hierarchy</a></li>
+<li id="id2665488"><a href="ch03s02.html#css_styles">CSS Styles</a></li></ol></li>
+<li id="id2665868"><a href="ch03s03.html">AJAX Server Controls</a><ol>
+<li id="id2665984"><a href="ch03s03.html#extending_the_simple_demonstration">Extending the Simple Demonstration</a></li>
+<li id="id2666474"><a href="ch03s03.html#ajax_server_control_class_hierarchy">AJAX Server Control Class Hierarchy</a></li>
+<li id="id2666552"><a href="ch03s03.html#the_scriptmanager_control">The ScriptManager Control</a></li></ol></li>
+<li id="id2666644"><a href="ch03s04.html">HTML Server Controls</a></li>
+<li id="id2667899"><a href="ch03s05.html">Client-Side Processing</a></li></ol></li>
+<li id="id2668542"><a href="ch04.html">4. Basic Controls</a><ol>
+<li id="id2668668"><a href="ch04.html#visual_studio_is_not_mandatory">Visual Studio Is Not Mandatory</a></li>
+<li id="id2669804"><a href="ch04s02.html">Web Forms: Plain or AJAX?</a></li>
+<li id="id2669914"><a href="ch04s03.html">Label Controls and Literal Controls</a></li>
+<li id="id2670337"><a href="ch04s04.html">TextBox Control</a><ol>
+<li id="id2671040"><a href="ch04s04.html#textbox_behavior">TextBox Behavior</a></li>
+<li id="id2671417"><a href="ch04s04.html#textbox_extenders">TextBox Extenders</a></li></ol></li>
+<li id="id2673576"><a href="ch04s05.html">HiddenField Control</a></li>
+<li id="id2674245"><a href="ch04s06.html">Button Controls</a><ol>
+<li id="id2674696"><a href="ch04s06.html#button_behavior">Button Behavior</a></li>
+<li id="id2675412"><a href="ch04s06.html#button_control_extenders">Button Control Extenders</a></li></ol></li>
+<li id="id2675829"><a href="ch04s07.html">HyperLink Control</a></li>
+<li id="id2676530"><a href="ch04s08.html">Images</a><ol>
+<li id="id2676558"><a href="ch04s08.html#image_control">Image Control</a></li>
+<li id="id2677485"><a href="ch04s08.html#imagemap_control">ImageMap Control</a></li></ol></li>
+<li id="id2678702"><a href="ch04s09.html">Selecting Values</a><ol>
+<li id="id2678906"><a href="ch04s09.html#checkbox_control">CheckBox Control</a><ol>
+<li id="id2678978"><a href="ch04s09.html#checkbox_behavior">CheckBox behavior</a></li>
+<li id="id2679757"><a href="ch04s09.html#checkbox_extenders">CheckBox extenders</a></li></ol></li>
+<li id="id2680634"><a href="ch04s09.html#radiobutton_control">RadioButton Control</a></li>
+<li id="id2681086"><a href="ch04s09.html#selecting_from_a_list">Selecting from a List</a></li>
+<li id="id2681635"><a href="ch04s09.html#listitem_object">ListItem Object</a></li>
+<li id="id2681955"><a href="ch04s09.html#checkboxlist_control">CheckBoxList Control</a><ol>
+<li id="id2682066"><a href="ch04s09.html#adding_items_declaratively">Adding items declaratively</a></li>
+<li id="id2682767"><a href="ch04s09.html#adding_items_programmatically_from_an_ar">Adding items programmatically from an array or collection</a></li>
+<li id="id2683538"><a href="ch04s09.html#adding_items_from_a_data_source">Adding items from a data source</a></li>
+<li id="id2683786"><a href="ch04s09.html#responding_to_user_selections">Responding to user selections</a></li></ol></li>
+<li id="id2684231"><a href="ch04s09.html#radiobuttonlist_control">RadioButtonList Control</a></li>
+<li id="id2684906"><a href="ch04s09.html#dropdownlist_control">DropDownList Control</a><ol>
+<li id="id2684940"><a href="ch04s09.html#dropdownlist_behavior">DropDownList behavior</a></li>
+<li id="id2685322"><a href="ch04s09.html#dropdownlist_extenders">DropDownList extenders</a></li></ol></li>
+<li id="id2685869"><a href="ch04s09.html#listbox_control">ListBox Control</a></li>
+<li id="id2686740"><a href="ch04s09.html#bulletedlist_control">BulletedList Control</a><ol>
+<li id="id2687104"><a href="ch04s09.html#bulletedlist_behavior">BulletedList behavior</a></li>
+<li id="id2687983"><a href="ch04s09.html#bulletedlist_extenders">BulletedList extenders</a></li></ol></li>
+<li id="id2688532"><a href="ch04s09.html#sliders_and_ratings">Sliders and Ratings</a></li></ol></li></ol></li>
+<li id="id2689830"><a href="ch05.html">5. More Controls</a><ol>
+<li id="id2689897"><a href="ch05.html#panel_controls">Panel Controls</a><ol>
+<li id="id2691611"><a href="ch05.html#the_panel_control_and_ajax">The Panel Control and AJAX</a></li>
+<li id="id2691875"><a href="ch05.html#panel_extenders">Panel Extenders</a></li>
+<li id="id2692671"><a href="ch05.html#collapsible_panels_and_accordions">Collapsible Panels and Accordions</a></li>
+<li id="id2695050"><a href="ch05.html#from_columns_to_stacks">From Columns to Stacks</a></li></ol></li>
+<li id="id2696479"><a href="ch05s02.html">The UpdatePanel Control</a><ol>
+<li id="id2697147"><a href="ch05s02.html#multiple_update_panels_on_one_page">Multiple Update Panels on One Page</a></li>
+<li id="id2698327"><a href="ch05s02.html#using_the_updateprogress_control">Using the UpdateProgress Control</a></li></ol></li>
+<li id="id2698960"><a href="ch05s03.html">MultiView and View Controls</a></li>
+<li id="id2701130"><a href="ch05s04.html">The Wizard Control</a></li>
+<li id="id2704969"><a href="ch05s05.html">The FileUpload Control</a></li>
+<li id="id2706467"><a href="ch05s06.html">The AdRotator Control</a><ol>
+<li id="id2706932"><a href="ch05s06.html#the_advertisement_file">The Advertisement File</a></li>
+<li id="id2707507"><a href="ch05s06.html#using_adrotator">Using AdRotator</a></li></ol></li>
+<li id="id2707965"><a href="ch05s07.html">The Calendar Control</a><ol>
+<li id="id2708974"><a href="ch05s07.html#selecting_dates_in_the_calendar">Selecting Dates in the Calendar</a></li>
+<li id="id2709455"><a href="ch05s07.html#controlling_the_calendars_appearance">Controlling the Calendar's Appearance</a></li>
+<li id="id2710217"><a href="ch05s07.html#programming_the_calendar_control">Programming the Calendar Control</a><ol>
+<li id="id2710287"><a href="ch05s07.html#selectionchanged_event">SelectionChanged event</a></li>
+<li id="id2712572"><a href="ch05s07.html#dayrender_event">DayRender event</a></li>
+<li id="id2713426"><a href="ch05s07.html#visiblemonthchanged_event">VisibleMonthChanged event</a></li></ol></li></ol></li></ol></li>
+<li id="id2713772"><a href="ch06.html">6. Website Fundamentals</a><ol>
+<li id="id2713822"><a href="ch06.html#the_page_class">The Page Class</a></li>
+<li id="id2714478"><a href="ch06s02.html">The Code-Behind File</a></li>
+<li id="id2715500"><a href="ch06s03.html">Moving to Another Page</a><ol>
+<li id="id2715561"><a href="ch06s03.html#hyperlink">HyperLink</a></li>
+<li id="id2715587"><a href="ch06s03.html#servertransfer">Server.Transfer</a></li>
+<li id="id2715726"><a href="ch06s03.html#responseredirect">Response.Redirect</a></li>
+<li id="id2715807"><a href="ch06s03.html#cross-page_posting">Cross-Page Posting</a><ol>
+<li id="id2716363"><a href="ch06s03.html#retrieving_data_from_the_previous_page">Retrieving data from the previous page</a></li>
+<li id="id2717704"><a href="ch06s03.html#how_did_i_get_here">How did I get here?</a></li></ol></li></ol></li>
+<li id="id2718537"><a href="ch06s04.html">State</a><ol>
+<li id="id2718795"><a href="ch06s04.html#session_state">Session State</a><ol>
+<li id="id2719572"><a href="ch06s04.html#session_state_configuration">Session state configuration</a></li>
+<li id="id2720690"><a href="ch06s04.html#session-scoped_application_objects">Session-scoped application objects</a></li></ol></li>
+<li id="id2720741"><a href="ch06s04.html#view_state">View State</a></li>
+<li id="id2721016"><a href="ch06s04.html#state_bag">State Bag</a></li>
+<li id="id2721607"><a href="ch06s04.html#application_state">Application State</a></li></ol></li>
+<li id="id2723112"><a href="ch06s05.html">Life Cycle</a></li>
+<li id="id2723618"><a href="ch06s06.html">Directives</a><ol>
+<li id="id2723698"><a href="ch06s06.html#application_directive">Application Directive</a></li>
+<li id="id2723854"><a href="ch06s06.html#assembly_directive">Assembly Directive</a></li>
+<li id="id2724092"><a href="ch06s06.html#control_directive">Control Directive</a></li>
+<li id="id2724392"><a href="ch06s06.html#implements_directive">Implements Directive</a></li>
+<li id="id2724474"><a href="ch06s06.html#import_directive">Import Directive</a></li>
+<li id="id2724793"><a href="ch06s06.html#master_directive">Master Directive</a></li>
+<li id="id2724831"><a href="ch06s06.html#mastertype_directive">MasterType Directive</a></li>
+<li id="id2724870"><a href="ch06s06.html#outputcache_directive">OutputCache Directive</a></li>
+<li id="id2724915"><a href="ch06s06.html#page_directive">Page Directive</a></li>
+<li id="id2725497"><a href="ch06s06.html#previouspagetype_directive">PreviousPageType Directive</a></li>
+<li id="id2725514"><a href="ch06s06.html#reference_directive">Reference Directive</a></li>
+<li id="id2725564"><a href="ch06s06.html#register_directive">Register Directive</a></li></ol></li></ol></li>
+<li id="id2725598"><a href="ch07.html">7. Data Source Controls and Connections</a><ol>
+<li id="id2725631"><a href="ch07.html#sources_of_data_and_datasource_controls">Sources of Data and DataSource Controls</a></li>
+<li id="id2726645"><a href="ch07s02.html">Using the ObjectDataSource Control</a></li>
+<li id="id2727265"><a href="ch07s03.html">Using the XmlDataSource Control</a></li>
+<li id="id2727975"><a href="ch07s04.html">Using the SqlDataSource Control</a><ol>
+<li id="id2728082"><a href="ch07s04.html#the_adventureworkslt_database">The AdventureWorksLT Database</a></li>
+<li id="id2728197"><a href="ch07s04.html#using_the_server_explorer">Using the Server Explorer</a></li>
+<li id="id2728565"><a href="ch07s04.html#configuring_the_sqldatasource">Configuring the SqlDataSource</a></li>
+<li id="id2729769"><a href="ch07s04.html#storing_connection_strings">Storing Connection Strings</a></li>
+<li id="id2730358"><a href="ch07s04.html#passing_parameters_to_the_select_query">Passing Parameters to the Select Query</a></li>
+<li id="id2731207"><a href="ch07s04.html#writing_data_to_a_database">Writing Data to a Database</a></li>
+<li id="id2731927"><a href="ch07s04.html#multiuser_updates">Multiuser Updates</a></li></ol></li>
+<li id="id2732559"><a href="ch07s05.html">Tracking the Data Source with Events</a></li></ol></li>
+<li id="id2733125"><a href="ch08.html">8. Using Data-Aware Controls</a><ol>
+<li id="id2733327"><a href="ch08.html#hierarchical_data_controls">Hierarchical Data Controls</a></li>
+<li id="id2733447"><a href="ch08s02.html">Tabular Data Controls</a></li>
+<li id="id2734115"><a href="ch08s03.html">Lists of Data</a><ol>
+<li id="id2734260"><a href="ch08s03.html#binding_data_to_a_list">Binding Data to a List</a></li>
+<li id="id2734850"><a href="ch08s03.html#retrieving_the_selected_value_from_a_lis">Retrieving the Selected Value from a List</a></li>
+<li id="id2735108"><a href="ch08s03.html#adding_static_values_to_a_data-bound_lis">Adding Static Values to a Data-Bound List</a></li></ol></li>
+<li id="id2735282"><a href="ch08s04.html">One Record at a Time: DetailsView</a><ol>
+<li id="id2735583"><a href="ch08s04.html#paging_through_records">Paging Through Records</a></li>
+<li id="id2736458"><a href="ch08s04.html#improving_presentation_and_accessibility">Improving Presentation and Accessibility</a></li>
+<li id="id2737114"><a href="ch08s04.html#retrieving_values_from_the_current_recor">Retrieving Values from the Current Record</a></li>
+<li id="id2737708"><a href="ch08s04.html#adding_updating_and_deleting_records">Adding, Updating, and Deleting Records</a></li>
+<li id="id2738319"><a href="ch08s04.html#manually_setting_the_contents_of_the_con">Manually Setting the Contents of the Control</a></li></ol></li>
+<li id="id2740356"><a href="ch08s05.html">Many Records at a Time: GridView</a><ol>
+<li id="id2740884"><a href="ch08s05.html#sorting_and_paging">Sorting and Paging</a></li>
+<li id="id2741241"><a href="ch08s05.html#improving_presentation_and_accessi-id001">Improving Presentation and Accessibility</a></li>
+<li id="id2741958"><a href="ch08s05.html#retrieving_values_from_the_selected_reco">Retrieving Values from the Selected Record</a></li>
+<li id="id2742862"><a href="ch08s05.html#updating_and_deleting_records">Updating and Deleting Records</a></li></ol></li>
+<li id="id2744234"><a href="ch08s06.html">Templated Controls</a><ol>
+<li id="id2744828"><a href="ch08s06.html#datalist_control">DataList Control</a><ol>
+<li id="id2745626"><a href="ch08s06.html#presentation_and_accessibility">Presentation and accessibility</a></li>
+<li id="id2746546"><a href="ch08s06.html#selecting_updating_and_deleting_records">Selecting, updating, and deleting records</a></li></ol></li>
+<li id="id2748129"><a href="ch08s06.html#formview_control">FormView Control</a></li>
+<li id="id2748583"><a href="ch08s06.html#repeater_control">Repeater Control</a></li>
+<li id="id2749253"><a href="ch08s06.html#listview_control">ListView Control</a><ol>
+<li id="id2750547"><a href="ch08s06.html#sorting_and_paging-id001">Sorting and paging</a></li>
+<li id="id2751798"><a href="ch08s06.html#selecting_adding_updating_and_deleting_d">Selecting, adding, updating, and deleting data in a ListView</a></li></ol></li></ol></li></ol></li>
+<li id="id2752908"><a href="ch09.html">9. ADO.NET</a><ol>
+<li id="id2752984"><a href="ch09.html#the_adonet_object_model">The ADO.NET Object Model</a><ol>
+<li id="id2753040"><a href="ch09.html#the_dataset_class">The DataSet Class</a><ol>
+<li id="id2753993"><a href="ch09.html#the_datatable_class">The DataTable class</a></li>
+<li id="id2754764"><a href="ch09.html#the_datarow_class">The DataRow class</a></li></ol></li>
+<li id="id2755222"><a href="ch09.html#dbcommand_and_dbconnection">DbCommand and DbConnection</a></li>
+<li id="id2755326"><a href="ch09.html#the_dataadapter_object">The DataAdapter Object</a></li>
+<li id="id2755612"><a href="ch09.html#the_datareader_object">The DataReader Object</a></li></ol></li>
+<li id="id2755922"><a href="ch09s02.html">Getting Started with ADO.NET</a><ol>
+<li id="id2756328"><a href="ch09s02.html#using_a_datareader">Using a DataReader</a></li>
+<li id="id2756797"><a href="ch09s02.html#creating_data_relationships_within_datas">Creating Data Relationships Within DataSets</a></li></ol></li>
+<li id="id2758133"><a href="ch09s03.html">Creating Data Objects by Hand</a><ol>
+<li id="id2758206"><a href="ch09s03.html#a_simple_database_design">A Simple Database Design</a></li>
+<li id="id2758489"><a href="ch09s03.html#creating_a_dataset_by_hand">Creating a DataSet by Hand</a><ol>
+<li id="id2758734"><a href="ch09s03.html#creating_a_datatable">Creating a DataTable</a></li>
+<li id="id2758784"><a href="ch09s03.html#adding_datacolumns_to_the_datatable">Adding DataColumns to the DataTable</a></li>
+<li id="id2758948"><a href="ch09s03.html#adding_primary_key_columns">Adding primary key columns</a></li>
+<li id="id2759198"><a href="ch09s03.html#adding_data_to_the_table">Adding data to the table</a></li>
+<li id="id2759545"><a href="ch09s03.html#creating_foreign_keys_and_data_relations">Creating foreign keys and data relationships</a></li></ol></li></ol></li>
+<li id="id2759910"><a href="ch09s04.html">Stored Procedures</a><ol>
+<li id="id2759944"><a href="ch09s04.html#creating_a_simple_stored_procedure">Creating a Simple Stored Procedure</a></li>
+<li id="id2760262"><a href="ch09s04.html#creating_a_stored_procedure_with_paramet">Creating a Stored Procedure with Parameters</a></li></ol></li>
+<li id="id2761028"><a href="ch09s05.html">Updating with SQL and ADO.NET</a></li>
+<li id="id2762003"><a href="ch09s06.html">Updating Data with Transactions</a><ol>
+<li id="id2762047"><a href="ch09s06.html#the_acid_test">The ACID Test</a></li>
+<li id="id2762200"><a href="ch09s06.html#implementing_transactions">Implementing Transactions</a><ol>
+<li id="id2763292"><a href="ch09s06.html#using_database_transactions">Using database transactions</a></li>
+<li id="id2763448"><a href="ch09s06.html#using_connection_transactions">Using connection transactions</a></li></ol></li></ol></li>
+<li id="id2764016"><a href="ch09s07.html">Binding to Business Objects</a></li></ol></li>
+<li id="id2764848"><a href="ch10.html">10. Presenting LINQ</a><ol>
+<li id="id2765036"><a href="ch10.html#deconstructing_linq">Deconstructing LINQ</a><ol>
+<li id="id2766021"><a href="ch10.html#linq_syntax">LINQ Syntax</a><ol>
+<li id="id2766263"><a href="ch10.html#the_from_clause">The from clause</a></li>
+<li id="id2766431"><a href="ch10.html#the_join_clause">The join clause</a></li>
+<li id="id2766538"><a href="ch10.html#the_let_clause">The let clause</a></li>
+<li id="id2766650"><a href="ch10.html#the_where_clause">The where clause</a></li>
+<li id="id2766767"><a href="ch10.html#the_orderby_and_orderbydescending_clause">The orderby and orderbydescending clauses</a></li>
+<li id="id2766837"><a href="ch10.html#the_select_clause">The select clause</a></li>
+<li id="id2767033"><a href="ch10.html#the_groupby_clause">The groupby clause</a></li>
+<li id="id2767438"><a href="ch10.html#other_linq_query_operators">Other LINQ query operators</a></li></ol></li>
+<li id="id2768394"><a href="ch10.html#behind_the_scenes_of_a_linq_query_csharp">Behind the Scenes of a LINQ Query: C# 3.0 at Work</a><ol>
+<li id="id2768472"><a href="ch10.html#anonymous_types_and_object_initializers">Anonymous types and object initializers</a></li>
+<li id="id2768630"><a href="ch10.html#implicitly_typed_local_variables">Implicitly typed local variables</a></li>
+<li id="id2768984"><a href="ch10.html#extension_methods">Extension methods</a></li>
+<li id="id2769143"><a href="ch10.html#creating_your_own_extension">Creating your own extension</a></li>
+<li id="id2769332"><a href="ch10.html#lambda_expressions">Lambda expressions</a></li></ol></li>
+<li id="id2769419"><a href="ch10.html#ienumerable_good_iqueryable_better">IEnumerable Good, IQueryable Better</a></li></ol></li>
+<li id="id2769674"><a href="ch10s02.html">LINQ Providers</a></li>
+<li id="id2769938"><a href="ch10s03.html">LINQ to XML</a><ol>
+<li id="id2770862"><a href="ch10s03.html#joining_xml_to_a_different_type_of_data">Joining XML to a Different Type of Data</a></li>
+<li id="id2771335"><a href="ch10s03.html#writing_xml_with_linq">Writing XML with LINQ</a></li></ol></li>
+<li id="id2771940"><a href="ch10s04.html">LINQ to SQL</a><ol>
+<li id="id2772013"><a href="ch10s04.html#from_relations_to_objects">From Relations to Objects</a></li>
+<li id="id2772249"><a href="ch10s04.html#using_the_object_relational_designer">Using the Object Relational Designer</a></li>
+<li id="id2772729"><a href="ch10s04.html#querying_datacontext_objects_manually">Querying DataContext Objects Manually</a></li>
+<li id="id2772866"><a href="ch10s04.html#joining_datacontexts_to_a_different_type">Joining DataContexts to a Different Type of Data</a></li>
+<li id="id2773155"><a href="ch10s04.html#writing_to_the_database_with_linq">Writing to the Database with LINQ</a></li>
+<li id="id2773467"><a href="ch10s04.html#introducing_the_linqdatasource_object">Introducing the LinqDataSource Object</a></li></ol></li></ol></li>
+<li id="id2774559"><a href="ch11.html">11. Validation</a><ol>
+<li id="id2774978"><a href="ch11.html#the_requiredfieldvalidator">The RequiredFieldValidator</a></li>
+<li id="id2775756"><a href="ch11s02.html">The Summary Control</a><ol>
+<li id="id2776228"><a href="ch11s02.html#identifying_the_users_errors">Identifying the User's Errors</a></li></ol></li>
+<li id="id2776511"><a href="ch11s03.html">The Compare Validator</a><ol>
+<li id="id2776899"><a href="ch11s03.html#checking_the_input_type">Checking the Input Type</a></li>
+<li id="id2777000"><a href="ch11s03.html#comparing_to_another_control">Comparing to Another Control</a></li>
+<li id="id2777248"><a href="ch11s03.html#checking_password_strength">Checking Password Strength</a></li></ol></li>
+<li id="id2777930"><a href="ch11s04.html">Range Checking</a></li>
+<li id="id2778197"><a href="ch11s05.html">Regular Expressions</a></li>
+<li id="id2778647"><a href="ch11s06.html">Custom Validation</a></li>
+<li id="id2779106"><a href="ch11s07.html">Validation Groups</a></li></ol></li>
+<li id="id2779407"><a href="ch12.html">12. Forms-Based Security</a><ol>
+<li id="id2779708"><a href="ch12.html#authentication">Authentication</a><ol>
+<li id="id2780004"><a href="ch12.html#anonymous_access">Anonymous Access</a><ol>
+<li id="id2780301"><a href="ch12.html#the_iusr_account">The IUSR account</a></li>
+<li id="id2780484"><a href="ch12.html#the_iis_56_directory_security_panel">The IIS 5/6 Directory Security panel</a></li></ol></li>
+<li id="id2780654"><a href="ch12.html#windows_authentication">Windows Authentication</a><ol>
+<li id="id2780825"><a href="ch12.html#enabling_authentication_in_iis_7">Enabling authentication in IIS 7</a></li>
+<li id="id2781056"><a href="ch12.html#basic_authentication">Basic authentication</a></li>
+<li id="id2781131"><a href="ch12.html#digest_authentication">Digest authentication</a></li>
+<li id="id2781248"><a href="ch12.html#integrated_windows_authentication">Integrated Windows authentication</a></li>
+<li id="id2781380"><a href="ch12.html#role-based_security">Role-based security</a></li>
+<li id="id2781515"><a href="ch12.html#client_certificate_mapping">Client certificate mapping</a></li></ol></li>
+<li id="id2781943"><a href="ch12.html#passport_authentication">Passport Authentication</a></li>
+<li id="id2782256"><a href="ch12.html#forms_authentication">Forms Authentication</a></li></ol></li>
+<li id="id2782363"><a href="ch12s02.html">Setting Up Forms-Based Authentication</a><ol>
+<li id="id2782430"><a href="ch12s02.html#creating_the_database">Creating the Database</a></li>
+<li id="id2782770"><a href="ch12s02.html#creating_and_configuring_the_website">Creating and Configuring the Website</a></li>
+<li id="id2783789"><a href="ch12s02.html#creating_users">Creating Users</a><ol>
+<li id="id2783848"><a href="ch12s02.html#using_the_web_site_administration_tool">Using the Web Site Administration Tool</a></li>
+<li id="id2784058"><a href="ch12s02.html#using_a_create_user_web_page">Using a Create User web page</a></li></ol></li>
+<li id="id2784361"><a href="ch12s02.html#creating_user-aware_pages">Creating User-Aware Pages</a><ol>
+<li id="id2784442"><a href="ch12s02.html#the_welcome_page">The Welcome page</a></li>
+<li id="id2784756"><a href="ch12s02.html#the_login_page">The Login page</a></li>
+<li id="id2785103"><a href="ch12s02.html#the_password_recovery_page">The Password Recovery page</a></li>
+<li id="id2785511"><a href="ch12s02.html#the_change_password_page">The Change Password page</a></li></ol></li>
+<li id="id2785714"><a href="ch12s02.html#restricting_access_to_users">Restricting Access to Users</a><ol>
+<li id="id2785823"><a href="ch12s02.html#in_the_code-behind_page">In the code-behind page</a></li>
+<li id="id2786014"><a href="ch12s02.html#in_webconfig">In web.config</a></li></ol></li>
+<li id="id2786258"><a href="ch12s02.html#enabling_roles">Enabling Roles</a></li>
+<li id="id2786922"><a href="ch12s02.html#creating_roles">Creating Roles</a><ol>
+<li id="id2787033"><a href="ch12s02.html#using_the_web_site_administration_-id001">Using the Web Site Administration Tool</a></li>
+<li id="id2787326"><a href="ch12s02.html#using_a_create_roles_web_page">Using a Create Roles web page</a></li></ol></li>
+<li id="id2788576"><a href="ch12s02.html#restricting_access_to_user_roles">Restricting Access to User Roles</a><ol>
+<li id="id2788613"><a href="ch12s02.html#in_the_code-behind_page-id001">In the code-behind page</a></li>
+<li id="id2788775"><a href="ch12s02.html#in_webconfig-id001">In web.config</a></li></ol></li></ol></li></ol></li>
+<li id="id2788909"><a href="ch13.html">13. Master Pages and Navigation</a><ol>
+<li id="id2788946"><a href="ch13.html#master_pages">Master Pages</a><ol>
+<li id="id2789592"><a href="ch13.html#adding_content_pages">Adding Content Pages</a></li>
+<li id="id2790101"><a href="ch13.html#using_nested_master_pages">Using Nested Master Pages</a></li>
+<li id="id2790694"><a href="ch13.html#dynamically_modifying_master_page_conten">Dynamically Modifying Master Page Contents from Content Pages</a></li></ol></li>
+<li id="id2791084"><a href="ch13s02.html">Navigation</a><ol>
+<li id="id2791118"><a href="ch13s02.html#customizing_browser_history">Customizing Browser History</a></li>
+<li id="id2792101"><a href="ch13s02.html#getting_started_with_site_navigation">Getting Started with Site Navigation</a></li>
+<li id="id2792556"><a href="ch13s02.html#setting_up_the_pages">Setting Up the Pages</a></li>
+<li id="id2793168"><a href="ch13s02.html#customizing_the_look_and_feel">Customizing the Look and Feel</a></li>
+<li id="id2794386"><a href="ch13s02.html#populating_on_demand">Populating on Demand</a></li>
+<li id="id2794608"><a href="ch13s02.html#using_a_menu_for_navigation">Using a Menu for Navigation</a></li>
+<li id="id2794699"><a href="ch13s02.html#enumerating_the_site_map_programmaticall">Enumerating the Site Map Programmatically</a></li></ol></li>
+<li id="id2795132"><a href="ch13s03.html">Filtering Based on Security</a><ol>
+<li id="id2795435"><a href="ch13s03.html#creating_access_rules">Creating Access Rules</a></li>
+<li id="id2795595"><a href="ch13s03.html#creating_a_permission-driven_site_map">Creating a Permission-Driven Site Map</a></li>
+<li id="id2795728"><a href="ch13s03.html#enabling_security_trimming">Enabling Security Trimming</a></li></ol></li></ol></li>
+<li id="id2796018"><a href="ch14.html">14. Personalization</a><ol>
+<li id="id2796051"><a href="ch14.html#creating_personalized_websites">Creating Personalized Websites</a><ol>
+<li id="id2796166"><a href="ch14.html#configuring_the_site_for_profiles">Configuring the Site for Profiles</a></li>
+<li id="id2796893"><a href="ch14.html#working_with_profile_data">Working with Profile Data</a></li>
+<li id="id2797531"><a href="ch14.html#exploring_the_profile_tables">Exploring the Profile Tables</a></li>
+<li id="id2797912"><a href="ch14.html#personalizing_with_complex_types">Personalizing with Complex Types</a></li>
+<li id="id2798531"><a href="ch14.html#anonymous_personalization">Anonymous Personalization</a><ol>
+<li id="id2798617"><a href="ch14.html#a_little_more_configuration">A little more configuration</a></li>
+<li id="id2798716"><a href="ch14.html#a_little_more_code">A little more code</a></li></ol></li>
+<li id="id2799605"><a href="ch14.html#inheriting_profile_properties">Inheriting Profile Properties</a></li>
+<li id="id2799885"><a href="ch14.html#saving_profile_properties">Saving Profile Properties</a></li></ol></li>
+<li id="id2799994"><a href="ch14s02.html">Themes and Skins</a><ol>
+<li id="id2800370"><a href="ch14s02.html#creating_the_test_site">Creating the Test Site</a></li>
+<li id="id2800477"><a href="ch14s02.html#organizing_site_themes_and_skins">Organizing Site Themes and Skins</a></li>
+<li id="id2800685"><a href="ch14s02.html#enabling_themes_and_skins">Enabling Themes and Skins</a></li>
+<li id="id2800750"><a href="ch14s02.html#specifying_themes_for_your_page">Specifying Themes for Your Page</a></li>
+<li id="id2800832"><a href="ch14s02.html#setting_stylesheet_themes">Setting Stylesheet Themes</a></li>
+<li id="id2801024"><a href="ch14s02.html#setting_customization_themes">Setting Customization Themes</a></li>
+<li id="id2801206"><a href="ch14s02.html#using_named_skins">Using Named Skins</a></li></ol></li>
+<li id="id2801397"><a href="ch14s03.html">Web Parts</a><ol>
+<li id="id2801420"><a href="ch14s03.html#web_parts_architecture">Web Parts Architecture</a></li>
+<li id="id2801785"><a href="ch14s03.html#creating_zones">Creating Zones</a></li>
+<li id="id2801928"><a href="ch14s03.html#adding_controls_to_zones">Adding Controls to Zones</a></li>
+<li id="id2802236"><a href="ch14s03.html#minimizing_and_restoring">Minimizing and Restoring</a></li>
+<li id="id2802359"><a href="ch14s03.html#enabling_editing_and_layout_changes">Enabling Editing and Layout Changes</a><ol>
+<li id="id2802398"><a href="ch14s03.html#creating_a_user_control_to_enable_changi">Creating a user control to enable changing page layout</a></li>
+<li id="id2802910"><a href="ch14s03.html#moving_a_part">Moving a part</a></li></ol></li>
+<li id="id2803049"><a href="ch14s03.html#adding_parts_from_a_catalog">Adding Parts from a Catalog</a></li></ol></li></ol></li>
+<li id="id2803567"><a href="ch15.html">15. Custom and User Controls</a><ol>
+<li id="id2803685"><a href="ch15.html#user_controls">User Controls</a><ol>
+<li id="id2804321"><a href="ch15.html#user_controls_with_code">User Controls with Code</a></li>
+<li id="id2804663"><a href="ch15.html#the_atcontrol_directive">The @Control Directive</a></li>
+<li id="id2805180"><a href="ch15.html#properties">Properties</a><ol>
+<li id="id2805471"><a href="ch15.html#creating_a_property">Creating a property</a></li>
+<li id="id2805524"><a href="ch15.html#providing_an_underlying_value_for_the_pr">Providing an underlying value for the property</a></li>
+<li id="id2805579"><a href="ch15.html#integrating_the_property_into_your_code">Integrating the property into your code</a></li>
+<li id="id2805669"><a href="ch15.html#setting_the_property_from_the_client">Setting the property from the client</a></li></ol></li>
+<li id="id2805999"><a href="ch15.html#handling_events">Handling Events</a></li></ol></li>
+<li id="id2806871"><a href="ch15s02.html">Custom Controls</a><ol>
+<li id="id2807822"><a href="ch15s02.html#properties-id001">Properties</a></li>
+<li id="id2807954"><a href="ch15s02.html#the_render_method">The Render Method</a></li>
+<li id="id2808109"><a href="ch15s02.html#updating_the_control">Updating the Control</a></li>
+<li id="id2808244"><a href="ch15s02.html#maintaining_state">Maintaining State</a><ol>
+<li id="id2808299"><a href="ch15s02.html#maintaining_view_state">Maintaining view state</a></li>
+<li id="id2808824"><a href="ch15s02.html#maintaining_control_state">Maintaining control state</a></li></ol></li></ol></li>
+<li id="id2809439"><a href="ch15s03.html">Derived Controls</a></li>
+<li id="id2809866"><a href="ch15s04.html">Composite Controls</a><ol>
+<li id="id2810288"><a href="ch15s04.html#modifying_the_countedbutton_derived_cont">Modifying the CountedButton Derived Control</a></li>
+<li id="id2810592"><a href="ch15s04.html#creating_the_bookcounter_composite_contr">Creating the BookCounter Composite Control</a><ol>
+<li id="id2810706"><a href="ch15s04.html#inamingcontainer">INamingContainer</a></li>
+<li id="id2810746"><a href="ch15s04.html#containing_countedbutton2">Containing CountedButton2</a></li></ol></li>
+<li id="id2810954"><a href="ch15s04.html#creating_the_bookinquirylist_composite_c">Creating the BookInquiryList Composite Control</a><ol>
+<li id="id2811097"><a href="ch15s04.html#controlbuilder_and_parsechildren_attribu">ControlBuilder and ParseChildren attributes</a></li>
+<li id="id2811332"><a href="ch15s04.html#render_method">Render method</a></li>
+<li id="id2811465"><a href="ch15s04.html#rendering_the_output">Rendering the output</a></li>
+<li id="id2811838"><a href="ch15s04.html#rendering_the_summary">Rendering the summary</a></li></ol></li></ol></li></ol></li>
+<li id="id2811892"><a href="ch16.html">16. Web Services</a><ol>
+<li id="id2811971"><a href="ch16.html#introducing_web_services">Introducing Web Services</a></li>
+<li id="id2812127"><a href="ch16s02.html">Understanding Web Service Protocols and Standards</a><ol>
+<li id="id2812167"><a href="ch16s02.html#http">HTTP</a><ol>
+<li id="id2812244"><a href="ch16s02.html#http-get">HTTP-GET</a></li>
+<li id="id2812393"><a href="ch16s02.html#http-post">HTTP-POST</a></li></ol></li>
+<li id="id2812459"><a href="ch16s02.html#xml">XML</a></li>
+<li id="id2812612"><a href="ch16s02.html#soap">SOAP</a></li></ol></li>
+<li id="id2812731"><a href="ch16s03.html">Using SOAP Web Services</a><ol>
+<li id="id2813090"><a href="ch16s03.html#creating_a_proxy">Creating a Proxy</a></li>
+<li id="id2813203"><a href="ch16s03.html#creating_a_consumer">Creating a Consumer</a></li></ol></li>
+<li id="id2813252"><a href="ch16s04.html">Developing an ASP.NET SOAP Web Service</a><ol>
+<li id="id2813414"><a href="ch16s04.html#creating_a_web_service">Creating a Web Service</a><ol>
+<li id="id2813726"><a href="ch16s04.html#inline_with_a_text_editor">Inline with a text editor</a></li></ol></li>
+<li id="id2814025"><a href="ch16s04.html#creating_an_aspnet_web_service_with_vs20">Creating an ASP.NET Web Service with VS2008</a></li>
+<li id="id2814743"><a href="ch16s04.html#the_webservice_directive">The WebService Directive</a></li>
+<li id="id2815055"><a href="ch16s04.html#deriving_from_the_webservice_class">Deriving from the WebService Class</a></li></ol></li>
+<li id="id2815250"><a href="ch16s05.html">Calling the Web Service</a></li>
+<li id="id2816084"><a href="ch16s06.html">Developing a WCF Web Service</a><ol>
+<li id="id2816127"><a href="ch16s06.html#creating_a_wcf_service">Creating a WCF Service</a></li>
+<li id="id2816918"><a href="ch16s06.html#consuming_a_wcf_service">Consuming a WCF Service</a></li>
+<li id="id2817799"><a href="ch16s06.html#using_wcf_to_call_a_public_service">Using WCF to Call a Public Service</a></li></ol></li>
+<li id="id2818354"><a href="ch16s07.html">Creating and Consuming AJAX-Enabled Web Services</a></li>
+<li id="id2819129"><a href="ch16s08.html">Introducing REST and JSON</a><ol>
+<li id="id2819170"><a href="ch16s08.html#rest">REST</a></li>
+<li id="id2819286"><a href="ch16s08.html#json">JSON</a></li>
+<li id="id2819726"><a href="ch16s08.html#consuming_a_restful_web_service">Consuming a RESTful Web Service</a></li></ol></li>
+<li id="id2820890"><a href="ch16s09.html">Learning More About Web Services</a></li></ol></li>
+<li id="id2821009"><a href="ch17.html">17. Caching and Performance</a><ol>
+<li id="id2821106"><a href="ch17.html#types_of_caching">Types of Caching</a><ol>
+<li id="id2821158"><a href="ch17.html#class_caching">Class Caching</a></li>
+<li id="id2821206"><a href="ch17.html#configuration_caching">Configuration Caching</a></li>
+<li id="id2821251"><a href="ch17.html#data_caching">Data Caching</a></li>
+<li id="id2821291"><a href="ch17.html#output_caching">Output Caching</a></li>
+<li id="id2821327"><a href="ch17.html#object_caching">Object Caching</a></li></ol></li>
+<li id="id2821356"><a href="ch17s02.html">Data Caching</a><ol>
+<li id="id2821398"><a href="ch17s02.html#datasourcecontrol_caching">DataSourceControl Caching</a></li>
+<li id="id2822021"><a href="ch17s02.html#sql_cache_dependency">SQL Cache Dependency</a><ol>
+<li id="id2822081"><a href="ch17s02.html#polling-based_cache_invalidation">Polling-based cache invalidation</a></li>
+<li id="id2823137"><a href="ch17s02.html#notification-based_cache_invalidation">Notification-based cache invalidation</a></li></ol></li></ol></li>
+<li id="id2823334"><a href="ch17s03.html">Output Caching</a><ol>
+<li id="id2823382"><a href="ch17s03.html#the_outputcache_directive">The OutputCache Directive</a><ol>
+<li id="id2823497"><a href="ch17s03.html#duration">Duration</a></li>
+<li id="id2823688"><a href="ch17s03.html#varybyparam">VaryByParam</a></li>
+<li id="id2824149"><a href="ch17s03.html#cacheprofile">CacheProfile</a></li>
+<li id="id2824290"><a href="ch17s03.html#diskcacheable">DiskCacheable</a></li>
+<li id="id2824363"><a href="ch17s03.html#location">Location</a></li>
+<li id="id2824574"><a href="ch17s03.html#sqldependency">SqlDependency</a></li>
+<li id="id2824733"><a href="ch17s03.html#varybycontrol">VaryByControl</a></li>
+<li id="id2824793"><a href="ch17s03.html#varybycustom">VaryByCustom</a></li>
+<li id="id2824826"><a href="ch17s03.html#varybyheader">VaryByHeader</a></li></ol></li></ol></li>
+<li id="id2824866"><a href="ch17s04.html">Fragment Caching: Caching Part of a Page</a></li>
+<li id="id2825620"><a href="ch17s05.html">Object Caching</a><ol>
+<li id="id2826400"><a href="ch17s05.html#cache_class_functionality">Cache Class Functionality</a></li>
+<li id="id2826686"><a href="ch17s05.html#dependencies">Dependencies</a><ol>
+<li id="id2826771"><a href="ch17s05.html#file_change_dependency">File change dependency</a></li>
+<li id="id2827500"><a href="ch17s05.html#cached_item_dependency">Cached item dependency</a></li>
+<li id="id2827901"><a href="ch17s05.html#time_dependency">Time dependency</a></li></ol></li>
+<li id="id2828210"><a href="ch17s05.html#scavenging">Scavenging</a></li>
+<li id="id2828572"><a href="ch17s05.html#callback_support">Callback Support</a></li></ol></li>
+<li id="id2829176"><a href="ch17s06.html">The HttpCachePolicy Class</a></li>
+<li id="id2829832"><a href="ch17s07.html">Performance</a><ol>
+<li id="id2829880"><a href="ch17s07.html#aspnet-specific_issues">ASP.NET-Specific Issues</a><ol>
+<li id="id2829904"><a href="ch17s07.html#session_state-id001">Session state</a></li>
+<li id="id2830068"><a href="ch17s07.html#view_state-id001">View state</a></li>
+<li id="id2830213"><a href="ch17s07.html#caching">Caching</a></li>
+<li id="id2830251"><a href="ch17s07.html#server_controls">Server controls</a></li>
+<li id="id2830319"><a href="ch17s07.html#web_gardening_and_web_farming">Web gardening and web farming</a></li>
+<li id="id2830396"><a href="ch17s07.html#round_trips">Round trips</a></li></ol></li>
+<li id="id2830480"><a href="ch17s07.html#general_net_issues">General .NET Issues</a><ol>
+<li id="id2830525"><a href="ch17s07.html#string_concatenation">String concatenation</a></li>
+<li id="id2830726"><a href="ch17s07.html#minimizing_exceptions">Minimizing exceptions</a></li>
+<li id="id2830795"><a href="ch17s07.html#using_early_binding">Using early binding</a></li>
+<li id="id2830846"><a href="ch17s07.html#disabling_debug_mode">Disabling debug mode</a></li></ol></li>
+<li id="id2830890"><a href="ch17s07.html#database_issues">Database Issues</a><ol>
+<li id="id2830913"><a href="ch17s07.html#using_a_datareader_class">Using a DataReader class</a></li>
+<li id="id2830961"><a href="ch17s07.html#using_sql_or_oracle_classes_rather_than_">Using SQL or Oracle classes rather than OleDB classes</a></li></ol></li></ol></li>
+<li id="id2831013"><a href="ch17s08.html">Benchmarking and Profiling</a></li></ol></li>
+<li id="id2831145"><a href="ch18.html">18. Application Logic and Configuration</a><ol>
+<li id="id2831236"><a href="ch18.html#introducing_iis_70">Introducing IIS 7.0</a><ol>
+<li id="id2831470"><a href="ch18.html#the_default_website">The Default Website</a></li>
+<li id="id2831629"><a href="ch18.html#virtual_directories">Virtual Directories</a><ol>
+<li id="id2831774"><a href="ch18.html#creating_the_virtual_directory">Creating the virtual directory</a></li>
+<li id="id2831901"><a href="ch18.html#virtual_directory_security_and_zones">Virtual directory security and zones</a></li></ol></li>
+<li id="id2831988"><a href="ch18.html#web_applications">Web Applications</a></li>
+<li id="id2832183"><a href="ch18.html#application_pools_and_domains">Application Pools and Domains</a></li></ol></li>
+<li id="id2832366"><a href="ch18s02.html">Application-Wide Logic</a><ol>
+<li id="id2832455"><a href="ch18s02.html#the_httpapplication_object">The HttpApplication Object</a></li>
+<li id="id2832578"><a href="ch18s02.html#the_globalasax_file">The Global.asax File</a><ol>
+<li id="id2833120"><a href="ch18s02.html#directives-id001">Directives</a></li>
+<li id="id2833776"><a href="ch18s02.html#script_blocks">Script blocks</a></li>
+<li id="id2833835"><a href="ch18s02.html#events-id001">Events</a></li>
+<li id="id2835390"><a href="ch18s02.html#server-side_includes">Server-side includes</a></li>
+<li id="id2835664"><a href="ch18s02.html#object_declarations">Object declarations</a></li></ol></li>
+<li id="id2835828"><a href="ch18s02.html#global_members">Global Members</a></li>
+<li id="id2836389"><a href="ch18s02.html#http_handlers_and_modules">HTTP Handlers and Modules</a></li></ol></li>
+<li id="id2837462"><a href="ch18s03.html">Configuring the Application</a><ol>
+<li id="id2837638"><a href="ch18s03.html#hierarchical_configuration">Hierarchical Configuration</a></li>
+<li id="id2837993"><a href="ch18s03.html#format">Format</a><ol>
+<li id="id2838320"><a href="ch18s03.html#configuration_section_handler_declaratio">Configuration section handler declarations</a></li>
+<li id="id2838753"><a href="ch18s03.html#configuration_sections">Configuration sections</a></li></ol></li>
+<li id="id2838869"><a href="ch18s03.html#webconfig_v20_and_v35">Web.config v2.0 and v3.5</a></li></ol></li>
+<li id="id2839510"><a href="ch18s04.html">Modifying web.config with IIS 7.0</a><ol>
+<li id="id2839653"><a href="ch18s04.html#application_development">Application Development</a><ol>
+<li id="id2839679"><a href="ch18s04.html#net_compilation">.NET Compilation</a></li>
+<li id="id2840258"><a href="ch18s04.html#net_globalization">.NET Globalization</a></li>
+<li id="id2840562"><a href="ch18s04.html#net_profile">.NET Profile</a></li>
+<li id="id2840688"><a href="ch18s04.html#application_settings">Application Settings</a></li>
+<li id="id2840874"><a href="ch18s04.html#connection_strings">Connection Strings</a></li>
+<li id="id2841039"><a href="ch18s04.html#machine_key">Machine Key</a></li>
+<li id="id2841333"><a href="ch18s04.html#pages_and_controls">Pages and Controls</a></li>
+<li id="id2842189"><a href="ch18s04.html#providers">Providers</a></li>
+<li id="id2842252"><a href="ch18s04.html#session_state-id002">Session State</a></li>
+<li id="id2842571"><a href="ch18s04.html#smtp_e-mail">SMTP E-mail</a></li></ol></li>
+<li id="id2842730"><a href="ch18s04.html#health_and_diagnostics">Health and Diagnostics</a></li>
+<li id="id2842780"><a href="ch18s04.html#http_features">HTTP Features</a></li>
+<li id="id2843095"><a href="ch18s04.html#performance-id001">Performance</a></li>
+<li id="id2843208"><a href="ch18s04.html#security">Security</a><ol>
+<li id="id2843238"><a href="ch18s04.html#net_roles">.NET Roles</a></li>
+<li id="id2843273"><a href="ch18s04.html#net_trust_levels">.NET Trust Levels</a></li>
+<li id="id2843561"><a href="ch18s04.html#net_users">.NET Users</a></li>
+<li id="id2843673"><a href="ch18s04.html#authentication-id001">Authentication</a></li>
+<li id="id2844517"><a href="ch18s04.html#authorization_rules">Authorization rules</a></li>
+<li id="id2844773"><a href="ch18s04.html#ipv4_address_and_domain_restrictions">IPv4 Address and Domain Restrictions</a></li>
+<li id="id2844795"><a href="ch18s04.html#ssl_settings">SSL Settings</a></li></ol></li>
+<li id="id2844820"><a href="ch18s04.html#server_components">Server Components</a></li></ol></li>
+<li id="id2844859"><a href="ch18s05.html">Web Site Administration Tool</a><ol>
+<li id="id2845015"><a href="ch18s05.html#security-id001">Security</a></li>
+<li id="id2845063"><a href="ch18s05.html#application">Application</a></li>
+<li id="id2845663"><a href="ch18s05.html#provider">Provider</a></li></ol></li>
+<li id="id2845721"><a href="ch18s06.html">Custom Configuration Sections</a><ol>
+<li id="id2845764"><a href="ch18s06.html#namevalue_pairs">Name/Value Pairs</a></li>
+<li id="id2846286"><a href="ch18s06.html#objects">Objects</a></li></ol></li></ol></li>
+<li id="id2847003"><a href="ch19.html">19. Tracing, Debugging, and Error Handling</a><ol>
+<li id="id2847080"><a href="ch19.html#creating_the_sample_application">Creating the Sample Application</a></li>
+<li id="id2847457"><a href="ch19s02.html">Tracing</a><ol>
+<li id="id2847497"><a href="ch19s02.html#page-level_tracing">Page-Level Tracing</a></li>
+<li id="id2847859"><a href="ch19s02.html#inserting_into_the_trace_log">Inserting into the Trace Log</a></li>
+<li id="id2848339"><a href="ch19s02.html#application-level_tracing">Application-Level Tracing</a></li>
+<li id="id2848797"><a href="ch19s02.html#trace_viewer">Trace Viewer</a></li></ol></li>
+<li id="id2848894"><a href="ch19s03.html">Debugging</a><ol>
+<li id="id2849163"><a href="ch19s03.html#the_debug_toolbar">The Debug Toolbar</a></li>
+<li id="id2849788"><a href="ch19s03.html#breakpoints">Breakpoints</a><ol>
+<li id="id2849838"><a href="ch19s03.html#setting_a_breakpoint">Setting a breakpoint</a></li>
+<li id="id2849896"><a href="ch19s03.html#breakpoints_window">Breakpoints window</a></li>
+<li id="id2849999"><a href="ch19s03.html#breakpoint_properties">Breakpoint properties</a></li>
+<li id="id2850487"><a href="ch19s03.html#breakpoint_icons">Breakpoint icons</a></li></ol></li>
+<li id="id2850772"><a href="ch19s03.html#stepping_through_code">Stepping Through Code</a></li>
+<li id="id2851033"><a href="ch19s03.html#examining_variables_and_objects">Examining Variables and Objects</a></li>
+<li id="id2851067"><a href="ch19s03.html#debug_windows">Debug Windows</a><ol>
+<li id="id2851437"><a href="ch19s03.html#immediate_window">Immediate window</a></li>
+<li id="id2851529"><a href="ch19s03.html#autos_window">Autos window</a></li>
+<li id="id2851668"><a href="ch19s03.html#locals_window">Locals window</a></li>
+<li id="id2851734"><a href="ch19s03.html#watch_window">Watch window</a></li>
+<li id="id2851811"><a href="ch19s03.html#call_stack_window">Call Stack window</a></li>
+<li id="id2851844"><a href="ch19s03.html#threads_window">Threads window</a></li>
+<li id="id2851886"><a href="ch19s03.html#modules_window">Modules window</a></li>
+<li id="id2851976"><a href="ch19s03.html#disassembly_window">Disassembly window</a></li>
+<li id="id2852068"><a href="ch19s03.html#registers_window">Registers window</a></li>
+<li id="id2852103"><a href="ch19s03.html#memory_windows">Memory windows</a></li></ol></li>
+<li id="id2852134"><a href="ch19s03.html#debugging_aspnet_source_code">Debugging ASP.NET Source Code</a></li></ol></li>
+<li id="id2852587"><a href="ch19s04.html">Error Handling</a></li>
+<li id="id2852698"><a href="ch19s05.html">Custom Error Pages</a></li></ol></li>
+<li id="id2853318"><a href="ch20.html">20. Deployment</a><ol>
+<li id="id2853514"><a href="ch20.html#assemblies">Assemblies</a><ol>
+<li id="id2854121"><a href="ch20.html#microsoft_intermediate_language_msil">Microsoft Intermediate Language (MSIL)</a></li>
+<li id="id2854219"><a href="ch20.html#ildasm">ILDASM</a></li>
+<li id="id2854962"><a href="ch20.html#manifests">Manifests</a></li>
+<li id="id2855128"><a href="ch20.html#versioning">Versioning</a></li>
+<li id="id2855462"><a href="ch20.html#private_versus_shared_assemblies">Private Versus Shared Assemblies</a></li>
+<li id="id2855852"><a href="ch20.html#strong_names">Strong Names</a><ol>
+<li id="id2856117"><a href="ch20.html#creating_a_strong_name">Creating a strong name</a></li>
+<li id="id2856247"><a href="ch20.html#delayed_signing">Delayed signing</a></li></ol></li></ol></li>
+<li id="id2856358"><a href="ch20s02.html">Local Deployment</a><ol>
+<li id="id2856569"><a href="ch20s02.html#full_runtime_compilation">Full Runtime Compilation</a></li>
+<li id="id2856706"><a href="ch20s02.html#manual_compilation_of_assemblies">Manual Compilation of Assemblies</a></li>
+<li id="id2857019"><a href="ch20s02.html#full_precompilation">Full Precompilation</a></li>
+<li id="id2857203"><a href="ch20s02.html#precompilation_of_code_only">Precompilation of Code Only</a></li></ol></li>
+<li id="id2857271"><a href="ch20s03.html">Global Deployment</a></li>
+<li id="id2858111"><a href="ch20s04.html">Windows Installer</a><ol>
+<li id="id2858571"><a href="ch20s04.html#build_configurations">Build Configurations</a></li>
+<li id="id2858730"><a href="ch20s04.html#adding_a_setup_project_with_the_setup_wi">Adding a Setup Project with the Setup Wizard</a></li>
+<li id="id2859076"><a href="ch20s04.html#adding_a_setup_project_manually">Adding a Setup Project Manually</a></li>
+<li id="id2859268"><a href="ch20s04.html#further_customizations">Further Customizations</a><ol>
+<li id="id2859367"><a href="ch20s04.html#file_system_editor">File System editor</a></li>
+<li id="id2859512"><a href="ch20s04.html#registry_editor">Registry editor</a></li>
+<li id="id2859644"><a href="ch20s04.html#file_types_editor">File Types editor</a></li>
+<li id="id2859756"><a href="ch20s04.html#user_interface_editor">User Interface editor</a></li>
+<li id="id2859860"><a href="ch20s04.html#custom_actions_editor">Custom Actions editor</a></li>
+<li id="id2859892"><a href="ch20s04.html#launch_conditions_editor">Launch Conditions editor</a></li></ol></li>
+<li id="id2859954"><a href="ch20s04.html#deploying_the_website">Deploying the Website</a></li></ol></li>
+<li id="id2860064"><a href="ch20s05.html">Web Deployment Projects</a><ol>
+<li id="id2860498"><a href="ch20s05.html#compilation">Compilation</a></li>
+<li id="id2860634"><a href="ch20s05.html#output_assemblies">Output Assemblies</a></li>
+<li id="id2860809"><a href="ch20s05.html#signing">Signing</a></li>
+<li id="id2860886"><a href="ch20s05.html#deployment-id001">Deployment</a></li></ol></li></ol></li>
+<li id="id2861129"><a href="ch21.html">21. Epilogue: From Now to vNext</a><ol>
+<li id="id2861181"><a href="ch21.html#some_of_the_winnowing_process">(Some of) The Winnowing Process</a></li>
+<li id="id2861448"><a href="ch21s02.html">On the Stove</a><ol>
+<li id="id2861476"><a href="ch21s02.html#richer_community_experiences">Richer Community Experiences</a></li>
+<li id="id2861649"><a href="ch21s02.html#rich_media_experiences_with_silverlight">Rich Media Experiences with Silverlight</a></li>
+<li id="id2861838"><a href="ch21s02.html#rich_data_experiences">Rich Data Experiences</a></li>
+<li id="id2862181"><a href="ch21s02.html#an_alternative_web_framework">An Alternative Web Framework</a></li></ol></li>
+<li id="id2862416"><a href="ch21s03.html">On the Far Horizon</a></li></ol></li>
+<li id="id2862531"><a href="apa.html">A. Installing the AJAX Control Toolkit</a><ol>
+<li id="id2862555"><a href="apa.html#downloading_the_code">Downloading the Code</a></li>
+<li id="id2862660"><a href="apas02.html">Building the Code and Looking Around</a></li>
+<li id="id2862883"><a href="apas03.html">Integrating the Toolkit with VS2008</a></li></ol></li>
+<li id="id2863169"><a href="apb.html">B. Relational Database Technology: A Crash Course</a><ol>
+<li id="id2863252"><a href="apb.html#tables_records_and_columns">Tables, Records, and Columns</a></li>
+<li id="id2863525"><a href="apbs02.html">Table Design</a><ol>
+<li id="id2863735"><a href="apbs02.html#normalization">Normalization</a></li>
+<li id="id2863887"><a href="apbs02.html#declarative_referential_integrity">Declarative Referential Integrity</a></li></ol></li>
+<li id="id2863956"><a href="apbs03.html">SQL</a><ol>
+<li id="id2864103"><a href="apbs03.html#joining_tables">Joining Tables</a></li>
+<li id="id2864511"><a href="apbs03.html#using_sql_to_manipulate_the_database">Using SQL to Manipulate the Database</a></li></ol></li>
+<li id="id2864576"><a href="apbs04.html">Further Reference</a></li></ol></li>
+<li id="id2864703"><a href="apc.html">C. Keyboard Shortcuts</a><ol>
+<li id="id2864771"><a href="apc.html#general_actions">General Actions</a></li>
+<li id="id2865093"><a href="apcs02.html">Text Generation and Refactoring</a></li>
+<li id="id2865372"><a href="apcs03.html">Text Navigation</a></li>
+<li id="id2865802"><a href="apcs04.html">Text Editing and Selection</a></li>
+<li id="id2866369"><a href="apcs05.html">Main Window Shortcut Keys</a><ol>
+<li id="id2866535"><a href="apcs05.html#design_view_shortcut_keys">Design View Shortcut Keys</a></li>
+<li id="id2866867"><a href="apcs05.html#class_diagram_shortcut_keys">Class Diagram Shortcut Keys</a></li>
+<li id="id2866971"><a href="apcs05.html#sql_editor_shortcut_keys">SQL Editor Shortcut Keys</a></li></ol></li>
+<li id="id2867106"><a href="apcs06.html">Tool Window Shortcut Keys</a></li>
+<li id="id2867432"><a href="apcs07.html">Find-and-Replace Shortcut Keys</a></li>
+<li id="id2867672"><a href="apcs08.html">Macro Shortcut Keys</a></li>
+<li id="id2867775"><a href="apcs09.html">Debugging Shortcut Keys</a></li></ol></li>
+<li id="id2868525"><a href="co01.html">Colophon</a></li></ol></li></ol></nav>
+</body></html>

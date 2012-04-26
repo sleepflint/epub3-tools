@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"><head><title>High Performance JavaScript</title></head><body>
+  
+  
+  <nav id="toc" epub:type="toc"><h1>Contents</h1><ol>
+<li id="id2787173"><a href="index.html">High Performance JavaScript</a><ol>
+<li id="id2839536"><a href="pr01.html">Preface</a><ol>
+<li id="id2795107"><a href="pr01.html#the_internet_evolves">The Internet Evolves</a></li>
+<li id="id2856190"><a href="pr01s02.html">Why Optimization Is Necessary</a></li>
+<li id="id2806171"><a href="pr01s03.html">Next-Generation JavaScript Engines</a></li>
+<li id="id2752396"><a href="pr01s04.html">Performance Is Still a Concern</a></li>
+<li id="id2811712"><a href="pr01s05.html">How This Book Is Organized</a></li>
+<li id="id2788267"><a href="pr01s06.html">JavaScript Loading</a></li>
+<li id="id2850348"><a href="pr01s07.html">Coding Technique</a></li>
+<li id="id2844521"><a href="pr01s08.html">Deployment</a></li>
+<li id="id2788444"><a href="pr01s09.html">Testing</a></li>
+<li id="id2789846"><a href="pr01s10.html">Who This Book Is For</a></li>
+<li id="id2784459"><a href="pr01s11.html">Conventions Used in This Book</a></li>
+<li id="id2871854"><a href="pr01s12.html">Using Code Examples</a></li>
+<li id="id2823281"><a href="pr01s13.html">Safari® Books Online</a></li>
+<li id="id2883981"><a href="pr01s14.html">How to Contact Us</a></li>
+<li id="id2884042"><a href="pr01s15.html">Acknowledgments</a></li></ol></li>
+<li id="id2788250"><a href="ch01.html">1. Loading and Execution</a><ol>
+<li id="id2789731"><a href="ch01.html#script_positioning">Script Positioning</a></li>
+<li id="id2884245"><a href="ch01s02.html">Grouping Scripts</a></li>
+<li id="id2884436"><a href="ch01s03.html">Nonblocking Scripts</a><ol>
+<li id="id2884909"><a href="ch01s03.html#deferred_scripts">Deferred Scripts</a></li>
+<li id="id2885140"><a href="ch01s03.html#dynamic_script_elements">Dynamic Script Elements</a></li>
+<li id="id2895219"><a href="ch01s03.html#xmlhttprequest_script_injection">XMLHttpRequest Script Injection</a></li>
+<li id="id2895371"><a href="ch01s03.html#recommended_nonblocking_pattern">Recommended Nonblocking Pattern</a><ol>
+<li id="id2895549"><a href="ch01s03.html#the_yui_3_approach">The YUI 3 approach</a></li>
+<li id="id2895641"><a href="ch01s03.html#the_lazyload_library">The LazyLoad library</a></li>
+<li id="id2895759"><a href="ch01s03.html#the_labjs_library">The LABjs library</a></li></ol></li></ol></li>
+<li id="id2895987"><a href="ch01s04.html">Summary</a></li></ol></li>
+<li id="id2896092"><a href="ch02.html">2. Data Access</a><ol>
+<li id="id2896295"><a href="ch02.html#managing_scope">Managing Scope</a><ol>
+<li id="id2896337"><a href="ch02.html#scope_chains_and_identifier_resolution">Scope Chains and Identifier Resolution</a></li>
+<li id="id2896756"><a href="ch02.html#identifier_resolution_performance">Identifier Resolution Performance</a></li>
+<li id="id2897117"><a href="ch02.html#scope_chain_augmentation">Scope Chain Augmentation</a></li>
+<li id="id2897519"><a href="ch02.html#dynamic_scopes">Dynamic Scopes</a></li>
+<li id="id2897763"><a href="ch02.html#closures_scope_and_memory">Closures, Scope, and Memory</a></li></ol></li>
+<li id="id2898141"><a href="ch02s02.html">Object Members</a><ol>
+<li id="id2898283"><a href="ch02s02.html#prototypes">Prototypes</a></li>
+<li id="id2898622"><a href="ch02s02.html#prototype_chains">Prototype Chains</a></li>
+<li id="id2898863"><a href="ch02s02.html#nested_members">Nested Members</a></li>
+<li id="id2899021"><a href="ch02s02.html#caching_object_member_values">Caching Object Member Values</a></li></ol></li>
+<li id="id2899307"><a href="ch02s03.html">Summary</a></li></ol></li>
+<li id="id2899396"><a href="ch03.html">3. DOM Scripting</a><ol>
+<li id="id2899472"><a href="ch03.html#dom_in_the_browser_world">DOM in the Browser World</a><ol>
+<li id="id2899600"><a href="ch03.html#inherently_slow">Inherently Slow</a></li></ol></li>
+<li id="id2899637"><a href="ch03s02.html">DOM Access and Modification</a><ol>
+<li id="id2899796"><a href="ch03s02.html#innerhtml_versus_dom_methods">innerHTML Versus DOM methods</a></li>
+<li id="id2900280"><a href="ch03s02.html#cloning_nodes">Cloning Nodes</a></li>
+<li id="id2900428"><a href="ch03s02.html#html_collections">HTML Collections</a><ol>
+<li id="id2900648"><a href="ch03s02.html#expensive_collections">Expensive collections</a></li>
+<li id="id2900942"><a href="ch03s02.html#local_variables_when_accessing_collectio">Local variables when accessing collection elements</a></li></ol></li>
+<li id="id2901130"><a href="ch03s02.html#walking_the_dom">Walking the DOM</a><ol>
+<li id="id2901157"><a href="ch03s02.html#crawling_the_dom">Crawling the DOM</a></li>
+<li id="id2901306"><a href="ch03s02.html#element_nodes">Element nodes</a></li>
+<li id="id2901564"><a href="ch03s02.html#the_selectors_api">The Selectors API</a></li></ol></li></ol></li>
+<li id="id2901947"><a href="ch03s03.html">Repaints and Reflows</a><ol>
+<li id="id2902104"><a href="ch03s03.html#when_does_a_reflow_happen">When Does a Reflow Happen?</a></li>
+<li id="id2902146"><a href="ch03s03.html#queuing_and_flushing_render_tree_changes">Queuing and Flushing Render Tree Changes</a></li>
+<li id="id2902378"><a href="ch03s03.html#minimizing_repaints_and_reflows">Minimizing Repaints and Reflows</a><ol>
+<li id="id2902446"><a href="ch03s03.html#style_changes">Style changes</a></li>
+<li id="id2902567"><a href="ch03s03.html#batching_dom_changes">Batching DOM changes</a></li></ol></li>
+<li id="id2902825"><a href="ch03s03.html#caching_layout_information">Caching Layout Information</a></li>
+<li id="id2902930"><a href="ch03s03.html#take_elements_out_of_the_flow_for_animat">Take Elements Out of the Flow for Animations</a></li>
+<li id="id2903009"><a href="ch03s03.html#ie_and_hover">IE and :hover</a></li></ol></li>
+<li id="id2903100"><a href="ch03s04.html">Event Delegation</a></li>
+<li id="id2903359"><a href="ch03s05.html">Summary</a></li></ol></li>
+<li id="id2903446"><a href="ch04.html">4. Algorithms and Flow Control</a><ol>
+<li id="id2903506"><a href="ch04.html#loops">Loops</a><ol>
+<li id="id2903556"><a href="ch04.html#types_of_loops">Types of Loops</a></li>
+<li id="id2903867"><a href="ch04.html#loop_performance">Loop Performance</a><ol>
+<li id="id2904051"><a href="ch04.html#decreasing_the_work_per_iteration">Decreasing the work per iteration</a></li>
+<li id="id2904437"><a href="ch04.html#decreasing_the_number_of_iterations">Decreasing the number of iterations</a></li></ol></li>
+<li id="id2904615"><a href="ch04.html#function-based_iteration">Function-Based Iteration</a></li></ol></li>
+<li id="id2904766"><a href="ch04s02.html">Conditionals</a><ol>
+<li id="id2904827"><a href="ch04s02.html#if-else_versus_switch">if-else Versus switch</a></li>
+<li id="id2905026"><a href="ch04s02.html#optimizing_if-else">Optimizing if-else</a></li>
+<li id="id2905213"><a href="ch04s02.html#lookup_tables">Lookup Tables</a></li></ol></li>
+<li id="id2905438"><a href="ch04s03.html">Recursion</a><ol>
+<li id="id2905503"><a href="ch04s03.html#call_stack_limits">Call Stack Limits</a></li>
+<li id="id2905729"><a href="ch04s03.html#recursion_patterns">Recursion Patterns</a></li>
+<li id="id2905820"><a href="ch04s03.html#iteration">Iteration</a></li>
+<li id="id2905995"><a href="ch04s03.html#memoization">Memoization</a></li></ol></li>
+<li id="id2906268"><a href="ch04s04.html">Summary</a></li></ol></li>
+<li id="id2906395"><a href="ch05.html">5. Strings and Regular Expressions</a><ol>
+<li id="id2906483"><a href="ch05.html#string_concatenation">String Concatenation</a><ol>
+<li id="id2906737"><a href="ch05.html#plus_plus_and_plus-equals_plusequal_oper">Plus (+) and Plus-Equals (+=) Operators</a><ol>
+<li id="id2907015"><a href="ch05.html#firefox_and_compile-time_folding">Firefox and compile-time folding</a></li></ol></li>
+<li id="id2907143"><a href="ch05.html#array_joining">Array Joining</a></li>
+<li id="id2907394"><a href="ch05.html#stringprototypeconcat">String.prototype.concat</a></li></ol></li>
+<li id="id2907504"><a href="ch05s02.html">Regular Expression Optimization</a><ol>
+<li id="id2907619"><a href="ch05s02.html#how_regular_expressions_work">How Regular Expressions Work</a></li>
+<li id="id2907816"><a href="ch05s02.html#understanding_backtracking">Understanding Backtracking</a><ol>
+<li id="id2907976"><a href="ch05s02.html#alternation_and_backtracking">Alternation and backtracking</a></li>
+<li id="id2908142"><a href="ch05s02.html#repetition_and_backtracking">Repetition and backtracking</a></li></ol></li>
+<li id="id2908374"><a href="ch05s02.html#runaway_backtracking">Runaway Backtracking</a><ol>
+<li id="id2908518"><a href="ch05s02.html#the_solution_be_specific">The solution: Be specific</a></li>
+<li id="id2908643"><a href="ch05s02.html#emulating_atomic_groups_using_lookahead_">Emulating atomic groups using lookahead and backreferences</a></li>
+<li id="id2908833"><a href="ch05s02.html#nested_quantifiers_and_runaway_backtrack">Nested quantifiers and runaway backtracking</a><ol>
+<li id="id2909011"><a href="ch05s02.html#from_bad_to_worse">From bad to worse</a></li></ol></li></ol></li>
+<li id="id2909216"><a href="ch05s02.html#a_note_on_benchmarking">A Note on Benchmarking</a></li>
+<li id="id2909297"><a href="ch05s02.html#more_ways_to_improve_regular_expression_">More Ways to Improve Regular Expression Efficiency</a></li>
+<li id="id2909845"><a href="ch05s02.html#when_not_to_use_regular_expressions">When Not to Use Regular Expressions</a></li></ol></li>
+<li id="id2910000"><a href="ch05s03.html">String Trimming</a><ol>
+<li id="id2910067"><a href="ch05s03.html#trimming_with_regular_expressions">Trimming with Regular Expressions</a></li>
+<li id="id2910464"><a href="ch05s03.html#trimming_without_regular_expressions">Trimming Without Regular Expressions</a></li>
+<li id="id2910547"><a href="ch05s03.html#a_hybrid_solution">A Hybrid Solution</a></li></ol></li>
+<li id="id2911051"><a href="ch05s04.html">Summary</a></li></ol></li>
+<li id="id2911133"><a href="ch06.html">6. Responsive Interfaces</a><ol>
+<li id="id2911189"><a href="ch06.html#the_browser_ui_thread">The Browser UI Thread</a><ol>
+<li id="id2911402"><a href="ch06.html#browser_limits">Browser Limits</a></li>
+<li id="id2911672"><a href="ch06.html#how_long_is_too_long">How Long Is Too Long?</a></li></ol></li>
+<li id="id2911908"><a href="ch06s02.html">Yielding with Timers</a><ol>
+<li id="id2911974"><a href="ch06s02.html#timer_basics">Timer Basics</a></li>
+<li id="id2912328"><a href="ch06s02.html#timer_precision">Timer Precision</a></li>
+<li id="id2912367"><a href="ch06s02.html#array_processing_with_timers">Array Processing with Timers</a></li>
+<li id="id2912630"><a href="ch06s02.html#splitting_up_tasks">Splitting Up Tasks</a></li>
+<li id="id2912813"><a href="ch06s02.html#timed_code">Timed Code</a></li>
+<li id="id2912983"><a href="ch06s02.html#timers_and_performance">Timers and Performance</a></li></ol></li>
+<li id="id2913115"><a href="ch06s03.html">Web Workers</a><ol>
+<li id="id2913176"><a href="ch06s03.html#worker_environment">Worker Environment</a></li>
+<li id="id2913365"><a href="ch06s03.html#worker_communication">Worker Communication</a></li>
+<li id="id2913589"><a href="ch06s03.html#loading_external_files">Loading External Files</a></li>
+<li id="id2913719"><a href="ch06s03.html#practical_uses">Practical Uses</a></li></ol></li>
+<li id="id2913893"><a href="ch06s04.html">Summary</a></li></ol></li>
+<li id="id2913957"><a href="ch07.html">7. Ajax</a><ol>
+<li id="id2913997"><a href="ch07.html#data_transmission">Data Transmission</a><ol>
+<li id="id2914036"><a href="ch07.html#requesting_data">Requesting Data</a><ol>
+<li id="id2914098"><a href="ch07.html#xmlhttprequest">XMLHttpRequest</a><ol>
+<li id="id2914213"><a href="ch07.html#post_versus_get_when_using_xhr">POST versus GET when using XHR</a></li></ol></li>
+<li id="id2914276"><a href="ch07.html#dynamic_script_tag_insertion">Dynamic script tag insertion</a></li>
+<li id="id2914428"><a href="ch07.html#multipart_xhr">Multipart XHR</a></li></ol></li>
+<li id="id2914836"><a href="ch07.html#sending_data">Sending Data</a><ol>
+<li id="id2914897"><a href="ch07.html#xmlhttprequest-id001">XMLHttpRequest</a></li>
+<li id="id2914985"><a href="ch07.html#beacons">Beacons</a></li></ol></li></ol></li>
+<li id="id2915195"><a href="ch07s02.html">Data Formats</a><ol>
+<li id="id2915258"><a href="ch07s02.html#xml">XML</a><ol>
+<li id="id2915480"><a href="ch07s02.html#xpath">XPath</a></li>
+<li id="id2915522"><a href="ch07s02.html#response_sizes_and_parse_times">Response sizes and parse times</a></li></ol></li>
+<li id="id2915712"><a href="ch07s02.html#json">JSON</a><ol>
+<li id="id2916072"><a href="ch07s02.html#json-p">JSON-P</a></li>
+<li id="id2916277"><a href="ch07s02.html#should_you_use_json">Should you use JSON?</a></li></ol></li>
+<li id="id2916336"><a href="ch07s02.html#html">HTML</a></li>
+<li id="id2916578"><a href="ch07s02.html#custom_formatting">Custom Formatting</a></li>
+<li id="id2916864"><a href="ch07s02.html#data_format_conclusions">Data Format Conclusions</a></li></ol></li>
+<li id="id2917224"><a href="ch07s03.html">Ajax Performance Guidelines</a><ol>
+<li id="id2917263"><a href="ch07s03.html#cache_data">Cache Data</a><ol>
+<li id="id2917312"><a href="ch07s03.html#setting_http_headers">Setting HTTP headers</a></li>
+<li id="id2917467"><a href="ch07s03.html#storing_data_locally">Storing data locally</a></li></ol></li>
+<li id="id2917545"><a href="ch07s03.html#know_the_limitations_of_your_ajax_librar">Know the Limitations of Your Ajax Library</a></li></ol></li>
+<li id="id2917763"><a href="ch07s04.html">Summary</a></li></ol></li>
+<li id="id2917872"><a href="ch08.html">8. Programming Practices</a><ol>
+<li id="id2917916"><a href="ch08.html#avoid_double_evaluation">Avoid Double Evaluation</a></li>
+<li id="id2918400"><a href="ch08s02.html">Use Object/Array Literals</a></li>
+<li id="id2918480"><a href="ch08s03.html">Don’t Repeat Work</a><ol>
+<li id="id2918655"><a href="ch08s03.html#lazy_loading">Lazy Loading</a></li>
+<li id="id2918756"><a href="ch08s03.html#conditional_advance_loading">Conditional Advance Loading</a></li></ol></li>
+<li id="id2918853"><a href="ch08s04.html">Use the Fast Parts</a><ol>
+<li id="id2918884"><a href="ch08s04.html#bitwise_operators">Bitwise Operators</a></li>
+<li id="id2919224"><a href="ch08s04.html#native_methods">Native Methods</a></li></ol></li>
+<li id="id2919833"><a href="ch08s05.html">Summary</a></li></ol></li>
+<li id="id2919918"><a href="ch09.html">9. Building and Deploying High-Performance JavaScript Applications</a><ol>
+<li id="id2919983"><a href="ch09.html#apache_ant">Apache Ant</a></li>
+<li id="id2920155"><a href="ch09s02.html">Combining JavaScript Files</a></li>
+<li id="id2920313"><a href="ch09s03.html">Preprocessing JavaScript Files</a></li>
+<li id="id2920604"><a href="ch09s04.html">JavaScript Minification</a></li>
+<li id="id2921061"><a href="ch09s05.html">Buildtime Versus Runtime Build Processes</a></li>
+<li id="id2921101"><a href="ch09s06.html">JavaScript Compression</a></li>
+<li id="id2921387"><a href="ch09s07.html">Caching JavaScript Files</a></li>
+<li id="id2921605"><a href="ch09s08.html">Working Around Caching Issues</a></li>
+<li id="id2921654"><a href="ch09s09.html">Using a Content Delivery Network</a></li>
+<li id="id2921738"><a href="ch09s10.html">Deploying JavaScript Resources</a></li>
+<li id="id2921838"><a href="ch09s11.html">Agile JavaScript Build Process</a></li>
+<li id="id2922092"><a href="ch09s12.html">Summary</a></li></ol></li>
+<li id="id2922136"><a href="ch10.html">10. Tools</a><ol>
+<li id="id2922220"><a href="ch10.html#javascript_profiling">JavaScript Profiling</a></li>
+<li id="id2922451"><a href="ch10s02.html">YUI Profiler</a></li>
+<li id="id2923106"><a href="ch10s03.html">Anonymous Functions</a></li>
+<li id="id2923252"><a href="ch10s04.html">Firebug</a><ol>
+<li id="id2923300"><a href="ch10s04.html#console_panel_profiler">Console Panel Profiler</a></li>
+<li id="id2923425"><a href="ch10s04.html#console_api">Console API</a></li>
+<li id="id2923696"><a href="ch10s04.html#net_panel">Net Panel</a></li></ol></li>
+<li id="id2923827"><a href="ch10s05.html">Internet Explorer Developer Tools</a></li>
+<li id="id2924079"><a href="ch10s06.html">Safari Web Inspector</a><ol>
+<li id="id2924153"><a href="ch10s06.html#profiles_panel">Profiles Panel</a></li>
+<li id="id2924462"><a href="ch10s06.html#resources_panel">Resources Panel</a></li></ol></li>
+<li id="id2924617"><a href="ch10s07.html">Chrome Developer Tools</a></li>
+<li id="id2924785"><a href="ch10s08.html">Script Blocking</a></li>
+<li id="id2924855"><a href="ch10s09.html">Page Speed</a></li>
+<li id="id2925070"><a href="ch10s10.html">Fiddler</a></li>
+<li id="id2925261"><a href="ch10s11.html">YSlow</a></li>
+<li id="id2925407"><a href="ch10s12.html">dynaTrace Ajax Edition</a></li>
+<li id="id2925618"><a href="ch10s13.html">Summary</a></li></ol></li>
+<li id="id2925681"><a href="ix01.html">Index</a></li>
+<li id="id2925693"><a href="author_bios.html">About the Author</a></li>
+<li id="id2925708"><a href="co02.html">Colophon</a></li></ol></li></ol></nav>
+</body></html>

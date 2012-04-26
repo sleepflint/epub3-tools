@@ -1,0 +1,1078 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"><head><title>JavaScript Cookbook</title></head><body>
+  
+  
+  <nav id="toc" epub:type="toc"><h1>Contents</h1><ol>
+<li id="id2737748"><a href="index.html">JavaScript Cookbook</a><ol>
+<li id="id2596834"><a href="examples_page.html">A Note Regarding Supplemental Files</a></li>
+<li id="id2595399"><a href="pr02.html">Preface</a><ol>
+<li id="id2764052"><a href="pr02.html#audiencecomma_assumptionscomma_and_appro">Audience, Assumptions, and Approach</a><ol>
+<li id="id2758311"><a href="pr02.html#target_browsers">Target Browsers</a></li>
+<li id="id2587571"><a href="pr02.html#sample_code_conventions">Sample Code Conventions</a></li>
+<li id="id2587880"><a href="pr02.html#approach">Approach</a></li>
+<li id="id2737928"><a href="pr02.html#organization">Organization</a></li></ol></li>
+<li id="id2585891"><a href="pr02s02.html">Conventions Used in This Book</a></li>
+<li id="id2774873"><a href="pr02s03.html">Using Code Examples</a></li>
+<li id="id2769848"><a href="pr02s04.html">How to Contact Us</a></li>
+<li id="id2595446"><a href="pr02s05.html">Safari® Books Online</a></li>
+<li id="id2720837"><a href="pr02s06.html">Acknowledgments</a></li></ol></li>
+<li id="id2720870"><a href="ch01.html">1. Working with JavaScript Strings</a><ol>
+<li id="id2720875"><a href="ch01.html#introduction-id00001">1.0. Introduction</a><ol>
+<li id="id2720915"><a href="ch01.html#string_primitive">A String Primitive</a></li>
+<li id="id2798105"><a href="ch01.html#string_object">A String Object</a></li>
+<li id="id2798254"><a href="ch01.html#see_also-id00002">See Also</a></li></ol></li>
+<li id="id2798270"><a href="ch01s02.html">1.1. Concatenating Two or More Strings</a><ol>
+<li id="id2798277"><a href="ch01s02.html#problem-id00003">Problem</a></li>
+<li id="id2798307"><a href="ch01s02.html#solution-id00004">Solution</a></li>
+<li id="id2798361"><a href="ch01s02.html#discussion-id00005">Discussion</a></li></ol></li>
+<li id="id2798577"><a href="ch01s03.html">1.2. Concatenating a String and Another Data Type</a><ol>
+<li id="id2798585"><a href="ch01s03.html#problem-id00006">Problem</a></li>
+<li id="id2798630"><a href="ch01s03.html#solution-id00007">Solution</a></li>
+<li id="id2798661"><a href="ch01s03.html#discussion-id00008">Discussion</a></li></ol></li>
+<li id="id2808460"><a href="ch01s04.html">1.3. Conditionally Comparing Strings</a><ol>
+<li id="id2808468"><a href="ch01s04.html#problem-id00009">Problem</a></li>
+<li id="id2808497"><a href="ch01s04.html#solution-id00010">Solution</a></li>
+<li id="id2808543"><a href="ch01s04.html#discussion-id00011">Discussion</a></li>
+<li id="id2809488"><a href="ch01s04.html#see_also-id00012">See Also</a></li></ol></li>
+<li id="id2809518"><a href="ch01s05.html">1.4. Finding a Substring in a String</a><ol>
+<li id="id2809525"><a href="ch01s05.html#problem-id00013">Problem</a></li>
+<li id="id2809585"><a href="ch01s05.html#solution-id00014">Solution</a></li>
+<li id="id2809632"><a href="ch01s05.html#discussion-id00015">Discussion</a></li>
+<li id="id2809798"><a href="ch01s05.html#see_also-id00016">See Also</a></li></ol></li>
+<li id="id2809871"><a href="ch01s06.html">1.5. Extracting a Substring from a String</a><ol>
+<li id="id2809880"><a href="ch01s06.html#problem-id00017">Problem</a></li>
+<li id="id2809916"><a href="ch01s06.html#solution-id00018">Solution</a></li>
+<li id="id2809968"><a href="ch01s06.html#discussion-id00019">Discussion</a></li>
+<li id="id2810083"><a href="ch01s06.html#see_also-id00020">See Also</a></li></ol></li>
+<li id="id2810123"><a href="ch01s07.html">1.6. Checking for an Existing, Nonempty String</a><ol>
+<li id="id2810132"><a href="ch01s07.html#problem-id00021">Problem</a></li>
+<li id="id2810183"><a href="ch01s07.html#solution-id00022">Solution</a></li>
+<li id="id2810253"><a href="ch01s07.html#discussion-id00023">Discussion</a></li></ol></li>
+<li id="id2810706"><a href="ch01s08.html">1.7. Breaking a Keyword String into Separate Keywords</a><ol>
+<li id="id2810715"><a href="ch01s08.html#problem-id00024">Problem</a></li>
+<li id="id2810771"><a href="ch01s08.html#solution-id00025">Solution</a></li>
+<li id="id2810839"><a href="ch01s08.html#discussion-id00026">Discussion</a></li>
+<li id="id2811024"><a href="ch01s08.html#see_also-id00027">See Also</a></li></ol></li>
+<li id="id2811099"><a href="ch01s09.html">1.8. Inserting Special Characters</a><ol>
+<li id="id2811107"><a href="ch01s09.html#problem-id00028">Problem</a></li>
+<li id="id2811142"><a href="ch01s09.html#solution-id00029">Solution</a></li>
+<li id="id2811234"><a href="ch01s09.html#discussion-id00030">Discussion</a></li></ol></li>
+<li id="id2811568"><a href="ch01s10.html">1.9. Processing Individual Lines of a textarea</a><ol>
+<li id="id2811577"><a href="ch01s10.html#problem-id00031">Problem</a></li>
+<li id="id2811636"><a href="ch01s10.html#solution-id00032">Solution</a></li>
+<li id="id2811723"><a href="ch01s10.html#discussion-id00033">Discussion</a></li>
+<li id="id2811801"><a href="ch01s10.html#see_also-id00034">See Also</a></li></ol></li>
+<li id="id2811857"><a href="ch01s11.html">1.10. Trimming Whitespace from the Ends of a String</a><ol>
+<li id="id2811866"><a href="ch01s11.html#problem-id00035">Problem</a></li>
+<li id="id2811927"><a href="ch01s11.html#solution-id00036">Solution</a></li>
+<li id="id2811970"><a href="ch01s11.html#discussion-id00037">Discussion</a></li>
+<li id="id2812141"><a href="ch01s11.html#see_also-id00038">See Also</a></li></ol></li>
+<li id="id2812207"><a href="ch01s12.html">1.11. Left- or Right-Pad a String</a><ol>
+<li id="id2812215"><a href="ch01s12.html#problem-id00039">Problem</a></li>
+<li id="id2812279"><a href="ch01s12.html#solution-id00040">Solution</a></li>
+<li id="id2812349"><a href="ch01s12.html#discussion-id00041">Discussion</a></li>
+<li id="id2812440"><a href="ch01s12.html#see_also-id00042">See Also</a></li></ol></li></ol></li>
+<li id="id2812516"><a href="ch02.html">2. Using Regular Expressions</a><ol>
+<li id="id2812522"><a href="ch02.html#introduction-id00043">2.0. Introduction</a><ol>
+<li id="id2812691"><a href="ch02.html#regexp_literal">A RegExp Literal</a></li>
+<li id="id2813871"><a href="ch02.html#regexp_as_object">RegExp As Object</a></li>
+<li id="id2813958"><a href="ch02.html#see_also-id00044">See Also</a></li></ol></li>
+<li id="id2813980"><a href="ch02s02.html">2.1. Testing Whether a Substring Exists</a><ol>
+<li id="id2813988"><a href="ch02s02.html#problem-id00045">Problem</a></li>
+<li id="id2814044"><a href="ch02s02.html#solution-id00046">Solution</a></li>
+<li id="id2814102"><a href="ch02s02.html#discussion-id00047">Discussion</a></li></ol></li>
+<li id="id2814291"><a href="ch02s03.html">2.2. Testing for Case-Insensitive Substring Matches</a><ol>
+<li id="id2814300"><a href="ch02s03.html#problem-id00048">Problem</a></li>
+<li id="id2814357"><a href="ch02s03.html#solution-id00049">Solution</a></li>
+<li id="id2814398"><a href="ch02s03.html#discussion-id00050">Discussion</a></li></ol></li>
+<li id="id2814637"><a href="ch02s04.html">2.3. Validating a Social Security Number</a><ol>
+<li id="id2814645"><a href="ch02s04.html#problem-id00051">Problem</a></li>
+<li id="id2814711"><a href="ch02s04.html#solution-id00052">Solution</a></li>
+<li id="id2814750"><a href="ch02s04.html#discussion-id00053">Discussion</a></li>
+<li id="id2815017"><a href="ch02s04.html#see_also-id00054">See Also</a></li></ol></li>
+<li id="id2815077"><a href="ch02s05.html">2.4. Finding and Highlighting All Instances of a Pattern</a><ol>
+<li id="id2815086"><a href="ch02s05.html#problem-id00055">Problem</a></li>
+<li id="id2815121"><a href="ch02s05.html#solution-id00056">Solution</a></li>
+<li id="id2815191"><a href="ch02s05.html#discussion-id00057">Discussion</a></li>
+<li id="id2815501"><a href="ch02s05.html#see_also-id00058">See Also</a></li></ol></li>
+<li id="id2815541"><a href="ch02s06.html">2.5. Replacing Patterns with New Strings</a><ol>
+<li id="id2815549"><a href="ch02s06.html#problem-id00059">Problem</a></li>
+<li id="id2815610"><a href="ch02s06.html#solution-id00060">Solution</a></li>
+<li id="id2815654"><a href="ch02s06.html#discussion-id00061">Discussion</a></li>
+<li id="id2815709"><a href="ch02s06.html#see_also-id00062">See Also</a></li></ol></li>
+<li id="id2815769"><a href="ch02s07.html">2.6. Swap Words in a String Using Capturing Parentheses</a><ol>
+<li id="id2815778"><a href="ch02s07.html#problem-id00063">Problem</a></li>
+<li id="id2815873"><a href="ch02s07.html#solution-id00064">Solution</a></li>
+<li id="id2815894"><a href="ch02s07.html#discussion-id00065">Discussion</a></li></ol></li>
+<li id="id2816410"><a href="ch02s08.html">2.7. Using Regular Expressions to Trim Whitespace</a><ol>
+<li id="id2816419"><a href="ch02s08.html#problem-id00066">Problem</a></li>
+<li id="id2816504"><a href="ch02s08.html#solution-id00067">Solution</a></li>
+<li id="id2816562"><a href="ch02s08.html#discussion-id00068">Discussion</a></li></ol></li>
+<li id="id2816682"><a href="ch02s09.html">2.8. Replace HTML Tags with Named Entities</a><ol>
+<li id="id2816691"><a href="ch02s09.html#problem-id00069">Problem</a></li>
+<li id="id2816786"><a href="ch02s09.html#solution-id00070">Solution</a></li>
+<li id="id2816830"><a href="ch02s09.html#discussion-id00071">Discussion</a></li></ol></li>
+<li id="id2816935"><a href="ch02s10.html">2.9. Searching for Special Characters</a><ol>
+<li id="id2816944"><a href="ch02s10.html#problem-id00072">Problem</a></li>
+<li id="id2817004"><a href="ch02s10.html#solution-id00073">Solution</a></li>
+<li id="id2817023"><a href="ch02s10.html#discussion-id00074">Discussion</a></li></ol></li></ol></li>
+<li id="id2817273"><a href="ch03.html">3. Dates, Time, and Timers</a><ol>
+<li id="id2817279"><a href="ch03.html#introduction-id00075">3.0. Introduction</a><ol>
+<li id="id2817343"><a href="ch03.html#date_object">The Date Object</a></li>
+<li id="id2818371"><a href="ch03.html#javascript_timers">JavaScript Timers</a></li></ol></li>
+<li id="id2818454"><a href="ch03s02.html">3.1. Printing Out Today’s Date</a><ol>
+<li id="id2818462"><a href="ch03s02.html#problem-id00076">Problem</a></li>
+<li id="id2818501"><a href="ch03s02.html#solution-id00077">Solution</a></li>
+<li id="id2818528"><a href="ch03s02.html#discussion-id00078">Discussion</a></li></ol></li>
+<li id="id2818700"><a href="ch03s03.html">3.2. Printing Out the UTC Date and Time</a><ol>
+<li id="id2818708"><a href="ch03s03.html#problem-id00079">Problem</a></li>
+<li id="id2818744"><a href="ch03s03.html#solution-id00080">Solution</a></li>
+<li id="id2818768"><a href="ch03s03.html#discussion-id00081">Discussion</a></li>
+<li id="id2818887"><a href="ch03s03.html#see_also-id00082">See Also</a></li></ol></li>
+<li id="id2818936"><a href="ch03s04.html">3.3. Printing Out an ISO 8601 Formatted Date</a><ol>
+<li id="id2818945"><a href="ch03s04.html#problem-id00083">Problem</a></li>
+<li id="id2818978"><a href="ch03s04.html#solution-id00084">Solution</a></li>
+<li id="id2819012"><a href="ch03s04.html#discussion-id00085">Discussion</a></li>
+<li id="id2819197"><a href="ch03s04.html#see_also-id00086">See Also</a></li></ol></li>
+<li id="id2819241"><a href="ch03s05.html">3.4. Converting an ISO 8601 Formatted Date to a Format Acceptable to the Date Object</a><ol>
+<li id="id2819250"><a href="ch03s05.html#problem-id00087">Problem</a></li>
+<li id="id2819305"><a href="ch03s05.html#solution-id00088">Solution</a></li>
+<li id="id2819334"><a href="ch03s05.html#discussion-id00089">Discussion</a></li></ol></li>
+<li id="id2819629"><a href="ch03s06.html">3.5. Creating a Specific Date</a><ol>
+<li id="id2819637"><a href="ch03s06.html#problem-id00090">Problem</a></li>
+<li id="id2819677"><a href="ch03s06.html#solution-id00091">Solution</a></li>
+<li id="id2819704"><a href="ch03s06.html#discussion-id00092">Discussion</a></li></ol></li>
+<li id="id2819752"><a href="ch03s07.html">3.6. Scheduling a Future Date</a><ol>
+<li id="id2819760"><a href="ch03s07.html#problem-id00093">Problem</a></li>
+<li id="id2819805"><a href="ch03s07.html#solution-id00094">Solution</a></li>
+<li id="id2819844"><a href="ch03s07.html#discussion-id00095">Discussion</a></li></ol></li>
+<li id="id2820173"><a href="ch03s08.html">3.7. Tracking Elapsed Time</a><ol>
+<li id="id2820181"><a href="ch03s08.html#problem-id00096">Problem</a></li>
+<li id="id2820242"><a href="ch03s08.html#solution-id00097">Solution</a></li>
+<li id="id2820278"><a href="ch03s08.html#discussion-id00098">Discussion</a></li></ol></li>
+<li id="id2820409"><a href="ch03s09.html">3.8. Creating a Timeout</a><ol>
+<li id="id2820417"><a href="ch03s09.html#problem-id00099">Problem</a></li>
+<li id="id2820477"><a href="ch03s09.html#solution-id00100">Solution</a></li>
+<li id="id2820502"><a href="ch03s09.html#discussion-id00101">Discussion</a></li>
+<li id="id2820603"><a href="ch03s09.html#see_also-id00102">See Also</a></li></ol></li>
+<li id="id2820659"><a href="ch03s10.html">3.9. Creating Recurring Timers</a><ol>
+<li id="id2820668"><a href="ch03s10.html#problem-id00103">Problem</a></li>
+<li id="id2820741"><a href="ch03s10.html#solution-id00104">Solution</a></li>
+<li id="id2820767"><a href="ch03s10.html#discussion-id00105">Discussion</a></li></ol></li>
+<li id="id2820943"><a href="ch03s11.html">3.10. Using Function Closures with Timers</a><ol>
+<li id="id2820952"><a href="ch03s11.html#problem-id00106">Problem</a></li>
+<li id="id2821030"><a href="ch03s11.html#solution-id00107">Solution</a></li>
+<li id="id2821076"><a href="ch03s11.html#discussion-id00108">Discussion</a></li>
+<li id="id2821191"><a href="ch03s11.html#see_also-id00109">See Also</a></li></ol></li></ol></li>
+<li id="id2821284"><a href="ch04.html">4. Working with Numbers and Math</a><ol>
+<li id="id2821290"><a href="ch04.html#introduction-id00110">4.0. Introduction</a><ol>
+<li id="id2821355"><a href="ch04.html#number_object_and_number_literal">The Number Object and Number Literal</a></li>
+<li id="id2821547"><a href="ch04.html#math_object">The Math Object</a></li></ol></li>
+<li id="id2822572"><a href="ch04s02.html">4.1. Keeping an Incremental Counter</a><ol>
+<li id="id2822580"><a href="ch04s02.html#problem-id00111">Problem</a></li>
+<li id="id2822625"><a href="ch04s02.html#solution-id00112">Solution</a></li>
+<li id="id2822646"><a href="ch04s02.html#discussion-id00113">Discussion</a></li>
+<li id="id2822857"><a href="ch04s02.html#see_also-id00114">See Also</a></li></ol></li>
+<li id="id2822900"><a href="ch04s03.html">4.2. Converting a Decimal to a Hexadecimal Value</a><ol>
+<li id="id2822909"><a href="ch04s03.html#problem-id00115">Problem</a></li>
+<li id="id2822952"><a href="ch04s03.html#solution-id00116">Solution</a></li>
+<li id="id2822992"><a href="ch04s03.html#discussion-id00117">Discussion</a></li>
+<li id="id2823067"><a href="ch04s03.html#see_also-id00118">See Also</a></li></ol></li>
+<li id="id2823111"><a href="ch04s04.html">4.3. Creating a Random Number Generator</a><ol>
+<li id="id2823120"><a href="ch04s04.html#problem-id00119">Problem</a></li>
+<li id="id2823154"><a href="ch04s04.html#solution-id00120">Solution</a></li>
+<li id="id2823212"><a href="ch04s04.html#discussion-id00121">Discussion</a></li></ol></li>
+<li id="id2823277"><a href="ch04s05.html">4.4. Randomly Generating Colors</a><ol>
+<li id="id2823285"><a href="ch04s05.html#problem-id00122">Problem</a></li>
+<li id="id2823331"><a href="ch04s05.html#solution-id00123">Solution</a></li>
+<li id="id2823368"><a href="ch04s05.html#discussion-id00124">Discussion</a></li>
+<li id="id2823436"><a href="ch04s05.html#see_also-id00125">See Also</a></li></ol></li>
+<li id="id2823487"><a href="ch04s06.html">4.5. Converting Strings in a Table to Numbers</a><ol>
+<li id="id2823496"><a href="ch04s06.html#problem-id00126">Problem</a></li>
+<li id="id2823530"><a href="ch04s06.html#solution-id00127">Solution</a></li>
+<li id="id2823567"><a href="ch04s06.html#discussion-id00128">Discussion</a></li></ol></li>
+<li id="id2823676"><a href="ch04s07.html">4.6. Summing All Numbers in a Table Column</a><ol>
+<li id="id2823685"><a href="ch04s07.html#problem-id00129">Problem</a></li>
+<li id="id2823730"><a href="ch04s07.html#solution-id00130">Solution</a></li>
+<li id="id2823754"><a href="ch04s07.html#discussion-id00131">Discussion</a></li>
+<li id="id2823988"><a href="ch04s07.html#see_also-id00132">See Also</a></li></ol></li>
+<li id="id2824059"><a href="ch04s08.html">4.7. Converting Between Degrees and Radians</a><ol>
+<li id="id2824068"><a href="ch04s08.html#problem-id00133">Problem</a></li>
+<li id="id2824137"><a href="ch04s08.html#solution-id00134">Solution</a></li>
+<li id="id2824191"><a href="ch04s08.html#discussion-id00135">Discussion</a></li></ol></li>
+<li id="id2824307"><a href="ch04s09.html">4.8. Find the Radius and Center of a Circle to Fit Within a Page Element</a><ol>
+<li id="id2824316"><a href="ch04s09.html#problem-id00136">Problem</a></li>
+<li id="id2824378"><a href="ch04s09.html#solution-id00137">Solution</a></li>
+<li id="id2824414"><a href="ch04s09.html#discussion-id00138">Discussion</a></li>
+<li id="id2824553"><a href="ch04s09.html#see_also-id00139">See Also</a></li></ol></li>
+<li id="id2824638"><a href="ch04s10.html">4.9. Calculating the Length of a Circular Arc</a><ol>
+<li id="id2824647"><a href="ch04s10.html#problem-id00140">Problem</a></li>
+<li id="id2824755"><a href="ch04s10.html#solution-id00141">Solution</a></li>
+<li id="id2824784"><a href="ch04s10.html#discussion-id00142">Discussion</a></li>
+<li id="id2824803"><a href="ch04s10.html#see_also-id00143">See Also</a></li></ol></li></ol></li>
+<li id="id2824910"><a href="ch05.html">5. Working with Arrays and Loops</a><ol>
+<li id="id2824917"><a href="ch05.html#introduction-id00144">5.0. Introduction</a></li>
+<li id="id2825268"><a href="ch05s02.html">5.1. Looping Through an Array</a><ol>
+<li id="id2825276"><a href="ch05s02.html#problem-id00145">Problem</a></li>
+<li id="id2825308"><a href="ch05s02.html#solution-id00146">Solution</a></li>
+<li id="id2825335"><a href="ch05s02.html#discussion-id00147">Discussion</a></li></ol></li>
+<li id="id2825439"><a href="ch05s03.html">5.2. Creating a Multidimensional Array</a><ol>
+<li id="id2825448"><a href="ch05s03.html#problem-id00148">Problem</a></li>
+<li id="id2825503"><a href="ch05s03.html#solution-id00149">Solution</a></li>
+<li id="id2825560"><a href="ch05s03.html#discussion-id00150">Discussion</a></li></ol></li>
+<li id="id2825824"><a href="ch05s04.html">5.3. Creating a String from an Array</a><ol>
+<li id="id2825832"><a href="ch05s04.html#problem-id00151">Problem</a></li>
+<li id="id2825879"><a href="ch05s04.html#solution-id00152">Solution</a></li>
+<li id="id2825911"><a href="ch05s04.html#discussion-id00153">Discussion</a></li></ol></li>
+<li id="id2825997"><a href="ch05s05.html">5.4. Sorting an Array</a><ol>
+<li id="id2826005"><a href="ch05s05.html#problem-id00154">Problem</a></li>
+<li id="id2826043"><a href="ch05s05.html#solution-id00155">Solution</a></li>
+<li id="id2826074"><a href="ch05s05.html#discussion-id00156">Discussion</a></li></ol></li>
+<li id="id2826235"><a href="ch05s06.html">5.5. Store and Access Values in Order</a><ol>
+<li id="id2826244"><a href="ch05s06.html#problem-id00157">Problem</a></li>
+<li id="id2826316"><a href="ch05s06.html#solution-id00158">Solution</a></li>
+<li id="id2826385"><a href="ch05s06.html#discussion-id00159">Discussion</a></li></ol></li>
+<li id="id2826516"><a href="ch05s07.html">5.6. Store and Access Values in Reverse Order</a><ol>
+<li id="id2826524"><a href="ch05s07.html#problem-id00160">Problem</a></li>
+<li id="id2826584"><a href="ch05s07.html#solution-id00161">Solution</a></li>
+<li id="id2826637"><a href="ch05s07.html#discussion-id00162">Discussion</a></li></ol></li>
+<li id="id2826772"><a href="ch05s08.html">5.7. Create a New Array as a Subset of an Existing Array</a><ol>
+<li id="id2826781"><a href="ch05s08.html#problem-id00163">Problem</a></li>
+<li id="id2826820"><a href="ch05s08.html#solution-id00164">Solution</a></li>
+<li id="id2826854"><a href="ch05s08.html#discussion-id00165">Discussion</a></li></ol></li>
+<li id="id2827026"><a href="ch05s09.html">5.8. Searching Through an Array</a><ol>
+<li id="id2827034"><a href="ch05s09.html#problem-id00166">Problem</a></li>
+<li id="id2827069"><a href="ch05s09.html#solution-id00167">Solution</a></li>
+<li id="id2827127"><a href="ch05s09.html#discussion-id00168">Discussion</a></li>
+<li id="id2827213"><a href="ch05s09.html#see_also-id00169">See Also</a></li></ol></li>
+<li id="id2827289"><a href="ch05s10.html">5.9. Flatten a Multidimensional Array</a><ol>
+<li id="id2827297"><a href="ch05s10.html#problems">Problem</a></li>
+<li id="id2827345"><a href="ch05s10.html#solution-id00170">Solution</a></li>
+<li id="id2827392"><a href="ch05s10.html#discussion-id00171">Discussion</a></li></ol></li>
+<li id="id2827450"><a href="ch05s11.html">5.10. Search and Remove or Replace Array Elements</a><ol>
+<li id="id2827459"><a href="ch05s11.html#problem-id00172">Problem</a></li>
+<li id="id2827543"><a href="ch05s11.html#solution-id00173">Solution</a></li>
+<li id="id2827604"><a href="ch05s11.html#discussion-id00174">Discussion</a></li>
+<li id="id2827752"><a href="ch05s11.html#see_also-id00175">See Also</a></li></ol></li>
+<li id="id2827811"><a href="ch05s12.html">5.11. Applying a Function Against Each Array Element</a><ol>
+<li id="id2827820"><a href="ch05s12.html#problems-id00176">Problem</a></li>
+<li id="id2827855"><a href="ch05s12.html#solution-id00177">Solution</a></li>
+<li id="id2827910"><a href="ch05s12.html#discussion-id00178">Discussion</a></li>
+<li id="id2827985"><a href="ch05s12.html#see_also-id00179">See Also</a></li></ol></li>
+<li id="id2828097"><a href="ch05s13.html">5.12. Applying a Function to Every Element in an Array and Returning a New Array</a><ol>
+<li id="id2828106"><a href="ch05s13.html#problem-id00180">Problem</a></li>
+<li id="id2828147"><a href="ch05s13.html#solution-id00181">Solution</a></li>
+<li id="id2828199"><a href="ch05s13.html#discussion-id00182">Discussion</a></li>
+<li id="id2828270"><a href="ch05s13.html#see_also-id00183">See Also</a></li></ol></li>
+<li id="id2828362"><a href="ch05s14.html">5.13. Creating a Filtered Array</a><ol>
+<li id="id2828370"><a href="ch05s14.html#problem-id00184">Problem</a></li>
+<li id="id2828430"><a href="ch05s14.html#solution-id00185">Solution</a></li>
+<li id="id2828462"><a href="ch05s14.html#discussion-id00186">Discussion</a></li>
+<li id="id2828552"><a href="ch05s14.html#see_also-id00187">See Also</a></li></ol></li>
+<li id="id2828654"><a href="ch05s15.html">5.14. Validating Array Contents</a><ol>
+<li id="id2828662"><a href="ch05s15.html#problem-id00188">Problem</a></li>
+<li id="id2828696"><a href="ch05s15.html#solution-id00189">Solution</a></li>
+<li id="id2828785"><a href="ch05s15.html#discussion-id00190">Discussion</a></li>
+<li id="id2828908"><a href="ch05s15.html#see_also-id00191">See Also</a></li></ol></li>
+<li id="id2829036"><a href="ch05s16.html">5.15. Using an Associative Array to Store Form Element Names and Values</a><ol>
+<li id="id2829046"><a href="ch05s16.html#problem-id00192">Problem</a></li>
+<li id="id2829119"><a href="ch05s16.html#solution-id00193">Solution</a></li>
+<li id="id2829159"><a href="ch05s16.html#discussion-id00194">Discussion</a></li>
+<li id="id2829576"><a href="ch05s16.html#see_also-id00195">See Also</a></li></ol></li></ol></li>
+<li id="id2829668"><a href="ch06.html">6. Building Reusability with JavaScript Functions</a><ol>
+<li id="id2829675"><a href="ch06.html#introduction-id00196">6.0. Introduction</a></li>
+<li id="id2829895"><a href="ch06s02.html">6.1. Creating a Block of Reusable Code</a><ol>
+<li id="id2829903"><a href="ch06s02.html#problem-id00197">Problem</a></li>
+<li id="id2829925"><a href="ch06s02.html#solution-id00198">Solution</a></li>
+<li id="id2829950"><a href="ch06s02.html#discussion-id00199">Discussion</a></li></ol></li>
+<li id="id2830043"><a href="ch06s03.html">6.2. Passing Single Data Values to and from a Function</a><ol>
+<li id="id2830052"><a href="ch06s03.html#problem-id00200">Problem</a></li>
+<li id="id2830102"><a href="ch06s03.html#solution-id00201">Solution</a></li>
+<li id="id2830124"><a href="ch06s03.html#discussion-id00202">Discussion</a></li>
+<li id="id2830294"><a href="ch06s03.html#see_also-id00203">See Also</a></li></ol></li>
+<li id="id2830337"><a href="ch06s04.html">6.3. Passing Complex Data Objects to a Function</a><ol>
+<li id="id2830346"><a href="ch06s04.html#problem-id00204">Problem</a></li>
+<li id="id2830398"><a href="ch06s04.html#solution-id00205">Solution</a></li>
+<li id="id2830420"><a href="ch06s04.html#discussion-id00206">Discussion</a></li></ol></li>
+<li id="id2830582"><a href="ch06s05.html">6.4. Creating a Dynamic Runtime Function</a><ol>
+<li id="id2830591"><a href="ch06s05.html#problem-id00207">Problem</a></li>
+<li id="id2830623"><a href="ch06s05.html#solution-id00208">Solution</a></li>
+<li id="id2830659"><a href="ch06s05.html#discussion-id00209">Discussion</a></li>
+<li id="id2830839"><a href="ch06s05.html#see_also-id00210">See Also</a></li></ol></li>
+<li id="id2830872"><a href="ch06s06.html">6.5. Passing a Function As an Argument to Another Function</a><ol>
+<li id="id2830881"><a href="ch06s06.html#problem-id00211">Problem</a></li>
+<li id="id2830919"><a href="ch06s06.html#solution-id00212">Solution</a></li>
+<li id="id2830971"><a href="ch06s06.html#discussion-id00213">Discussion</a></li>
+<li id="id2831070"><a href="ch06s06.html#see_also-id00214">See Also</a></li></ol></li>
+<li id="id2831104"><a href="ch06s07.html">6.6. Implementing a Recursive Algorithm</a><ol>
+<li id="id2831113"><a href="ch06s07.html#problem-id00215">Problem</a></li>
+<li id="id2831161"><a href="ch06s07.html#solution-id00216">Solution</a></li>
+<li id="id2831185"><a href="ch06s07.html#discussion-id00217">Discussion</a></li>
+<li id="id2831506"><a href="ch06s07.html#see_also-id00218">See Also</a></li></ol></li>
+<li id="id2831562"><a href="ch06s08.html">6.7. Create a Function That Remembers Its State</a><ol>
+<li id="id2831571"><a href="ch06s08.html#problem-id00219">Problem</a></li>
+<li id="id2831631"><a href="ch06s08.html#solution-id00220">Solution</a></li>
+<li id="id2831673"><a href="ch06s08.html#discussion-id00221">Discussion</a></li>
+<li id="id2832176"><a href="ch06s08.html#see_also-id00222">See Also</a></li></ol></li>
+<li id="id2832265"><a href="ch06s09.html">6.8. Improving Application Performance with a Generalized Currying Function</a><ol>
+<li id="id2832274"><a href="ch06s09.html#problem-id00223">Problem</a></li>
+<li id="id2832320"><a href="ch06s09.html#solution-id00224">Solution</a></li>
+<li id="id2832383"><a href="ch06s09.html#discussion-id00225">Discussion</a></li>
+<li id="id2832536"><a href="ch06s09.html#see_also-id00226">See Also</a></li></ol></li>
+<li id="id2832604"><a href="ch06s10.html">6.9. Improve Application Performance with Memoization (Caching Calculations)</a><ol>
+<li id="id2832614"><a href="ch06s10.html#problem-id00227">Problem</a></li>
+<li id="id2832667"><a href="ch06s10.html#solution-id00228">Solution</a></li>
+<li id="id2832705"><a href="ch06s10.html#discussion-id00229">Discussion</a></li>
+<li id="id2832974"><a href="ch06s10.html#see_also-id00230">See Also</a></li></ol></li>
+<li id="id2833031"><a href="ch06s11.html">6.10. Using an Anonymous Function to Wrap Global Variables</a><ol>
+<li id="id2833040"><a href="ch06s11.html#problem-id00231">Problem</a></li>
+<li id="id2833092"><a href="ch06s11.html#solution-id00232">Solution</a></li>
+<li id="id2833117"><a href="ch06s11.html#discussion-id00233">Discussion</a></li>
+<li id="id2833192"><a href="ch06s11.html#see_also-id00234">See Also</a></li></ol></li></ol></li>
+<li id="id2833245"><a href="ch07.html">7. Handling Events</a><ol>
+<li id="id2833251"><a href="ch07.html#introduction-id00235">7.0. Introduction</a><ol>
+<li id="id2833353"><a href="ch07.html#some_common_events">Some Common Events</a></li>
+<li id="id2833605"><a href="ch07.html#event_history_and_new_event_handling">Event History and New Event Handling</a></li>
+<li id="id2833847"><a href="ch07.html#new_eventscomma_new_uses">New Events, New Uses</a></li>
+<li id="id2833950"><a href="ch07.html#see_also-id00236">See Also</a></li></ol></li>
+<li id="id2833965"><a href="ch07s02.html">7.1. Detecting When the Page Has Finished Loading</a><ol>
+<li id="id2833974"><a href="ch07s02.html#problem-id00237">Problem</a></li>
+<li id="id2834033"><a href="ch07s02.html#solution-id00238">Solution</a></li>
+<li id="id2834070"><a href="ch07s02.html#discussion-id00239">Discussion</a></li>
+<li id="id2834225"><a href="ch07s02.html#see_also-id00240">See Also</a></li></ol></li>
+<li id="id2834281"><a href="ch07s03.html">7.2. Capturing the Location of a Mouse Click Event Using the Event Object</a><ol>
+<li id="id2834290"><a href="ch07s03.html#problem-id00241">Problem</a></li>
+<li id="id2834349"><a href="ch07s03.html#solution-id00242">Solution</a></li>
+<li id="id2834399"><a href="ch07s03.html#discussion-id00243">Discussion</a></li>
+<li id="id2834835"><a href="ch07s03.html#see_also-id00244">See Also</a></li></ol></li>
+<li id="id2834902"><a href="ch07s04.html">7.3. Creating a Generic, Reusable Event Handler Function</a><ol>
+<li id="id2834911"><a href="ch07s04.html#problem-id00245">Problem</a></li>
+<li id="id2834944"><a href="ch07s04.html#solution-id00246">Solution</a></li>
+<li id="id2834971"><a href="ch07s04.html#discussion-id00247">Discussion</a><ol>
+<li id="id2835339"><a href="ch07s04.html#creating_a_universal_stop_listening_func">Creating a universal stop-listening function</a></li></ol></li></ol></li>
+<li id="id2835503"><a href="ch07s05.html">7.4. Canceling an Event Based on Changed Circumstance</a><ol>
+<li id="id2835512"><a href="ch07s05.html#problem-id00248">Problem</a></li>
+<li id="id2835544"><a href="ch07s05.html#solution-id00249">Solution</a></li>
+<li id="id2835567"><a href="ch07s05.html#discussion-id00250">Discussion</a></li></ol></li>
+<li id="id2835671"><a href="ch07s06.html">7.5. Preventing an Event from Propagating Through a Set of Nested Elements</a><ol>
+<li id="id2835680"><a href="ch07s06.html#problem-id00251">Problem</a></li>
+<li id="id2835719"><a href="ch07s06.html#solution-id00252">Solution</a></li>
+<li id="id2835755"><a href="ch07s06.html#discussion-id00253">Discussion</a></li></ol></li>
+<li id="id2836103"><a href="ch07s07.html">7.6. Capturing Keyboard Activity</a><ol>
+<li id="id2836111"><a href="ch07s07.html#problem-id00254">Problem</a></li>
+<li id="id2836177"><a href="ch07s07.html#solution-id00255">Solution</a></li>
+<li id="id2836212"><a href="ch07s07.html#discussion-id00256">Discussion</a></li>
+<li id="id2836556"><a href="ch07s07.html#see_also-id00257">See Also</a></li></ol></li>
+<li id="id2836626"><a href="ch07s08.html">7.7. Using the New HTML5 Drag-and-Drop</a><ol>
+<li id="id2836634"><a href="ch07s08.html#problem-id00258">Problem</a></li>
+<li id="id2836681"><a href="ch07s08.html#solution-id00259">Solution</a></li>
+<li id="id2836810"><a href="ch07s08.html#discussion-id00261">Discussion</a></li>
+<li id="id2837892"><a href="ch07s08.html#see_also-id00262">See Also</a></li></ol></li>
+<li id="id2837997"><a href="ch07s09.html">7.8. Using Safari Orientation Events and Other Mobile Development Environments</a><ol>
+<li id="id2838006"><a href="ch07s09.html#problem-id00263">Problem</a></li>
+<li id="id2838060"><a href="ch07s09.html#solution-id00264">Solution</a></li>
+<li id="id2838083"><a href="ch07s09.html#discussion-id00265">Discussion</a></li>
+<li id="id2838186"><a href="ch07s09.html#see_also-id00266">See Also</a></li></ol></li></ol></li>
+<li id="id2838270"><a href="ch08.html">8. Browser Pieces</a><ol>
+<li id="id2838276"><a href="ch08.html#introduction-id00267">8.0. Introduction</a></li>
+<li id="id2838500"><a href="ch08s02.html">8.1. Ask the Web Page Reader to Confirm an Action</a><ol>
+<li id="id2838508"><a href="ch08s02.html#problem-id00268">Problem</a></li>
+<li id="id2838556"><a href="ch08s02.html#solution-id00269">Solution</a></li>
+<li id="id2838582"><a href="ch08s02.html#discussion-id00270">Discussion</a></li></ol></li>
+<li id="id2838731"><a href="ch08s03.html">8.2. Creating a New, Stripped-Down Browser Window</a><ol>
+<li id="id2838740"><a href="ch08s03.html#problem-id00271">Problem</a></li>
+<li id="id2838781"><a href="ch08s03.html#solution-id00272">Solution</a></li>
+<li id="id2838830"><a href="ch08s03.html#discussion-id00273">Discussion</a></li></ol></li>
+<li id="id2838919"><a href="ch08s04.html">8.3. Finding Out About the Browser Accessing the Page</a><ol>
+<li id="id2838928"><a href="ch08s04.html#problem-id00274">Problem</a></li>
+<li id="id2838966"><a href="ch08s04.html#solution-id00275">Solution</a></li>
+<li id="id2839010"><a href="ch08s04.html#discussion-id00276">Discussion</a></li>
+<li id="id2839432"><a href="ch08s04.html#see_also-id00277">See Also</a></li></ol></li>
+<li id="id2839467"><a href="ch08s05.html">8.4. Warning the Web Page Reader About Leaving a Page</a><ol>
+<li id="id2839476"><a href="ch08s05.html#problem-id00278">Problem</a></li>
+<li id="id2839522"><a href="ch08s05.html#solution-id00279">Solution</a></li>
+<li id="id2839561"><a href="ch08s05.html#discussion-id00280">Discussion</a></li></ol></li>
+<li id="id2839621"><a href="ch08s06.html">8.5. Changing Stylesheets Depending on Color Support</a><ol>
+<li id="id2839630"><a href="ch08s06.html#problem-id00281">Problem</a></li>
+<li id="id2839686"><a href="ch08s06.html#solution-id00282">Solution</a></li>
+<li id="id2839770"><a href="ch08s06.html#discussion-id00283">Discussion</a></li>
+<li id="id2839958"><a href="ch08s06.html#see_also-id00284">See Also</a></li></ol></li>
+<li id="id2840016"><a href="ch08s07.html">8.6. Modifying Image Dimensions Depending on Page Size</a><ol>
+<li id="id2840025"><a href="ch08s07.html#problem-id00285">Problem</a></li>
+<li id="id2840105"><a href="ch08s07.html#solution-id00286">Solution</a></li>
+<li id="id2840168"><a href="ch08s07.html#discussion-id00287">Discussion</a></li>
+<li id="id2840315"><a href="ch08s07.html#see_also-id00288">See Also</a></li></ol></li>
+<li id="id2840381"><a href="ch08s08.html">8.7. Creating Breadcrumbs in a CMS Template Page</a><ol>
+<li id="id2840390"><a href="ch08s08.html#problem-id00289">Problem</a></li>
+<li id="id2840439"><a href="ch08s08.html#solution-id00290">Solution</a></li>
+<li id="id2840483"><a href="ch08s08.html#discussion-id00291">Discussion</a></li></ol></li>
+<li id="id2841013"><a href="ch08s09.html">8.8. Bookmarking a Dynamic Page</a><ol>
+<li id="id2841021"><a href="ch08s09.html#problem-id00292">Problem</a></li>
+<li id="id2841089"><a href="ch08s09.html#solution-id00293">Solution</a></li>
+<li id="id2841143"><a href="ch08s09.html#discussion-id00294">Discussion</a></li>
+<li id="id2841372"><a href="ch08s09.html#see_also-id00295">See Also</a></li></ol></li>
+<li id="id2841482"><a href="ch08s10.html">8.9. Preserving State for Back Button, Page Refresh</a><ol>
+<li id="id2841491"><a href="ch08s10.html#problem-id00296">Problem</a></li>
+<li id="id2841574"><a href="ch08s10.html#solution-id00297">Solution</a></li>
+<li id="id2841607"><a href="ch08s10.html#discussion-id00298">Discussion</a></li>
+<li id="id2841723"><a href="ch08s10.html#see_also-id00299">See Also</a></li></ol></li></ol></li>
+<li id="id2841836"><a href="ch09.html">9. Form Elements and Validation</a><ol>
+<li id="id2841842"><a href="ch09.html#introduction-id00300">9.0. Introduction</a></li>
+<li id="id2841915"><a href="ch09s02.html">9.1. Accessing Form Text Input Values</a><ol>
+<li id="id2841923"><a href="ch09s02.html#problem-id00301">Problem</a></li>
+<li id="id2841963"><a href="ch09s02.html#solution-id00302">Solution</a></li>
+<li id="id2841988"><a href="ch09s02.html#discussion-id00303">Discussion</a></li>
+<li id="id2842242"><a href="ch09s02.html#see_also-id00304">See Also</a></li></ol></li>
+<li id="id2842297"><a href="ch09s03.html">9.2. Dynamically Disabling and Enabling Form Elements</a><ol>
+<li id="id2842306"><a href="ch09s03.html#problem-id00305">Problem</a></li>
+<li id="id2842350"><a href="ch09s03.html#solution-id00306">Solution</a></li>
+<li id="id2842416"><a href="ch09s03.html#discussion-id00307">Discussion</a></li>
+<li id="id2842439"><a href="ch09s03.html#see_also-id00308">See Also</a></li></ol></li>
+<li id="id2842497"><a href="ch09s04.html">9.3. Getting Information from a Form Element Based on an Event</a><ol>
+<li id="id2842506"><a href="ch09s04.html#problem-id00309">Problem</a></li>
+<li id="id2842550"><a href="ch09s04.html#solution-id00310">Solution</a></li>
+<li id="id2842803"><a href="ch09s04.html#discussion-id00311">Discussion</a></li>
+<li id="id2843397"><a href="ch09s04.html#see_also-id00312">See Also</a></li></ol></li>
+<li id="id2843447"><a href="ch09s05.html">9.4. Performing an Action When a Radio Button Is Clicked</a><ol>
+<li id="id2843456"><a href="ch09s05.html#problem-id00313">Problem</a></li>
+<li id="id2843522"><a href="ch09s05.html#solution-id00314">Solution</a></li>
+<li id="id2843559"><a href="ch09s05.html#discussion-id00315">Discussion</a></li>
+<li id="id2843813"><a href="ch09s05.html#see_also-id00316">See Also</a></li></ol></li>
+<li id="id2843874"><a href="ch09s06.html">9.5. Checking for a Valid Phone Number</a><ol>
+<li id="id2843883"><a href="ch09s06.html#problem-id00317">Problem</a></li>
+<li id="id2843989"><a href="ch09s06.html#solution-id00318">Solution</a></li>
+<li id="id2844016"><a href="ch09s06.html#discussion-id00319">Discussion</a></li>
+<li id="id2844080"><a href="ch09s06.html#see_also-id00320">See Also</a></li></ol></li>
+<li id="id2844138"><a href="ch09s07.html">9.6. Canceling a Form Submission</a><ol>
+<li id="id2844146"><a href="ch09s07.html#problem-id00321">Problem</a></li>
+<li id="id2844209"><a href="ch09s07.html#solution-id00322">Solution</a></li>
+<li id="id2844250"><a href="ch09s07.html#discussion-id00323">Discussion</a></li>
+<li id="id2844288"><a href="ch09s07.html#see_also-id00324">See Also</a></li></ol></li>
+<li id="id2844332"><a href="ch09s08.html">9.7. Preventing Duplicate Form Submissions</a><ol>
+<li id="id2844340"><a href="ch09s08.html#problem-id00325">Problem</a></li>
+<li id="id2844424"><a href="ch09s08.html#solution-id00326">Solution</a></li>
+<li id="id2844448"><a href="ch09s08.html#discussion-id00327">Discussion</a></li></ol></li>
+<li id="id2844631"><a href="ch09s09.html">9.8. Hiding and Displaying Form Elements</a><ol>
+<li id="id2844640"><a href="ch09s09.html#problem-id00328">Problem</a></li>
+<li id="id2844677"><a href="ch09s09.html#solution-id00329">Solution</a></li>
+<li id="id2844811"><a href="ch09s09.html#discussion-id00330">Discussion</a></li>
+<li id="id2844994"><a href="ch09s09.html#see_also-id00331">See Also</a></li></ol></li>
+<li id="id2845039"><a href="ch09s10.html">9.9. Modifying a Selection List Based on Other Form Decisions</a><ol>
+<li id="id2845048"><a href="ch09s10.html#problem-id00332">Problem</a></li>
+<li id="id2845110"><a href="ch09s10.html#solution-id00333">Solution</a></li>
+<li id="id2845160"><a href="ch09s10.html#discussion-id00334">Discussion</a></li>
+<li id="id2845262"><a href="ch09s10.html#see_also-id00335">See Also</a></li></ol></li></ol></li>
+<li id="id2845338"><a href="ch10.html">10. Debugging and Error Handling</a><ol>
+<li id="id2845345"><a href="ch10.html#introduction-id00336">10.0. Introduction</a></li>
+<li id="id2845435"><a href="ch10s02.html">10.1. Gracefully Handling No JavaScript Support</a><ol>
+<li id="id2845444"><a href="ch10s02.html#problem-id00337">Problem</a></li>
+<li id="id2845538"><a href="ch10s02.html#solution-id00338">Solution</a></li>
+<li id="id2845581"><a href="ch10s02.html#discussion-id00339">Discussion</a></li>
+<li id="id2845825"><a href="ch10s02.html#see_also-id00340">See Also</a></li></ol></li>
+<li id="id2845935"><a href="ch10s03.html">10.2. Checking for Errors in Functions</a><ol>
+<li id="id2845944"><a href="ch10s03.html#problem-id00341">Problem</a></li>
+<li id="id2846008"><a href="ch10s03.html#solution-id00342">Solution</a></li>
+<li id="id2846049"><a href="ch10s03.html#discussion-id00343">Discussion</a></li></ol></li>
+<li id="id2846141"><a href="ch10s04.html">10.3. Using an Alert for Simple Debugging</a><ol>
+<li id="id2846150"><a href="ch10s04.html#problem-id00344">Problem</a></li>
+<li id="id2846198"><a href="ch10s04.html#solution-id00345">Solution</a></li>
+<li id="id2846226"><a href="ch10s04.html#discussion-id00346">Discussion</a></li></ol></li>
+<li id="id2846377"><a href="ch10s05.html">10.4. Catching an Error and Providing Graceful Error Handling</a><ol>
+<li id="id2846386"><a href="ch10s05.html#problem-id00347">Problem</a></li>
+<li id="id2846408"><a href="ch10s05.html#solution-id00348">Solution</a></li>
+<li id="id2846433"><a href="ch10s05.html#discussion-id00349">Discussion</a></li></ol></li>
+<li id="id2846747"><a href="ch10s06.html">10.5. Initiating Manageable Errors</a><ol>
+<li id="id2846756"><a href="ch10s06.html#problem-id00350">Problem</a></li>
+<li id="id2846803"><a href="ch10s06.html#solution-id00351">Solution</a></li>
+<li id="id2846844"><a href="ch10s06.html#discussion-id00352">Discussion</a></li></ol></li>
+<li id="id2847150"><a href="ch10s07.html">10.6. Using Firebug with Firefox</a><ol>
+<li id="id2847158"><a href="ch10s07.html#problem-id00353">Problem</a></li>
+<li id="id2847205"><a href="ch10s07.html#solution-id00354">Solution</a></li>
+<li id="id2847214"><a href="ch10s07.html#discussion-id00355">Discussion</a></li>
+<li id="id2847479"><a href="ch10s07.html#see_also-id00356">See Also</a></li></ol></li>
+<li id="id2847543"><a href="ch10s08.html">10.7. Setting a Breakpoint and Examining Data with Firebug</a><ol>
+<li id="id2847552"><a href="ch10s08.html#problem-id00357">Problem</a></li>
+<li id="id2847618"><a href="ch10s08.html#solution-id00358">Solution</a></li>
+<li id="id2847627"><a href="ch10s08.html#discussion-id00359">Discussion</a></li></ol></li>
+<li id="id2847839"><a href="ch10s09.html">10.8. Firefox and the Console</a><ol>
+<li id="id2847848"><a href="ch10s09.html#problem-id00360">Problem</a></li>
+<li id="id2847921"><a href="ch10s09.html#solution-id00361">Solution</a></li>
+<li id="id2847930"><a href="ch10s09.html#discussion-id00362">Discussion</a></li>
+<li id="id2848218"><a href="ch10s09.html#see_also-id00363">See Also</a></li></ol></li>
+<li id="id2848299"><a href="ch10s10.html">10.9. Using IE’s Built-in Debugger</a><ol>
+<li id="id2848309"><a href="ch10s10.html#problem-id00364">Problem</a></li>
+<li id="id2848365"><a href="ch10s10.html#solution-id00365">Solution</a></li>
+<li id="id2848416"><a href="ch10s10.html#discussion-id00366">Discussion</a></li>
+<li id="id2848575"><a href="ch10s10.html#see_also-id00367">See Also</a></li></ol></li>
+<li id="id2848635"><a href="ch10s11.html">10.10. Setting a Breakpoint with IE Developer Tools</a><ol>
+<li id="id2848644"><a href="ch10s11.html#problem-id00368">Problem</a></li>
+<li id="id2848721"><a href="ch10s11.html#solution-id00369">Solution</a></li>
+<li id="id2848733"><a href="ch10s11.html#discussion-id00370">Discussion</a></li></ol></li>
+<li id="id2848905"><a href="ch10s12.html">10.11. Opera’s Dragonfly</a><ol>
+<li id="id2848914"><a href="ch10s12.html#problem-id00371">Problem</a></li>
+<li id="id2848966"><a href="ch10s12.html#solution-id00372">Solution</a></li>
+<li id="id2848976"><a href="ch10s12.html#discussion-id00373">Discussion</a></li>
+<li id="id2849226"><a href="ch10s12.html#see_also-id00374">See Also</a></li></ol></li>
+<li id="id2849271"><a href="ch10s13.html">10.12. Setting a Breakpoint with Dragonfly</a><ol>
+<li id="id2849280"><a href="ch10s13.html#problem-id00375">Problem</a></li>
+<li id="id2849339"><a href="ch10s13.html#solution-id00376">Solution</a></li></ol></li>
+<li id="id2849417"><a href="ch10s14.html">10.13. Turning on Safari’s Development Tools</a><ol>
+<li id="id2849425"><a href="ch10s14.html#problem-id00377">Problem</a></li>
+<li id="id2849534"><a href="ch10s14.html#solution-id00378">Solution</a></li>
+<li id="id2849545"><a href="ch10s14.html#discussion-id00379">Discussion</a></li>
+<li id="id2849848"><a href="ch10s14.html#see_also-id00380">See Also</a></li></ol></li>
+<li id="id2849950"><a href="ch10s15.html">10.14. Setting a Breakpoint with Safari’s Debugger</a><ol>
+<li id="id2849959"><a href="ch10s15.html#problem-id00381">Problem</a></li>
+<li id="id2850004"><a href="ch10s15.html#solution-id00382">Solution</a></li>
+<li id="id2850018"><a href="ch10s15.html#discussion-id00383">Discussion</a></li></ol></li>
+<li id="id2850179"><a href="ch10s16.html">10.15. Debugging in Chrome</a><ol>
+<li id="id2850187"><a href="ch10s16.html#problem-id00384">Problem</a></li>
+<li id="id2850254"><a href="ch10s16.html#solution-id00385">Solution</a></li>
+<li id="id2850280"><a href="ch10s16.html#discussion-id00386">Discussion</a></li>
+<li id="id2850335"><a href="ch10s16.html#see_also-id00387">See Also</a></li></ol></li></ol></li>
+<li id="id2850392"><a href="ch11.html">11. Accessing Page Elements</a><ol>
+<li id="id2850398"><a href="ch11.html#introduction-id00388">11.0. Introduction</a><ol>
+<li id="id2850650"><a href="ch11.html#dom_level_0_document">The DOM Level 0 Document</a></li>
+<li id="id2850980"><a href="ch11.html#standardized_doms">The Standardized DOMs</a></li>
+<li id="id2851191"><a href="ch11.html#see_also-id00389">See Also</a></li></ol></li>
+<li id="id2851251"><a href="ch11s02.html">11.1. Access a Given Element and Find Its Parent and Child Elements</a><ol>
+<li id="id2851260"><a href="ch11s02.html#problem-id00390">Problem</a></li>
+<li id="id2851288"><a href="ch11s02.html#solution-id00391">Solution</a></li>
+<li id="id2851380"><a href="ch11s02.html#discussion-id00392">Discussion</a></li></ol></li>
+<li id="id2851571"><a href="ch11s03.html">11.2. Accessing All Images in the Web Page</a><ol>
+<li id="id2851580"><a href="ch11s03.html#problem-id00393">Problem</a></li>
+<li id="id2851622"><a href="ch11s03.html#solution-id00394">Solution</a></li>
+<li id="id2851664"><a href="ch11s03.html#discussion-id00395">Discussion</a></li>
+<li id="id2852017"><a href="ch11s03.html#namespace_variation">Namespace Variation</a></li>
+<li id="id2852519"><a href="ch11s03.html#see_also-id00396">See Also</a></li></ol></li>
+<li id="id2852578"><a href="ch11s04.html">11.3. Discover All Images Within an Article</a><ol>
+<li id="id2852587"><a href="ch11s04.html#problem-id00397">Problem</a></li>
+<li id="id2852634"><a href="ch11s04.html#solution-id00398">Solution</a></li>
+<li id="id2852676"><a href="ch11s04.html#discussion-id00399">Discussion</a></li>
+<li id="id2852784"><a href="ch11s04.html#see_also-id00400">See Also</a></li></ol></li>
+<li id="id2852863"><a href="ch11s05.html">11.4. Discover all Images in Articles Using the Selectors API</a><ol>
+<li id="id2852872"><a href="ch11s05.html#problem-id00401">Problem</a></li>
+<li id="id2852935"><a href="ch11s05.html#solution-id00402">Solution</a></li>
+<li id="id2852970"><a href="ch11s05.html#discussion-id00403">Discussion</a></li>
+<li id="id2853341"><a href="ch11s05.html#namespace_variation-id00404">Namespace Variation</a></li>
+<li id="id2853531"><a href="ch11s05.html#see_also-id00405">See Also</a></li></ol></li>
+<li id="id2853670"><a href="ch11s06.html">11.5. Finding the Parent Element for a Group of Elements</a><ol>
+<li id="id2853679"><a href="ch11s06.html#problem-id00406">Problem</a></li>
+<li id="id2853727"><a href="ch11s06.html#solution-id00407">Solution</a></li>
+<li id="id2853778"><a href="ch11s06.html#discussion-id00408">Discussion</a></li>
+<li id="id2853840"><a href="ch11s06.html#see_also-id00409">See Also</a></li></ol></li>
+<li id="id2853909"><a href="ch11s07.html">11.6. Highlighting the First Paragraph in Every Element</a><ol>
+<li id="id2853918"><a href="ch11s07.html#problem-id00410">Problem</a></li>
+<li id="id2853974"><a href="ch11s07.html#solution-id00411">Solution</a></li>
+<li id="id2854046"><a href="ch11s07.html#discussion-id00412">Discussion</a></li>
+<li id="id2854326"><a href="ch11s07.html#see_also-id00413">See Also</a></li></ol></li>
+<li id="id2854391"><a href="ch11s08.html">11.7. Apply a Striping Theme to an Unordered List</a><ol>
+<li id="id2854400"><a href="ch11s08.html#problem-id00414">Problem</a></li>
+<li id="id2854441"><a href="ch11s08.html#solution-id00415">Solution</a></li>
+<li id="id2854549"><a href="ch11s08.html#discussion-id00416">Discussion</a></li>
+<li id="id2854658"><a href="ch11s08.html#see_also-id00417">See Also</a></li></ol></li>
+<li id="id2854728"><a href="ch11s09.html">11.8. Creating an Array of All Elements of a Given Class</a><ol>
+<li id="id2854737"><a href="ch11s09.html#problem-id00418">Problem</a></li>
+<li id="id2854817"><a href="ch11s09.html#solution-id00419">Solution</a></li>
+<li id="id2854857"><a href="ch11s09.html#discussion-id00420">Discussion</a></li>
+<li id="id2854912"><a href="ch11s09.html#see_also-id00421">See Also</a></li></ol></li>
+<li id="id2854991"><a href="ch11s10.html">11.9. Finding All Elements That Share an Attribute</a><ol>
+<li id="id2855000"><a href="ch11s10.html#problem-id00422">Problem</a></li>
+<li id="id2855035"><a href="ch11s10.html#solution-id00423">Solution</a></li>
+<li id="id2855138"><a href="ch11s10.html#discussion-id00424">Discussion</a></li>
+<li id="id2855246"><a href="ch11s10.html#see_also-id00425">See Also</a></li></ol></li>
+<li id="id2855294"><a href="ch11s11.html">11.10. Finding All Checked Options</a><ol>
+<li id="id2855302"><a href="ch11s11.html#problem-id00426">Problem</a></li>
+<li id="id2855354"><a href="ch11s11.html#solution-id00427">Solution</a></li>
+<li id="id2855437"><a href="ch11s11.html#discussion-id00428">Discussion</a></li>
+<li id="id2855525"><a href="ch11s11.html#see_also-id00429">See Also</a></li></ol></li>
+<li id="id2855580"><a href="ch11s12.html">11.11. Summing All the Values in a Table Row</a><ol>
+<li id="id2855589"><a href="ch11s12.html#problem-id00430">Problem</a></li>
+<li id="id2855681"><a href="ch11s12.html#solution-id00431">Solution</a></li>
+<li id="id2855715"><a href="ch11s12.html#discussion-id00432">Discussion</a></li>
+<li id="id2855990"><a href="ch11s12.html#see_also-id00433">See Also</a></li></ol></li>
+<li id="id2856092"><a href="ch11s13.html">11.12. Get Element Attributes</a><ol>
+<li id="id2856101"><a href="ch11s13.html#problems-id00434">Problem</a></li>
+<li id="id2856136"><a href="ch11s13.html#solution-id00435">Solution</a></li>
+<li id="id2856226"><a href="ch11s13.html#discussion-id00436">Discussion</a></li>
+<li id="id2856328"><a href="ch11s13.html#see_also-id00437">See Also</a></li></ol></li>
+<li id="id2856384"><a href="ch11s14.html">11.13. Get Style Information for an Element</a><ol>
+<li id="id2856393"><a href="ch11s14.html#problem-id00438">Problem</a></li>
+<li id="id2856441"><a href="ch11s14.html#solution-id00439">Solution</a></li>
+<li id="id2856506"><a href="ch11s14.html#discussion-id00440">Discussion</a></li>
+<li id="id2856850"><a href="ch11s14.html#see_also-id00441">See Also</a></li></ol></li></ol></li>
+<li id="id2856899"><a href="ch12.html">12. Creating and Removing Elements and Attributes</a><ol>
+<li id="id2856906"><a href="ch12.html#introduction-id00442">12.0. Introduction</a><ol>
+<li id="id2856942"><a href="ch12.html#see_also-id00443">See Also</a></li></ol></li>
+<li id="id2856957"><a href="ch12s02.html">12.1. Using innerHTML: A Quick and Easy Approach to Adding Content</a><ol>
+<li id="id2856966"><a href="ch12s02.html#problem-id00444">Problem</a></li>
+<li id="id2857040"><a href="ch12s02.html#solution-id00445">Solution</a></li>
+<li id="id2857073"><a href="ch12s02.html#discussion-id00446">Discussion</a></li></ol></li>
+<li id="id2857246"><a href="ch12s03.html">12.2. Inserting Elements Before Existing Page Elements</a><ol>
+<li id="id2857255"><a href="ch12s03.html#problem-id00447">Problem</a></li>
+<li id="id2857337"><a href="ch12s03.html#solution-id00448">Solution</a></li>
+<li id="id2857381"><a href="ch12s03.html#discussion-id00449">Discussion</a></li>
+<li id="id2857677"><a href="ch12s03.html#namespace_variation-id00450">Namespace Variation</a></li>
+<li id="id2857782"><a href="ch12s03.html#see_also-id00451">See Also</a></li></ol></li>
+<li id="id2857850"><a href="ch12s04.html">12.3. Appending a New Element to the End of a Page</a><ol>
+<li id="id2857859"><a href="ch12s04.html#problem-id00452">Problem</a></li>
+<li id="id2857937"><a href="ch12s04.html#solution-id00453">Solution</a></li>
+<li id="id2857984"><a href="ch12s04.html#discussion-id00454">Discussion</a></li></ol></li>
+<li id="id2858144"><a href="ch12s05.html">12.4. Triggering Older Versions of IE to Style New Elements</a><ol>
+<li id="id2858153"><a href="ch12s05.html#problem-id00455">Problem</a></li>
+<li id="id2858220"><a href="ch12s05.html#solution-id00456">Solution</a></li>
+<li id="id2858245"><a href="ch12s05.html#discussion-id00457">Discussion</a></li>
+<li id="id2858365"><a href="ch12s05.html#see_also-id00458">See Also</a></li></ol></li>
+<li id="id2858430"><a href="ch12s06.html">12.5. Inserting a New Paragraph</a><ol>
+<li id="id2858438"><a href="ch12s06.html#problem-id00459">Problem</a></li>
+<li id="id2858519"><a href="ch12s06.html#solution-id00460">Solution</a></li>
+<li id="id2858578"><a href="ch12s06.html#discussion-id00461">Discussion</a></li>
+<li id="id2858638"><a href="ch12s06.html#see_also-id00462">See Also</a></li></ol></li>
+<li id="id2858725"><a href="ch12s07.html">12.6. Adding Text to a New Paragraph</a><ol>
+<li id="id2858734"><a href="ch12s07.html#problem-id00463">Problem</a></li>
+<li id="id2858857"><a href="ch12s07.html#discussion-id00464">Discussion</a></li>
+<li id="id2859015"><a href="ch12s07.html#see_also-id00465">See Also</a></li></ol></li>
+<li id="id2859079"><a href="ch12s08.html">12.7. Adding Attributes to an Existing Element</a><ol>
+<li id="id2859088"><a href="ch12s08.html#problem-id00466">Problem</a></li>
+<li id="id2859123"><a href="ch12s08.html#solution-id00467">Solution</a></li>
+<li id="id2859208"><a href="ch12s08.html#discussion-id00468">Discussion</a></li>
+<li id="id2859357"><a href="ch12s08.html#namespace_variation-id00469">Namespace Variation</a></li></ol></li>
+<li id="id2859495"><a href="ch12s09.html">12.8. Testing for a Boolean Attribute</a><ol>
+<li id="id2859504"><a href="ch12s09.html#problem-id00470">Problem</a></li>
+<li id="id2859552"><a href="ch12s09.html#solution-id00471">Solution</a></li>
+<li id="id2859587"><a href="ch12s09.html#discussion-id00472">Discussion</a></li>
+<li id="id2859698"><a href="ch12s09.html#see_also-id00473">See Also</a></li></ol></li>
+<li id="id2859752"><a href="ch12s10.html">12.9. Removing an Attribute</a><ol>
+<li id="id2859760"><a href="ch12s10.html#problem-id00474">Problem</a></li>
+<li id="id2859810"><a href="ch12s10.html#solution-id00475">Solution</a></li>
+<li id="id2859844"><a href="ch12s10.html#discussion-id00476">Discussion</a></li>
+<li id="id2859938"><a href="ch12s10.html#see_also-id00477">See Also</a></li></ol></li>
+<li id="id2859992"><a href="ch12s11.html">12.10. Moving a Paragraph</a><ol>
+<li id="id2860000"><a href="ch12s11.html#problem-id00478">Problem</a></li>
+<li id="id2860060"><a href="ch12s11.html#solution-id00479">Solution</a></li>
+<li id="id2860096"><a href="ch12s11.html#discussion-id00480">Discussion</a></li>
+<li id="id2860109"><a href="ch12s11.html#see_also-id00481">See Also</a></li></ol></li>
+<li id="id2860169"><a href="ch12s12.html">12.11. Replacing Links with Footnote Bullets</a><ol>
+<li id="id2860177"><a href="ch12s12.html#problem-id00482">Problem</a></li>
+<li id="id2860245"><a href="ch12s12.html#solution-id00483">Solution</a></li>
+<li id="id2860324"><a href="ch12s12.html#discussion-id00484">Discussion</a></li></ol></li>
+<li id="id2860684"><a href="ch12s13.html">12.12. Adding Rows to an Existing Table</a><ol>
+<li id="id2860693"><a href="ch12s13.html#problem-id00485">Problem</a></li>
+<li id="id2860741"><a href="ch12s13.html#solution-id00486">Solution</a></li>
+<li id="id2860819"><a href="ch12s13.html#discussion-id00487">Discussion</a></li>
+<li id="id2860970"><a href="ch12s13.html#see_also-id00488">See Also</a></li></ol></li>
+<li id="id2861015"><a href="ch12s14.html">12.13. Removing a Paragraph from a div Element</a><ol>
+<li id="id2861024"><a href="ch12s14.html#problem-id00489">Problem</a></li>
+<li id="id2861088"><a href="ch12s14.html#solution-id00490">Solution</a></li>
+<li id="id2861122"><a href="ch12s14.html#discussion-id00491">Discussion</a></li></ol></li>
+<li id="id2861314"><a href="ch12s15.html">12.14. Deleting Rows from an HTML Table</a><ol>
+<li id="id2861323"><a href="ch12s15.html#problem-id00492">Problem</a></li>
+<li id="id2861372"><a href="ch12s15.html#solution-id00493">Solution</a></li>
+<li id="id2861407"><a href="ch12s15.html#discussion-id00494">Discussion</a></li>
+<li id="id2861520"><a href="ch12s15.html#see_also-id00495">See Also</a></li></ol></li>
+<li id="id2861568"><a href="ch12s16.html">12.15. Changing the Element’s CSS Style Properties</a><ol>
+<li id="id2861577"><a href="ch12s16.html#problem-id00496">Problem</a></li>
+<li id="id2861625"><a href="ch12s16.html#solution-id00497">Solution</a></li>
+<li id="id2861682"><a href="ch12s16.html#discussion-id00498">Discussion</a></li>
+<li id="id2862078"><a href="ch12s16.html#see_also-id00499">See Also</a></li></ol></li></ol></li>
+<li id="id2862149"><a href="ch13.html">13. Working with Web Page Spaces</a><ol>
+<li id="id2862156"><a href="ch13.html#introduction-id00500">13.0. Introduction</a></li>
+<li id="id2862412"><a href="ch13s02.html">13.1. Determining the Area of the Web Page</a><ol>
+<li id="id2862421"><a href="ch13s02.html#problem-id00501">Problem</a></li>
+<li id="id2862482"><a href="ch13s02.html#solution-id00502">Solution</a></li>
+<li id="id2862514"><a href="ch13s02.html#discussion-id00503">Discussion</a></li>
+<li id="id2862732"><a href="ch13s02.html#see_also-id00504">See Also</a></li></ol></li>
+<li id="id2862801"><a href="ch13s03.html">13.2. Measuring Elements</a><ol>
+<li id="id2862809"><a href="ch13s03.html#problem-id00505">Problem</a></li>
+<li id="id2862866"><a href="ch13s03.html#solution-id00506">Solution</a></li>
+<li id="id2862921"><a href="ch13s03.html#discussion-id00507">Discussion</a></li></ol></li>
+<li id="id2863255"><a href="ch13s04.html">13.3. Locating Elements in the Page</a><ol>
+<li id="id2863264"><a href="ch13s04.html#problem-id00508">Problem</a></li>
+<li id="id2863337"><a href="ch13s04.html#solution-id00509">Solution</a></li>
+<li id="id2863410"><a href="ch13s04.html#discussion-id00510">Discussion</a></li>
+<li id="id2863728"><a href="ch13s04.html#see_also-id00511">See Also</a></li></ol></li>
+<li id="id2863799"><a href="ch13s05.html">13.4. Hiding Page Sections</a><ol>
+<li id="id2863807"><a href="ch13s05.html#problem-id00512">Problem</a></li>
+<li id="id2863852"><a href="ch13s05.html#solution-id00513">Solution</a></li>
+<li id="id2863918"><a href="ch13s05.html#discussion-id00514">Discussion</a></li>
+<li id="id2864165"><a href="ch13s05.html#see_also-id00515">See Also</a></li></ol></li>
+<li id="id2864221"><a href="ch13s06.html">13.5. Creating Collapsible Form Sections</a><ol>
+<li id="id2864229"><a href="ch13s06.html#problem-id00516">Problem</a></li>
+<li id="id2864275"><a href="ch13s06.html#solution-id00517">Solution</a></li>
+<li id="id2864361"><a href="ch13s06.html#discussion-id00518">Discussion</a></li>
+<li id="id2864633"><a href="ch13s06.html#see_also-id00519">See Also</a></li></ol></li>
+<li id="id2864679"><a href="ch13s07.html">13.6. Adding a Page Overlay</a><ol>
+<li id="id2864687"><a href="ch13s07.html#problem-id00520">Problem</a></li>
+<li id="id2864745"><a href="ch13s07.html#solution-id00521">Solution</a></li>
+<li id="id2864811"><a href="ch13s07.html#discussion-id00522">Discussion</a></li>
+<li id="id2865042"><a href="ch13s07.html#see_also-id00523">See Also</a></li></ol></li>
+<li id="id2865103"><a href="ch13s08.html">13.7. Creating Tab Pages</a><ol>
+<li id="id2865111"><a href="ch13s08.html#problem-id00524">Problem</a></li>
+<li id="id2865201"><a href="ch13s08.html#solution-id00525">Solution</a></li>
+<li id="id2865229"><a href="ch13s08.html#discussion-id00526">Discussion</a></li>
+<li id="id2865485"><a href="ch13s08.html#see_also-id00527">See Also</a></li></ol></li>
+<li id="id2865555"><a href="ch13s09.html">13.8. Creating Hover-Based Pop-up Info Windows</a><ol>
+<li id="id2865564"><a href="ch13s09.html#problem-id00528">Problem</a></li>
+<li id="id2865645"><a href="ch13s09.html#solution-id00529">Solution</a></li>
+<li id="id2865875"><a href="ch13s09.html#discussion-id00530">Discussion</a></li>
+<li id="id2866040"><a href="ch13s09.html#see_also-id00531">See Also</a></li></ol></li>
+<li id="id2866148"><a href="ch13s10.html">13.9. Collapsing or Resizing the Sidebar</a><ol>
+<li id="id2866156"><a href="ch13s10.html#problem-id00532">Problem</a></li>
+<li id="id2866224"><a href="ch13s10.html#solution-id00533">Solution</a></li>
+<li id="id2866355"><a href="ch13s10.html#discussion-id00534">Discussion</a></li></ol></li></ol></li>
+<li id="id2866578"><a href="ch14.html">14. Creating Interactive and Accessible Effects with JavaScript, CSS, and ARIA</a><ol>
+<li id="id2866586"><a href="ch14.html#introduction-id00535">14.0. Introduction</a><ol>
+<li id="id2866797"><a href="ch14.html#see_also-id00536">See Also</a></li></ol></li>
+<li id="id2866887"><a href="ch14s02.html">14.1. Displaying a Hidden Page Section</a><ol>
+<li id="id2866896"><a href="ch14s02.html#problem-id00537">Problem</a></li>
+<li id="id2866956"><a href="ch14s02.html#solution-id00538">Solution</a></li>
+<li id="id2866993"><a href="ch14s02.html#discussion-id00539">Discussion</a></li>
+<li id="id2867221"><a href="ch14s02.html#see_also-id00540">See Also</a></li></ol></li>
+<li id="id2867276"><a href="ch14s03.html">14.2. Creating an Alert Message</a><ol>
+<li id="id2867284"><a href="ch14s03.html#problem-id00541">Problem</a></li>
+<li id="id2867316"><a href="ch14s03.html#solution-id00542">Solution</a></li>
+<li id="id2867345"><a href="ch14s03.html#discussion-id00543">Discussion</a></li>
+<li id="id2867581"><a href="ch14s03.html#see_also-id00544">See Also</a></li></ol></li>
+<li id="id2867628"><a href="ch14s04.html">14.3. Highlighting Form Field with Missing or Incorrect Data</a><ol>
+<li id="id2867637"><a href="ch14s04.html#problem-id00545">Problem</a></li>
+<li id="id2867699"><a href="ch14s04.html#solution-id00546">Solution</a></li>
+<li id="id2867787"><a href="ch14s04.html#discussion-id00547">Discussion</a></li>
+<li id="id2868189"><a href="ch14s04.html#see_also-id00548">See Also</a></li></ol></li>
+<li id="id2868250"><a href="ch14s05.html">14.4. Adding Keyboard Accessibility to a Page Overlay</a><ol>
+<li id="id2868259"><a href="ch14s05.html#problem-id00549">Problem</a></li>
+<li id="id2868371"><a href="ch14s05.html#solution-id00550">Solution</a></li>
+<li id="id2868400"><a href="ch14s05.html#discussion-id00551">Discussion</a></li>
+<li id="id2868779"><a href="ch14s05.html#see_also-id00552">See Also</a></li></ol></li>
+<li id="id2868883"><a href="ch14s06.html">14.5. Creating Collapsible Form Sections</a><ol>
+<li id="id2868891"><a href="ch14s06.html#problem-id00554">Problem</a></li>
+<li id="id2868965"><a href="ch14s06.html#solution-id00555">Solution</a></li>
+<li id="id2869404"><a href="ch14s06.html#discussion-id00556">Discussion</a></li>
+<li id="id2869695"><a href="ch14s06.html#see_also-id00557">See Also</a></li></ol></li>
+<li id="id2869769"><a href="ch14s07.html">14.6. Displaying a Flash of Color to Signal an Action</a><ol>
+<li id="id2869778"><a href="ch14s07.html#problem-id00558">Problem</a></li>
+<li id="id2869874"><a href="ch14s07.html#solution-id00559">Solution</a></li>
+<li id="id2869934"><a href="ch14s07.html#discussion-id00560">Discussion</a></li>
+<li id="id2870275"><a href="ch14s07.html#see_also-id00561">See Also</a></li></ol></li>
+<li id="id2870350"><a href="ch14s08.html">14.7. Adding ARIA Attributes to a Tabbed Page Application</a><ol>
+<li id="id2870359"><a href="ch14s08.html#problem-id00562">Problem</a></li>
+<li id="id2870504"><a href="ch14s08.html#solution-id00563">Solution</a></li>
+<li id="id2870834"><a href="ch14s08.html#discussion-id00564">Discussion</a></li>
+<li id="id2870915"><a href="ch14s08.html#see_also-id00565">See Also</a></li></ol></li>
+<li id="id2871004"><a href="ch14s09.html">14.8. Live Region</a><ol>
+<li id="id2871012"><a href="ch14s09.html#problem-id00566">Problem</a></li>
+<li id="id2871086"><a href="ch14s09.html#solution-id00567">Solution</a></li>
+<li id="id2871107"><a href="ch14s09.html#discussion-id00568">Discussion</a></li>
+<li id="id2871421"><a href="ch14s09.html#see_also-id00569">See Also</a></li></ol></li></ol></li>
+<li id="id2871486"><a href="ch15.html">15. Creating Media Rich and Interactive Applications</a><ol>
+<li id="id2871493"><a href="ch15.html#introduction-id00570">15.0. Introduction</a><ol>
+<li id="id2871760"><a href="ch15.html#see_also-id00571">See Also</a></li></ol></li>
+<li id="id2871781"><a href="ch15s02.html">15.1. Creating Basic Shapes in Canvas (Using the canvas Element)</a><ol>
+<li id="id2871790"><a href="ch15s02.html#problem-id00572">Problem</a></li>
+<li id="id2871843"><a href="ch15s02.html#solution-id00573">Solution</a></li>
+<li id="id2871888"><a href="ch15s02.html#discussion-id00574">Discussion</a></li>
+<li id="id2872216"><a href="ch15s02.html#see_also-id00575">See Also</a></li></ol></li>
+<li id="id2872269"><a href="ch15s03.html">15.2. Implementing Canvas Applications in IE</a><ol>
+<li id="id2872277"><a href="ch15s03.html#problem-id00576">Problem</a></li>
+<li id="id2872299"><a href="ch15s03.html#solution-id00577">Solution</a></li>
+<li id="id2872340"><a href="ch15s03.html#discussion-id00578">Discussion</a></li></ol></li>
+<li id="id2872492"><a href="ch15s04.html">15.3. Creating a Dynamic Line Chart in Canvas</a><ol>
+<li id="id2872501"><a href="ch15s04.html#problem-id00579">Problem</a></li>
+<li id="id2872551"><a href="ch15s04.html#solution-id00580">Solution</a></li>
+<li id="id2872605"><a href="ch15s04.html#discussion-id00581">Discussion</a></li>
+<li id="id2872878"><a href="ch15s04.html#see_also-id00582">See Also</a></li></ol></li>
+<li id="id2872941"><a href="ch15s05.html">15.4. Adding JavaScript to an SVG File</a><ol>
+<li id="id2872949"><a href="ch15s05.html#problem-id00583">Problem</a></li>
+<li id="id2872987"><a href="ch15s05.html#solution-id00584">Solution</a></li>
+<li id="id2873079"><a href="ch15s05.html#discussion-id00585">Discussion</a></li></ol></li>
+<li id="id2873266"><a href="ch15s06.html">15.5. Accessing SVG from Web Page Script</a><ol>
+<li id="id2873274"><a href="ch15s06.html#problem-id00586">Problem</a></li>
+<li id="id2873326"><a href="ch15s06.html#solution-id00587">Solution</a></li>
+<li id="id2873377"><a href="ch15s06.html#discussion-id00588">Discussion</a></li></ol></li>
+<li id="id2873653"><a href="ch15s07.html">15.6. Emulating SVG in Internet Explorer</a><ol>
+<li id="id2873661"><a href="ch15s07.html#problem-id00589">Problem</a></li>
+<li id="id2873716"><a href="ch15s07.html#solution-id00590">Solution</a></li>
+<li id="id2873784"><a href="ch15s07.html#discussion-id00591">Discussion</a></li>
+<li id="id2873860"><a href="ch15s07.html#see_also-id00592">See Also</a></li></ol></li>
+<li id="id2873903"><a href="ch15s08.html">15.7. Enable Interactive SVG Embedded in HTML</a><ol>
+<li id="id2873912"><a href="ch15s08.html#problem-id00593">Problem</a></li>
+<li id="id2873989"><a href="ch15s08.html#solution-id00594">Solution</a></li>
+<li id="id2874012"><a href="ch15s08.html#discussion-id00595">Discussion</a></li>
+<li id="id2874641"><a href="ch15s08.html#see_also-id00596">See Also</a></li></ol></li>
+<li id="id2874745"><a href="ch15s09.html">15.8. Using the Math Functions to Create a Realistic, Ticking Analog Clock in SVG</a><ol>
+<li id="id2874754"><a href="ch15s09.html#problem-id00597">Problem</a></li>
+<li id="id2874803"><a href="ch15s09.html#solution-id00598">Solution</a></li>
+<li id="id2874887"><a href="ch15s09.html#discussion-id00599">Discussion</a></li></ol></li>
+<li id="id2875129"><a href="ch15s10.html">15.9. Integrating SVG and the Canvas Element in HTML</a><ol>
+<li id="id2875138"><a href="ch15s10.html#problem-id00600">Problem</a></li>
+<li id="id2875225"><a href="ch15s10.html#solution-id00601">Solution</a></li>
+<li id="id2875315"><a href="ch15s10.html#discussion-id00602">Discussion</a></li></ol></li>
+<li id="id2875487"><a href="ch15s11.html">15.10. Turning on WebGL Support in Firefox and WebKit/Safari</a><ol>
+<li id="id2875496"><a href="ch15s11.html#problem-id00603">Problem</a></li>
+<li id="id2875569"><a href="ch15s11.html#solution-id00604">Solution</a></li>
+<li id="id2875622"><a href="ch15s11.html#discussion-id00605">Discussion</a></li>
+<li id="id2875681"><a href="ch15s11.html#see_also-id00606">See Also</a></li></ol></li>
+<li id="id2875773"><a href="ch15s12.html">15.11. Running a Routine When an Audio File Begins Playing</a><ol>
+<li id="id2875782"><a href="ch15s12.html#problem-id00607">Problem</a></li>
+<li id="id2875817"><a href="ch15s12.html#solution-id00608">Solution</a></li>
+<li id="id2875882"><a href="ch15s12.html#discussion-id00609">Discussion</a></li>
+<li id="id2876068"><a href="ch15s12.html#see_also-id00610">See Also</a></li></ol></li>
+<li id="id2876104"><a href="ch15s13.html">15.12. Controlling Video from JavaScript with the video Element</a><ol>
+<li id="id2876113"><a href="ch15s13.html#problem-id00611">Problem</a></li>
+<li id="id2876148"><a href="ch15s13.html#solution-id00612">Solution</a></li>
+<li id="id2876284"><a href="ch15s13.html#discussion-id00613">Discussion</a></li>
+<li id="id2876544"><a href="ch15s13.html#see_also-id00614">See Also</a></li></ol></li></ol></li>
+<li id="id2876638"><a href="ch16.html">16. JavaScript Objects</a><ol>
+<li id="id2876644"><a href="ch16.html#introduction-id00615">16.0. Introduction</a><ol>
+<li id="id2876748"><a href="ch16.html#see_also-id00616">See Also</a></li></ol></li>
+<li id="id2876769"><a href="ch16s02.html">16.1. Defining a Basic JavaScript Object</a><ol>
+<li id="id2876777"><a href="ch16s02.html#problem-id00617">Problem</a></li>
+<li id="id2876798"><a href="ch16s02.html#solution-id00618">Solution</a></li>
+<li id="id2876836"><a href="ch16s02.html#discussion-id00619">Discussion</a></li>
+<li id="id2877038"><a href="ch16s02.html#see_also-id00620">See Also</a></li></ol></li>
+<li id="id2877068"><a href="ch16s03.html">16.2. Keeping Object Members Private</a><ol>
+<li id="id2877077"><a href="ch16s03.html#problem-id00621">Problem</a></li>
+<li id="id2877156"><a href="ch16s03.html#solution-id00622">Solution</a></li>
+<li id="id2877197"><a href="ch16s03.html#discussion-id00623">Discussion</a></li>
+<li id="id2877281"><a href="ch16s03.html#see_also-id00624">See Also</a></li></ol></li>
+<li id="id2877351"><a href="ch16s04.html">16.3. Expanding Objects with prototype</a><ol>
+<li id="id2877417"><a href="ch16s04.html#solution-id00625">Solution</a></li>
+<li id="id2877447"><a href="ch16s04.html#discussion-id00626">Discussion</a></li></ol></li>
+<li id="id2877762"><a href="ch16s05.html">16.4. Adding Getter/Setter to Objects</a><ol>
+<li id="id2877771"><a href="ch16s05.html#problem-id00627">Problem</a></li>
+<li id="id2877824"><a href="ch16s05.html#solution-id00628">Solution</a></li>
+<li id="id2877852"><a href="ch16s05.html#discussion-id00629">Discussion</a></li>
+<li id="id2878004"><a href="ch16s05.html#see_also-id00630">See Also</a></li></ol></li>
+<li id="id2878055"><a href="ch16s06.html">16.5. Inheriting an Object’s Functionality</a><ol>
+<li id="id2878064"><a href="ch16s06.html#problem-id00631">Problem</a></li>
+<li id="id2878154"><a href="ch16s06.html#solution-id00632">Solution</a></li>
+<li id="id2878189"><a href="ch16s06.html#discussion-id00633">Discussion</a></li></ol></li>
+<li id="id2878605"><a href="ch16s07.html">16.6. Extending an Object by Defining a New Property</a><ol>
+<li id="id2878614"><a href="ch16s07.html#problem-id00634">Problem</a></li>
+<li id="id2878668"><a href="ch16s07.html#solution-id00635">Solution</a></li>
+<li id="id2878728"><a href="ch16s07.html#discussion-id00636">Discussion</a></li>
+<li id="id2879487"><a href="ch16s07.html#see_also-id00637">See Also</a></li></ol></li>
+<li id="id2879552"><a href="ch16s08.html">16.7. Enumerating an Object’s Properties</a><ol>
+<li id="id2879561"><a href="ch16s08.html#problem-id00638">Problem</a></li>
+<li id="id2879611"><a href="ch16s08.html#solution-id00639">Solution</a></li>
+<li id="id2879708"><a href="ch16s08.html#discussion-id00640">Discussion</a></li>
+<li id="id2880199"><a href="ch16s08.html#see_also-id00641">See Also</a></li></ol></li>
+<li id="id2880243"><a href="ch16s09.html">16.8. Preventing Object Extensibility</a><ol>
+<li id="id2880252"><a href="ch16s09.html#problem-id00642">Problem</a></li>
+<li id="id2880289"><a href="ch16s09.html#solution-id00643">Solution</a></li>
+<li id="id2880330"><a href="ch16s09.html#discussion-id00644">Discussion</a></li>
+<li id="id2880405"><a href="ch16s09.html#see_also-id00645">See Also</a></li></ol></li>
+<li id="id2880564"><a href="ch16s10.html">16.9. Preventing Object Additions and Changes to Property Descriptors</a><ol>
+<li id="id2880574"><a href="ch16s10.html#problem-id00646">Problem</a></li>
+<li id="id2880628"><a href="ch16s10.html#solution-id00647">Solution</a></li>
+<li id="id2880674"><a href="ch16s10.html#discussion-id00648">Discussion</a></li>
+<li id="id2880740"><a href="ch16s10.html#see_also-id00649">See Also</a></li></ol></li>
+<li id="id2880795"><a href="ch16s11.html">16.10. Preventing Any Changes to an Object</a><ol>
+<li id="id2880803"><a href="ch16s11.html#problem-id00650">Problem</a></li>
+<li id="id2880857"><a href="ch16s11.html#solution-id00651">Solution</a></li>
+<li id="id2880902"><a href="ch16s11.html#discussion-id00652">Discussion</a></li>
+<li id="id2881060"><a href="ch16s11.html#see_also-id00653">See Also</a></li></ol></li>
+<li id="id2881125"><a href="ch16s12.html">16.11. One-Off Objects and Namespacing Your JavaScript</a><ol>
+<li id="id2881134"><a href="ch16s12.html#problem-id00654">Problem</a></li>
+<li id="id2881182"><a href="ch16s12.html#solution-id00655">Solution</a></li>
+<li id="id2881217"><a href="ch16s12.html#discussion-id00656">Discussion</a></li>
+<li id="id2881355"><a href="ch16s12.html#see_also-id00657">See Also</a></li></ol></li>
+<li id="id2881406"><a href="ch16s13.html">16.12. Rediscovering “this” with Prototype.bind</a><ol>
+<li id="id2881416"><a href="ch16s13.html#problem-id00658">Problem</a></li>
+<li id="id2881474"><a href="ch16s13.html#solution-id00659">Solution</a></li>
+<li id="id2881544"><a href="ch16s13.html#discussion-id00660">Discussion</a></li></ol></li>
+<li id="id2881804"><a href="ch16s14.html">16.13. Chaining Your Object’s Methods</a><ol>
+<li id="id2881813"><a href="ch16s14.html#problem-id00661">Problem</a></li>
+<li id="id2881881"><a href="ch16s14.html#solution-id00662">Solution</a></li>
+<li id="id2881939"><a href="ch16s14.html#discussion-id00663">Discussion</a></li>
+<li id="id2882046"><a href="ch16s14.html#see_also-id00664">See Also</a></li></ol></li></ol></li>
+<li id="id2882099"><a href="ch17.html">17. JavaScript Libraries</a><ol>
+<li id="id2882106"><a href="ch17.html#introduction-id00665">17.0. Introduction</a><ol>
+<li id="id2882195"><a href="ch17.html#see_also-id00666">See Also</a></li></ol></li>
+<li id="id2882227"><a href="ch17s02.html">17.1. Packaging Your Code</a><ol>
+<li id="id2882235"><a href="ch17s02.html#problem-id00667">Problem</a></li>
+<li id="id2882280"><a href="ch17s02.html#solution-id00668">Solution</a></li>
+<li id="id2882333"><a href="ch17s02.html#discussion-id00669">Discussion</a></li>
+<li id="id2882532"><a href="ch17s02.html#see_also-id00670">See Also</a></li></ol></li>
+<li id="id2882597"><a href="ch17s03.html">17.2. Testing Your Code with JsUnit</a><ol>
+<li id="id2882605"><a href="ch17s03.html#problem-id00671">Problem</a></li>
+<li id="id2882660"><a href="ch17s03.html#solution-id00672">Solution</a></li>
+<li id="id2882708"><a href="ch17s03.html#discussion-id00673">Discussion</a></li></ol></li>
+<li id="id2883231"><a href="ch17s04.html">17.3. Minify Your Library</a><ol>
+<li id="id2883239"><a href="ch17s04.html#problem-id00674">Problem</a></li>
+<li id="id2883285"><a href="ch17s04.html#solution-id00675">Solution</a></li>
+<li id="id2883298"><a href="ch17s04.html#discussion-id00676">Discussion</a></li>
+<li id="id2883369"><a href="ch17s04.html#see_also-id00677">See Also</a></li></ol></li>
+<li id="id2883420"><a href="ch17s05.html">17.4. Hosting Your Library</a><ol>
+<li id="id2883428"><a href="ch17s05.html#problem-id00678">Problem</a></li>
+<li id="id2883478"><a href="ch17s05.html#solution-id00679">Solution</a></li>
+<li id="id2883488"><a href="ch17s05.html#discussion-id00680">Discussion</a></li></ol></li>
+<li id="id2883756"><a href="ch17s06.html">17.5. Using an External Library: Building on the jQuery Framework</a><ol>
+<li id="id2883765"><a href="ch17s06.html#problem-id00681">Problem</a></li>
+<li id="id2883815"><a href="ch17s06.html#solution-id00682">Solution</a></li>
+<li id="id2883826"><a href="ch17s06.html#discussion-id00683">Discussion</a></li>
+<li id="id2884125"><a href="ch17s06.html#see_also-id00684">See Also</a></li></ol></li>
+<li id="id2884207"><a href="ch17s07.html">17.6. Using Existing jQuery Plug-ins</a><ol>
+<li id="id2884215"><a href="ch17s07.html#problem-id00685">Problem</a></li>
+<li id="id2884268"><a href="ch17s07.html#solution-id00686">Solution</a></li>
+<li id="id2884384"><a href="ch17s07.html#discussion-id00687">Discussion</a></li></ol></li>
+<li id="id2884445"><a href="ch17s08.html">17.7. Convert Your Library to a jQuery Plug-in</a><ol>
+<li id="id2884453"><a href="ch17s08.html#problem-id00688">Problem</a></li>
+<li id="id2884489"><a href="ch17s08.html#solution-id00689">Solution</a></li>
+<li id="id2884616"><a href="ch17s08.html#discussion-id00690">Discussion</a></li></ol></li>
+<li id="id2885004"><a href="ch17s09.html">17.8. Safely Combining Several Libraries in Your Applications</a><ol>
+<li id="id2885013"><a href="ch17s09.html#problem-id00691">Problem</a></li>
+<li id="id2885052"><a href="ch17s09.html#solution-id00692">Solution</a></li>
+<li id="id2885073"><a href="ch17s09.html#discussion-id00693">Discussion</a></li>
+<li id="id2885385"><a href="ch17s09.html#see_also-id00694">See Also</a></li></ol></li></ol></li>
+<li id="id2885430"><a href="ch18.html">18. Communication</a><ol>
+<li id="id2885436"><a href="ch18.html#introduction-id00695">18.0. Introduction</a></li>
+<li id="id2885575"><a href="ch18s02.html">18.1. Accessing the XMLHttpRequest Object</a><ol>
+<li id="id2885584"><a href="ch18s02.html#problem-id00696">Problem</a></li>
+<li id="id2885624"><a href="ch18s02.html#solution-id00697">Solution</a></li>
+<li id="id2885664"><a href="ch18s02.html#discussion-id00698">Discussion</a></li>
+<li id="id2886116"><a href="ch18s02.html#see_also-id00699">See Also</a></li></ol></li>
+<li id="id2886167"><a href="ch18s03.html">18.2. Preparing the Data for Transmission</a><ol>
+<li id="id2886175"><a href="ch18s03.html#problem-id00700">Problem</a></li>
+<li id="id2886211"><a href="ch18s03.html#solution-id00701">Solution</a></li>
+<li id="id2886271"><a href="ch18s03.html#discussion-id00702">Discussion</a></li></ol></li>
+<li id="id2886451"><a href="ch18s04.html">18.3. Determining the Type of Query Call</a><ol>
+<li id="id2886460"><a href="ch18s04.html#problem-id00703">Problem</a></li>
+<li id="id2886503"><a href="ch18s04.html#solution-id00704">Solution</a></li>
+<li id="id2886587"><a href="ch18s04.html#discussion-id00705">Discussion</a></li>
+<li id="id2886972"><a href="ch18s04.html#see_also-id00706">See Also</a></li></ol></li>
+<li id="id2887027"><a href="ch18s05.html">18.4. Adding a Callback Function to an Ajax Request</a><ol>
+<li id="id2887036"><a href="ch18s05.html#problem-id00707">Problem</a></li>
+<li id="id2887071"><a href="ch18s05.html#solution-id00708">Solution</a></li>
+<li id="id2887122"><a href="ch18s05.html#discussion-id00709">Discussion</a></li>
+<li id="id2887374"><a href="ch18s05.html#see_also-id00710">See Also</a></li></ol></li>
+<li id="id2887407"><a href="ch18s06.html">18.5. Checking for an Error Condition</a><ol>
+<li id="id2887416"><a href="ch18s06.html#problem-id00711">Problem</a></li>
+<li id="id2887477"><a href="ch18s06.html#solution-id00712">Solution</a></li>
+<li id="id2887521"><a href="ch18s06.html#discussion-id00713">Discussion</a></li></ol></li>
+<li id="id2887627"><a href="ch18s07.html">18.6. Processing a Text Result</a><ol>
+<li id="id2887635"><a href="ch18s07.html#problem-id00714">Problem</a></li>
+<li id="id2887683"><a href="ch18s07.html#solution-id00715">Solution</a></li>
+<li id="id2887728"><a href="ch18s07.html#discussion-id00716">Discussion</a></li>
+<li id="id2887778"><a href="ch18s07.html#see_also-id00717">See Also</a></li></ol></li>
+<li id="id2887845"><a href="ch18s08.html">18.7. Making an Ajax Request to Another Domain (Using JSONP)</a><ol>
+<li id="id2887854"><a href="ch18s08.html#problem-id00718">Problem</a></li>
+<li id="id2887891"><a href="ch18s08.html#solution-id00719">Solution</a></li>
+<li id="id2887983"><a href="ch18s08.html#discussion-id00720">Discussion</a></li>
+<li id="id2888084"><a href="ch18s08.html#see_also-id00721">See Also</a></li></ol></li>
+<li id="id2888117"><a href="ch18s09.html">18.8. Populating a Selection List from the Server</a><ol>
+<li id="id2888126"><a href="ch18s09.html#problem-id00722">Problem</a></li>
+<li id="id2888164"><a href="ch18s09.html#solution-id00723">Solution</a></li>
+<li id="id2888230"><a href="ch18s09.html#discussion-id00724">Discussion</a></li></ol></li>
+<li id="id2888406"><a href="ch18s10.html">18.9. Using a Timer to Automatically Update the Page with Fresh Data</a><ol>
+<li id="id2888415"><a href="ch18s10.html#problem-id00725">Problem</a></li>
+<li id="id2888472"><a href="ch18s10.html#solution-id00726">Solution</a></li>
+<li id="id2888657"><a href="ch18s10.html#discussion-id00727">Discussion</a></li>
+<li id="id2888890"><a href="ch18s10.html#see_also-id00728">See Also</a></li></ol></li>
+<li id="id2888970"><a href="ch18s11.html">18.10. Communicating Across Windows with PostMessage</a><ol>
+<li id="id2888979"><a href="ch18s11.html#problem-id00729">Problem</a></li>
+<li id="id2889027"><a href="ch18s11.html#solution-id00730">Solution</a></li>
+<li id="id2889193"><a href="ch18s11.html#discussion-id00731">Discussion</a></li></ol></li></ol></li>
+<li id="id2889500"><a href="ch19.html">19. Working with Structured Data</a><ol>
+<li id="id2889506"><a href="ch19.html#introduction-id00732">19.0. Introduction</a></li>
+<li id="id2889630"><a href="ch19s02.html">19.1. Process an XML Document Returned from an Ajax Call</a><ol>
+<li id="id2889638"><a href="ch19s02.html#problem-id00733">Problem</a></li>
+<li id="id2889697"><a href="ch19s02.html#solution-id00734">Solution</a></li>
+<li id="id2889744"><a href="ch19s02.html#discussion-id00735">Discussion</a></li>
+<li id="id2889882"><a href="ch19s02.html#see_also-id00736">See Also</a></li></ol></li>
+<li id="id2889942"><a href="ch19s03.html">19.2. Extracting Pertinent Information from an XML Tree</a><ol>
+<li id="id2889951"><a href="ch19s03.html#problem-id00737">Problem</a></li>
+<li id="id2889997"><a href="ch19s03.html#solution-id00738">Solution</a></li>
+<li id="id2890024"><a href="ch19s03.html#discussion-id00739">Discussion</a></li>
+<li id="id2890393"><a href="ch19s03.html#see_also-id00740">See Also</a></li></ol></li>
+<li id="id2890474"><a href="ch19s04.html">19.3. Generate a JavaScript Object with JSON, Old-School Style</a><ol>
+<li id="id2890483"><a href="ch19s04.html#problem-id00741">Problem</a></li>
+<li id="id2890521"><a href="ch19s04.html#solution-id00742">Solution</a></li>
+<li id="id2890571"><a href="ch19s04.html#discussion-id00743">Discussion</a></li>
+<li id="id2890792"><a href="ch19s04.html#see_also-id00744">See Also</a></li></ol></li>
+<li id="id2890839"><a href="ch19s05.html">19.4. Parse a JSON Formatted String</a><ol>
+<li id="id2890848"><a href="ch19s05.html#problem-id00745">Problem</a></li>
+<li id="id2890907"><a href="ch19s05.html#solution-id00746">Solution</a></li>
+<li id="id2890947"><a href="ch19s05.html#discussion-id00747">Discussion</a></li>
+<li id="id2891082"><a href="ch19s05.html#see_also-id00748">See Also</a></li></ol></li>
+<li id="id2891132"><a href="ch19s06.html">19.5. Convert an Object to a Filtered/Transformed String with JSON</a><ol>
+<li id="id2891141"><a href="ch19s06.html#problem-id00749">Problem</a></li>
+<li id="id2891185"><a href="ch19s06.html#solution-id00750">Solution</a></li>
+<li id="id2891227"><a href="ch19s06.html#discussion-id00751">Discussion</a></li>
+<li id="id2891362"><a href="ch19s06.html#see_also-id00752">See Also</a></li></ol></li>
+<li id="id2891402"><a href="ch19s07.html">19.6. Convert hCalendar Microformat Annotations into a Canvas Timeline</a><ol>
+<li id="id2891420"><a href="ch19s07.html#problem-id00753">Problem</a></li>
+<li id="id2891524"><a href="ch19s07.html#solution-id00754">Solution</a></li>
+<li id="id2891626"><a href="ch19s07.html#discussion-id00755">Discussion</a></li>
+<li id="id2891907"><a href="ch19s07.html#see_also-id00756">See Also</a></li></ol></li>
+<li id="id2891972"><a href="ch19s08.html">19.7. Glean Page RDFa and Convert It into JSON Using rdfQuery and the jQuery RDF Plug-in</a><ol>
+<li id="id2891982"><a href="ch19s08.html#problem-id00757">Problem</a></li>
+<li id="id2892116"><a href="ch19s08.html#solution-id00758">Solution</a></li>
+<li id="id2892159"><a href="ch19s08.html#discussion-id00759">Discussion</a></li>
+<li id="id2892448"><a href="ch19s08.html#see_also-id00760">See Also</a></li></ol></li></ol></li>
+<li id="id2892580"><a href="ch20.html">20. Persistence</a><ol>
+<li id="id2892586"><a href="ch20.html#introduction-id00761">20.0. Introduction</a><ol>
+<li id="id2892714"><a href="ch20.html#see_also-id00762">See Also</a></li></ol></li>
+<li id="id2892730"><a href="ch20s02.html">20.1. Attaching Persistent Information to URLs</a><ol>
+<li id="id2892739"><a href="ch20s02.html#problem-id00763">Problem</a></li>
+<li id="id2892786"><a href="ch20s02.html#solution-id00764">Solution</a></li>
+<li id="id2892808"><a href="ch20s02.html#discussion-id00765">Discussion</a></li>
+<li id="id2893085"><a href="ch20s02.html#see_also-id00766">See Also</a></li></ol></li>
+<li id="id2893152"><a href="ch20s03.html">20.2. Creating a Cookie to Persist Information Across Pages</a><ol>
+<li id="id2893161"><a href="ch20s03.html#problem-id00767">Problem</a></li>
+<li id="id2893193"><a href="ch20s03.html#solution-id00768">Solution</a></li>
+<li id="id2893232"><a href="ch20s03.html#discussion-id00769">Discussion</a></li>
+<li id="id2893597"><a href="ch20s03.html#see_also-id00770">See Also</a></li></ol></li>
+<li id="id2893631"><a href="ch20s04.html">20.3. Persisting Information Using the History.pushState Method and window.onpopevent</a><ol>
+<li id="id2893641"><a href="ch20s04.html#problem-id00771">Problem</a></li>
+<li id="id2893702"><a href="ch20s04.html#solution-id00772">Solution</a></li>
+<li id="id2893762"><a href="ch20s04.html#discussion-id00773">Discussion</a></li></ol></li>
+<li id="id2894260"><a href="ch20s05.html">20.4. Using sessionStorage for Client-Side Storage</a><ol>
+<li id="id2894269"><a href="ch20s05.html#problem-id00774">Problem</a></li>
+<li id="id2894335"><a href="ch20s05.html#solution-id00775">Solution</a></li>
+<li id="id2894362"><a href="ch20s05.html#discussion-id00776">Discussion</a></li>
+<li id="id2895022"><a href="ch20s05.html#see_also-id00777">See Also</a></li></ol></li>
+<li id="id2895103"><a href="ch20s06.html">20.5. Creating a localStorage Client-Side Data Storage Item</a><ol>
+<li id="id2895112"><a href="ch20s06.html#problem-id00778">Problem</a></li>
+<li id="id2895163"><a href="ch20s06.html#solution-id00779">Solution</a></li>
+<li id="id2895195"><a href="ch20s06.html#discussion-id00780">Discussion</a></li>
+<li id="id2895506"><a href="ch20s06.html#see_also-id00781">See Also</a></li></ol></li>
+<li id="id2895574"><a href="ch20s07.html">20.6. Persisting Data Using a Relational Data Store</a><ol>
+<li id="id2895583"><a href="ch20s07.html#problem-id00782">Problem</a></li>
+<li id="id2895650"><a href="ch20s07.html#solution-id00783">Solution</a></li>
+<li id="id2895710"><a href="ch20s07.html#discussion-id00784">Discussion</a></li>
+<li id="id2895794"><a href="ch20s07.html#see_also-id00785">See Also</a></li></ol></li></ol></li>
+<li id="id2895859"><a href="ch21.html">21. JavaScript Outside the Box</a><ol>
+<li id="id2895865"><a href="ch21.html#introduction-id00786">21.0. Introduction</a></li>
+<li id="id2895988"><a href="ch21s02.html">21.1. Creating a Browser Add-0n, Plug-in, or Extension</a><ol>
+<li id="id2895997"><a href="ch21s02.html#problem-id00787">Problem</a></li>
+<li id="id2896059"><a href="ch21s02.html#solution-id00788">Solution</a></li>
+<li id="id2896073"><a href="ch21s02.html#discussion-id00789">Discussion</a><ol>
+<li id="id2896093"><a href="ch21s02.html#creating_google_chrome_extensions">Creating Google Chrome extensions</a></li>
+<li id="id2896369"><a href="ch21s02.html#mozilla_extensions">Mozilla extensions</a></li>
+<li id="id2896516"><a href="ch21s02.html#creating_a_greasemonkey_script">Creating a Greasemonkey script</a></li></ol></li></ol></li>
+<li id="id2896760"><a href="ch21s03.html">21.2. Creating Desktop and Mobile Widgets</a><ol>
+<li id="id2896768"><a href="ch21s03.html#problem-id00790">Problem</a></li>
+<li id="id2896817"><a href="ch21s03.html#solution-id00791">Solution</a></li>
+<li id="id2896825"><a href="ch21s03.html#discussion-id00792">Discussion</a><ol>
+<li id="id2896881"><a href="ch21s03.html#developing_mac_dashboard_widgets">Developing Mac Dashboard widgets</a></li>
+<li id="id2897089"><a href="ch21s03.html#opera_widgets_development_environment">The Opera Widgets development environment</a></li></ol></li></ol></li>
+<li id="id2897473"><a href="ch21s04.html">21.3. Creating JavaScript Applications for the iPhone, Android, and BlackBerry with PhoneGap</a><ol>
+<li id="id2897483"><a href="ch21s04.html#problem-id00793">Problem</a></li>
+<li id="id2897579"><a href="ch21s04.html#solution-id00794">Solution</a></li>
+<li id="id2897596"><a href="ch21s04.html#discussion-id00795">Discussion</a></li>
+<li id="id2897728"><a href="ch21s04.html#see_also-id00796">See Also</a></li></ol></li>
+<li id="id2897886"><a href="ch21s05.html">21.4. Enhancing Tools with JavaScript</a><ol>
+<li id="id2897895"><a href="ch21s05.html#problem-id00797">Problem</a></li>
+<li id="id2897946"><a href="ch21s05.html#solution-id00798">Solution</a></li>
+<li id="id2897957"><a href="ch21s05.html#discussion-id00799">Discussion</a><ol>
+<li id="id2897996"><a href="ch21s05.html#working_with_the_adobe_bridge_sdk_and_th">Working with the Adobe Bridge SDK and the ExtendScript Toolkit</a></li>
+<li id="id2898208"><a href="ch21s05.html#creating_an_openoffice_macro">Creating an OpenOffice macro</a></li></ol></li></ol></li>
+<li id="id2898516"><a href="ch21s06.html">21.5. Creating Efficient Desktop Applications with Web Workers and the File API</a><ol>
+<li id="id2898530"><a href="ch21s06.html#problem-id00800">Problem</a></li>
+<li id="id2898564"><a href="ch21s06.html#solution-id00801">Solution</a></li>
+<li id="id2898608"><a href="ch21s06.html#discussion-id00802">Discussion</a></li>
+<li id="id2899441"><a href="ch21s06.html#see_also-id00803">See Also</a></li></ol></li></ol></li>
+<li id="id2899504"><a href="ix01.html">Index</a></li>
+<li id="id2899516"><a href="author_bios.html">About the Author</a></li>
+<li id="id2899532"><a href="co02.html">Colophon</a></li></ol></li></ol></nav>
+</body></html>

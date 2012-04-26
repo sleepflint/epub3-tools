@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"><head><title>Twitter API: Up and Running</title></head><body>
+  
+  
+  <nav id="toc" epub:type="toc"><h1>Contents</h1><ol>
+<li id="id2440152"><a href="index.html">Twitter API: Up and Running</a><ol>
+<li id="id2492012"><a href="pr01.html">Preface</a><ol>
+<li id="id2504372"><a href="pr01.html#why_security_is_beautiful">Who This Book Is For</a></li>
+<li id="id2470835"><a href="pr01s02.html">How This Book Is Organized</a></li>
+<li id="id2466813"><a href="pr01s03.html">Conventions Used in This Book</a></li>
+<li id="id2523687"><a href="pr01s04.html">Using Code Examples</a></li>
+<li id="id2523748"><a href="pr01s05.html">Safari® Books Online</a></li>
+<li id="id2523783"><a href="pr01s06.html">We’d Like to Hear from You</a></li>
+<li id="id2523858"><a href="pr01s07.html">Acknowledgments</a></li></ol></li>
+<li id="id2470359"><a href="ch01.html">1. Hello Twitter</a><ol>
+<li id="id2524125"><a href="ch01.html#what_are_you_doing_question">What Are You Doing?</a><ol>
+<li id="id2524542"><a href="ch01.html#rules_of_engagement">Rules of Engagement</a></li>
+<li id="id2529764"><a href="ch01.html#opportunistic_interruptions">Opportunistic Interruptions</a></li>
+<li id="id2529947"><a href="ch01.html#twitter_is_like_a_side-by-side_conversat">Twitter Is Like a Side-by-Side Conversation</a></li></ol></li>
+<li id="id2494738"><a href="ch01s02.html">History of Twitter</a><ol>
+<li id="id2494933"><a href="ch01s02.html#a_brief_history_of_microblogging">A Brief History of Microblogging</a></li>
+<li id="id2523992"><a href="ch01s02.html#believe_it_or_not_colon_twitter_was_insp">Believe It or Not: Twitter Was Inspired by Bike Couriers</a></li>
+<li id="id2526969"><a href="ch01s02.html#millions_and_millions_served">Millions and Millions Served</a></li>
+<li id="id2527313"><a href="ch01s02.html#the_rise_of_the_fail_whale">The Rise of the Fail Whale</a></li>
+<li id="id2510814"><a href="ch01s02.html#who_wants_to_be_a_millionaire_question">Who Wants to Be a Millionaire? Gauging Twitter’s Profitability</a><ol>
+<li id="id2511011"><a href="ch01s02.html#charging_for_service">Charging for service</a></li>
+<li id="id2511099"><a href="ch01s02.html#self-selecting_advertisers">Self-selecting advertisers</a></li>
+<li id="id2511214"><a href="ch01s02.html#implementing_an_open_source_service_mode">Implementing an open source service model</a></li></ol></li>
+<li id="id2511291"><a href="ch01s02.html#developers_are_users_comma_too">Developers Are Users, Too</a></li></ol></li>
+<li id="id2544647"><a href="ch01s03.html">Creative Uses of Twitter</a><ol>
+<li id="id2544846"><a href="ch01s03.html#twitter_utilitarianism">Twitter Utilitarianism</a></li>
+<li id="id2545064"><a href="ch01s03.html#twitter_for_news">Twitter for News</a></li>
+<li id="id2545148"><a href="ch01s03.html#twitter_for_science">Twitter for Science</a></li>
+<li id="id2545300"><a href="ch01s03.html#twitter_for_god">Twitter for God</a></li>
+<li id="id2507610"><a href="ch01s03.html#twitter_for_emergencies">Twitter for Emergencies</a></li>
+<li id="id2507775"><a href="ch01s03.html#twitter_for_marketing">Twitter for Marketing</a></li>
+<li id="id2507950"><a href="ch01s03.html#twitter_for_social_change">Twitter for Social Change</a></li>
+<li id="id2508280"><a href="ch01s03.html#twitter_for_money">Twitter for Money</a></li>
+<li id="id2508423"><a href="ch01s03.html#twitter_for_games">Twitter for Games</a></li>
+<li id="id2508577"><a href="ch01s03.html#twitter_for_anthropomorphism">Twitter for Anthropomorphism</a></li>
+<li id="id2495473"><a href="ch01s03.html#twitter_for_help">Twitter for Help</a></li>
+<li id="id2495591"><a href="ch01s03.html#twitter_for_creativity">Twitter for Creativity</a></li>
+<li id="id2495765"><a href="ch01s03.html#twitter_for_education">Twitter for Education</a></li>
+<li id="id2495881"><a href="ch01s03.html#twitter_for_entertainment">Twitter for Entertainment</a></li>
+<li id="id2496043"><a href="ch01s03.html#twitter_for_sports">Twitter for Sports</a></li>
+<li id="id2496191"><a href="ch01s03.html#twitter_for_evil">Twitter for Evil</a></li>
+<li id="id2496361"><a href="ch01s03.html#twitter_as_a_shared_event">Twitter As a Shared Event</a></li>
+<li id="id2496516"><a href="ch01s03.html#id2496516">Twitter for Everyone</a></li></ol></li>
+<li id="id2496599"><a href="ch01s04.html">A Changing Culture</a></li></ol></li>
+<li id="id2525030"><a href="ch02.html">2. Twitter Applications</a><ol>
+<li id="id2525170"><a href="ch02.html#twitter_apostrophy_s_open_api">Twitter’s Open API</a></li>
+<li id="id2525315"><a href="ch02s02.html">Finding Inspiration</a></li>
+<li id="id2525470"><a href="ch02s03.html">Tools for Publishing</a><ol>
+<li id="id2525522"><a href="ch02s03.html#twitterfeed">Twitterfeed</a></li>
+<li id="id2525609"><a href="ch02s03.html#snaptweet">SnapTweet</a></li>
+<li id="id2525716"><a href="ch02s03.html#secrettweet">SecretTweet</a></li></ol></li>
+<li id="id2525861"><a href="ch02s04.html">Tools for the Information Stream</a><ol>
+<li id="id2525960"><a href="ch02s04.html#twittervision">Twittervision</a></li>
+<li id="id2526077"><a href="ch02s04.html#twitter_matrix">Twitter Matrix</a></li>
+<li id="id2526170"><a href="ch02s04.html#twalala">Twalala</a></li></ol></li>
+<li id="id2526317"><a href="ch02s05.html">Tools of Appropriation</a><ol>
+<li id="id2526373"><a href="ch02s05.html#track_this">Track This</a></li>
+<li id="id2526486"><a href="ch02s05.html#live_twitting">LiveTwitting</a></li>
+<li id="id2492938"><a href="ch02s05.html#food_feed">FoodFeed</a></li></ol></li>
+<li id="id2493111"><a href="ch02s06.html">Tools for Search</a><ol>
+<li id="id2493169"><a href="ch02s06.html#twitdir">TwitDir</a></li>
+<li id="id2493281"><a href="ch02s06.html#green_tweets">Green Tweets</a></li>
+<li id="id2493376"><a href="ch02s06.html#tweetbeep">TweetBeep</a></li>
+<li id="id2493484"><a href="ch02s06.html#tweet_scan">Tweet Scan</a></li>
+<li id="id2493611"><a href="ch02s06.html#favrd">Favrd</a></li></ol></li>
+<li id="id2493766"><a href="ch02s07.html">Tools of Aggregation</a><ol>
+<li id="id2493814"><a href="ch02s07.html#twappi">Twappi</a></li>
+<li id="id2493919"><a href="ch02s07.html#twitscoop">Twitscoop</a></li>
+<li id="id2494041"><a href="ch02s07.html#twist">Twist</a></li></ol></li>
+<li id="id2494150"><a href="ch02s08.html">Tools for Statistics</a><ol>
+<li id="id2494202"><a href="ch02s08.html#what_apostrophy_s_your_tweet_worth">What’s Your Tweet Worth?</a></li>
+<li id="id2494318"><a href="ch02s08.html#tweetstats">TweetStats</a></li>
+<li id="id2494442"><a href="ch02s08.html#follow_cost">Follow Cost</a></li>
+<li id="id2494588"><a href="ch02s08.html#twitter_grader">Twitter Grader</a></li>
+<li id="id2504709"><a href="ch02s08.html#twitterank">Twitterank</a></li></ol></li>
+<li id="id2504935"><a href="ch02s09.html">Tools for the Follow Network</a><ol>
+<li id="id2504999"><a href="ch02s09.html#does_follow">Does Follow</a></li>
+<li id="id2505116"><a href="ch02s09.html#qwitter">Qwitter</a></li>
+<li id="id2505248"><a href="ch02s09.html#friend_or_follow">Friend or Follow</a></li>
+<li id="id2505354"><a href="ch02s09.html#mr._tweet">Mr. Tweet</a></li>
+<li id="id2505461"><a href="ch02s09.html#omnee">Omnee</a></li>
+<li id="id2505606"><a href="ch02s09.html#twitree">Twitree</a></li></ol></li>
+<li id="id2505732"><a href="ch02s10.html">And Many More</a></li></ol></li>
+<li id="id2505835"><a href="ch03.html">3. Web Programming Basics</a><ol>
+<li id="id2505933"><a href="ch03.html#xhtml">XHTML</a><ol>
+<li id="id2506064"><a href="ch03.html#web_pages">Web Pages</a><ol>
+<li id="id2506581"><a href="ch03.html#form_tags">Form tags</a></li></ol></li>
+<li id="id2507059"><a href="ch03.html#a_nod_to_some_other_xml_structures">A Nod to Some Other XML Structures</a></li></ol></li>
+<li id="id2507119"><a href="ch03s02.html">CSS</a><ol>
+<li id="id2507398"><a href="ch03s02.html#assigning_styles_to_structure">Assigning Styles to Structure</a></li>
+<li id="id2496933"><a href="ch03s02.html#laying_out_your_web_page_content">Laying Out Your Web Page Content</a></li>
+<li id="id2497373"><a href="ch03s02.html#decorating_the_web_page_content">Decorating the Web Page Content</a></li>
+<li id="id2497786"><a href="ch03s02.html#getting_the_browser_to_recognize_styles">Getting the Browser to Recognize Styles</a></li></ol></li>
+<li id="id2498044"><a href="ch03s03.html">PHP</a><ol>
+<li id="id2498137"><a href="ch03s03.html#how_to_accept_candy_from_strangers">How to Accept Candy from Strangers</a><ol>
+<li id="id2498173"><a href="ch03s03.html#sql_injection_attacks">SQL injection attacks</a></li>
+<li id="id2498216"><a href="ch03s03.html#crlf_injection_attacks">CRLF injection attacks</a></li>
+<li id="id2498248"><a href="ch03s03.html#cross-site_request_forgery_open_parenthe">Cross-site request forgery (CSRF) attacks</a></li></ol></li>
+<li id="id2498336"><a href="ch03s03.html#strings_comma_arrays_comma_and_objects">Strings, Arrays, and Objects</a></li>
+<li id="id2498726"><a href="ch03s03.html#manipulating_the_data_you_collect">Manipulating the Data You Collect</a></li>
+<li id="id2500514"><a href="ch03s03.html#knowing_your_environment">Knowing Your Environment</a></li>
+<li id="id2500934"><a href="ch03s03.html#controlling_the_flow_of_logic">Controlling the Flow of Logic</a><ol>
+<li id="id2500972"><a href="ch03s03.html#if_..._elseif_..._else">if…elseif…else</a></li>
+<li id="id2501065"><a href="ch03s03.html#while">while</a></li>
+<li id="id2501118"><a href="ch03s03.html#for">for</a></li>
+<li id="id2501172"><a href="ch03s03.html#foreach">foreach</a></li>
+<li id="id2501218"><a href="ch03s03.html#switch_..._case_..._break">switch…case…break</a></li>
+<li id="id2501362"><a href="ch03s03.html#try_..._catch">try…catch</a></li>
+<li id="id2501430"><a href="ch03s03.html#die_open_parenthesis_close_parenthesis_o">die⁠(⁠ ⁠) or exit⁠(⁠ ⁠)</a></li></ol></li>
+<li id="id2501530"><a href="ch03s03.html#file_management">File Management</a></li>
+<li id="id2501896"><a href="ch03s03.html#connecting_to_the_database">Connecting to the Database</a></li>
+<li id="id2502408"><a href="ch03s03.html#building_a_custom_function">Building a Custom Function</a><ol>
+<li id="id2502480"><a href="ch03s03.html#including_more_code_in_your_application">Including more code in your application</a></li>
+<li id="id2553369"><a href="ch03s03.html#defining_your_own_function">Defining your own function</a></li></ol></li>
+<li id="id2553677"><a href="ch03s03.html#simplexml">SimpleXML</a></li>
+<li id="id2553987"><a href="ch03s03.html#dom">DOM</a></li>
+<li id="id2554259"><a href="ch03s03.html#curl">cURL</a></li>
+<li id="id2555000"><a href="ch03s03.html#debugging">Debugging</a></li></ol></li>
+<li id="id2555416"><a href="ch03s04.html">MySQL</a><ol>
+<li id="id2555503"><a href="ch03s04.html#creating_a_new_table">Creating a New Table</a></li>
+<li id="id2555676"><a href="ch03s04.html#retrieving_information_from_the_database">Retrieving Information from the Database</a></li>
+<li id="id2555972"><a href="ch03s04.html#changing_information_in_the_database">Changing Information in the Database</a></li></ol></li>
+<li id="id2556127"><a href="ch03s05.html">A Place to Call /home</a><ol>
+<li id="id2556190"><a href="ch03s05.html#selecting_a_host_server">Selecting a Host Server</a></li>
+<li id="id2556477"><a href="ch03s05.html#automation">Automation</a><ol>
+<li id="id2556654"><a href="ch03s05.html#pseudo-automation_hacks">Pseudoautomation hacks</a></li></ol></li></ol></li>
+<li id="id2556768"><a href="ch03s06.html">Further Reading</a></li></ol></li>
+<li id="id2556911"><a href="ch04.html">4. Meet the Twitter API</a><ol>
+<li id="id2557095"><a href="ch04.html#accessing_the_api">Accessing the API</a><ol>
+<li id="id2557199"><a href="ch04.html#http_requests">HTTP Requests</a><ol>
+<li id="id2557270"><a href="ch04.html#get">GET</a></li>
+<li id="id2557461"><a href="ch04.html#post">POST</a></li>
+<li id="id2557747"><a href="ch04.html#delete">DELETE</a></li></ol></li>
+<li id="id2557901"><a href="ch04.html#http_status_codes">HTTP Status Codes</a></li>
+<li id="id2558114"><a href="ch04.html#format">Format</a><ol>
+<li id="id2558271"><a href="ch04.html#rss_and_atom">RSS and Atom</a></li></ol></li>
+<li id="id2558326"><a href="ch04.html#authentication">Authentication</a></li>
+<li id="id2558615"><a href="ch04.html#id2558615">A Peak at OAuth</a></li>
+<li id="id2558811"><a href="ch04.html#parameters">Parameters</a><ol>
+<li id="id2558957"><a href="ch04.html#parameters_that_may_be_required">Parameters that may be required</a></li>
+<li id="id2559141"><a href="ch04.html#other_parameters_that_may_be_useful">Other parameters that may be useful</a></li></ol></li>
+<li id="id2559933"><a href="ch04.html#rate_limiting">Rate Limiting</a><ol>
+<li id="id2560053"><a href="ch04.html#checking_the_rate_limit_status">Checking the rate limit status</a></li>
+<li id="id2475972"><a href="ch04.html#whitelisting">Whitelisting</a></li></ol></li>
+<li id="id2476009"><a href="ch04.html#keeping_development_light">Keeping Development Light</a></li></ol></li>
+<li id="id2476170"><a href="ch04s02.html">Play Along at Home</a></li>
+<li id="id2476381"><a href="ch04s03.html">The API Methods</a><ol>
+<li id="id2476476"><a href="ch04s03.html#publishing">Publishing</a><ol>
+<li id="id2476518"><a href="ch04s03.html#post_a_tweet">Post a Tweet</a></li>
+<li id="id2476664"><a href="ch04s03.html#delete_a_tweet">Delete a Tweet</a></li></ol></li>
+<li id="id2476760"><a href="ch04s03.html#the_information_stream">The Information Stream</a><ol>
+<li id="id2476822"><a href="ch04s03.html#show_a_tweet">Show a Tweet</a></li>
+<li id="id2476885"><a href="ch04s03.html#view_the_public_timeline">View the Public Timeline</a></li>
+<li id="id2477035"><a href="ch04s03.html#view_a_friends_timeline">View a Friends Timeline</a></li>
+<li id="id2477193"><a href="ch04s03.html#view_an_individual_timeline">View an Individual Timeline</a></li>
+<li id="id2477320"><a href="ch04s03.html#view_replies">View Replies</a></li>
+<li id="id2477445"><a href="ch04s03.html#view_favorites">View Favorites</a></li>
+<li id="id2477533"><a href="ch04s03.html#create_a_favorite">Create a Favorite</a></li>
+<li id="id2477589"><a href="ch04s03.html#delete_a_favorite">Delete a Favorite</a></li></ol></li>
+<li id="id2477696"><a href="ch04s03.html#the_follow_network">The Follow Network</a><ol>
+<li id="id2477760"><a href="ch04s03.html#show_member_profile">Show Member Profile</a></li>
+<li id="id2478094"><a href="ch04s03.html#view_members_being_followed">View Members Being Followed</a></li>
+<li id="id2478282"><a href="ch04s03.html#view_followers">View Followers</a></li>
+<li id="id2478432"><a href="ch04s03.html#get_all_followers">Get All Followers</a></li>
+<li id="id2478540"><a href="ch04s03.html#get_all_friends">Get All Friends</a></li>
+<li id="id2478593"><a href="ch04s03.html#follow_a_member">Follow a Member</a></li>
+<li id="id2478851"><a href="ch04s03.html#unfollow_a_member">Unfollow a Member</a></li>
+<li id="id2478949"><a href="ch04s03.html#confirm_a_follow">Confirm a Follow</a></li>
+<li id="id2479082"><a href="ch04s03.html#block_a_member">Block a Member</a></li>
+<li id="id2479201"><a href="ch04s03.html#remove_a_block">Remove a Block</a></li></ol></li>
+<li id="id2479303"><a href="ch04s03.html#communication">Communication</a><ol>
+<li id="id2479425"><a href="ch04s03.html#list_received_messages">List Received Messages</a></li>
+<li id="id2479519"><a href="ch04s03.html#list_sent_messages">List Sent Messages</a></li>
+<li id="id2479574"><a href="ch04s03.html#create_a_message">Create a Message</a></li>
+<li id="id2479718"><a href="ch04s03.html#delete_a_message">Delete a Message</a></li>
+<li id="id2479802"><a href="ch04s03.html#show_a_message">Show a Message</a></li></ol></li>
+<li id="id2479908"><a href="ch04s03.html#member_account">Member Account</a><ol>
+<li id="id2480002"><a href="ch04s03.html#update_member_location">Update Member Location</a></li>
+<li id="id2480108"><a href="ch04s03.html#update_member_profile">Update Member Profile</a></li>
+<li id="id2480274"><a href="ch04s03.html#update_profile_colors">Update Profile Colors</a></li>
+<li id="id2480461"><a href="ch04s03.html#update_background_image">Update Background Image</a></li>
+<li id="id2480721"><a href="ch04s03.html#update_profile_image">Update Profile Image</a></li>
+<li id="id2480827"><a href="ch04s03.html#update_the_delivery_device">Update the Delivery Device</a></li>
+<li id="id2480963"><a href="ch04s03.html#turn_on_solidus_off_notification">Turn On/Off Notification</a></li></ol></li>
+<li id="id2481125"><a href="ch04s03.html#api_administration">API Administration</a><ol>
+<li id="id2481160"><a href="ch04s03.html#test">Test</a></li>
+<li id="id2481214"><a href="ch04s03.html#verify_credentials">Verify Credentials</a></li>
+<li id="id2481312"><a href="ch04s03.html#check_rate_limit_status">Check Rate Limit Status</a></li>
+<li id="id2481466"><a href="ch04s03.html#end_a_member_session">End a Member Session</a></li></ol></li>
+<li id="id2481526"><a href="ch04s03.html#search">Search</a><ol>
+<li id="id2481601"><a href="ch04s03.html#keyword_search">Keyword Search</a><ol>
+<li id="id2481687"><a href="ch04s03.html#content_searches">Content searches</a></li>
+<li id="id2481962"><a href="ch04s03.html#meta_filters">Meta filters</a></li>
+<li id="id2482252"><a href="ch04s03.html#operators">Operators</a></li>
+<li id="id2482396"><a href="ch04s03.html#optional_parameters">Optional parameters</a></li></ol></li>
+<li id="id2482636"><a href="ch04s03.html#monitor_trends">Monitor Trends</a></li></ol></li></ol></li>
+<li id="id2482745"><a href="ch04s04.html">Other Data Options</a></li>
+<li id="id2482877"><a href="ch04s05.html">Gone Phishing: A Word About Passwords</a><ol>
+<li id="id2545610"><a href="ch04s05.html#is_twishing_worth_the_effort_question">Is Twishing Worth the Effort?</a><ol>
+<li id="id2545676"><a href="ch04s05.html#controlling">Controlling</a></li>
+<li id="id2545732"><a href="ch04s05.html#invading">Invading</a></li>
+<li id="id2545794"><a href="ch04s05.html#stealthing">Stealthing</a></li>
+<li id="id2545857"><a href="ch04s05.html#screaming">Screaming</a></li>
+<li id="id2545944"><a href="ch04s05.html#damaging">Damaging</a></li>
+<li id="id2545995"><a href="ch04s05.html#annoying">Annoying</a></li>
+<li id="id2546050"><a href="ch04s05.html#deceiving">Deceiving</a></li></ol></li>
+<li id="id2546109"><a href="ch04s05.html#oauth_can_help">OAuth Can Help</a></li></ol></li></ol></li>
+<li id="id2546348"><a href="ch05.html">5. Meet the Output</a><ol>
+<li id="id2546509"><a href="ch05.html#user_objects">User Objects</a><ol>
+<li id="id2547206"><a href="ch05.html#user_elements">User Elements</a></li></ol></li>
+<li id="id2548127"><a href="ch05s02.html">Status Objects</a><ol>
+<li id="id2548611"><a href="ch05s02.html#status_elements">Status Elements</a></li></ol></li>
+<li id="id2549098"><a href="ch05s03.html">Message Objects</a><ol>
+<li id="id2549420"><a href="ch05s03.html#direct_message_elements">Direct Message Elements</a></li></ol></li>
+<li id="id2549703"><a href="ch05s04.html">Search Objects</a><ol>
+<li id="id2549949"><a href="ch05s04.html#feed_elements">Feed Elements</a></li>
+<li id="id2550176"><a href="ch05s04.html#entry_elements">Entry Elements</a></li></ol></li>
+<li id="id2550452"><a href="ch05s05.html">ID Objects</a><ol>
+<li id="id2550586"><a href="ch05s05.html#id_elements">ID Elements</a></li></ol></li>
+<li id="id2550680"><a href="ch05s06.html">Response Objects</a><ol>
+<li id="id2550850"><a href="ch05s06.html#response_elements">Response Elements</a></li></ol></li>
+<li id="id2550971"><a href="ch05s07.html">Hash Objects</a><ol>
+<li id="id2551168"><a href="ch05s07.html#hash_elements">Hash Elements</a></li>
+<li id="id2551343"><a href="ch05s07.html#errors">Errors</a></li></ol></li></ol></li>
+<li id="id2551544"><a href="ch06.html">6. Application Setup</a><ol>
+<li id="id2551784"><a href="ch06.html#establishing_your_twitter_account">Establishing Your Twitter Account</a><ol>
+<li id="id2551864"><a href="ch06.html#registering_a_new_twitter_member_account">Registering a New Twitter Member Account</a></li>
+<li id="id2552174"><a href="ch06.html#configuring_your_new_account">Configuring Your New Account</a><ol>
+<li id="id2552211"><a href="ch06.html#account_tab">Account tab</a></li>
+<li id="id2552365"><a href="ch06.html#picture_tab">Picture tab</a></li>
+<li id="id2552456"><a href="ch06.html#other_settings">Other settings</a></li></ol></li></ol></li>
+<li id="id2552812"><a href="ch06s02.html">Creating Your Database</a><ol>
+<li id="id2552934"><a href="ch06s02.html#making_sure_there_is_a_there_there">Making Sure There Is a There There</a></li>
+<li id="id2553027"><a href="ch06s02.html#giving_the_database_some_structure">Giving the Database Some Structure</a></li></ol></li>
+<li id="id2561975"><a href="ch06s03.html">Included Functions</a><ol>
+<li id="id2562035"><a href="ch06s03.html#creating_your_includes_directory">Creating Your Includes Directory</a></li>
+<li id="id2562397"><a href="ch06s03.html#environment_functions">Environment Functions</a><ol>
+<li id="id2562442"><a href="ch06s03.html#getserverpath_open_parenthesis_close_par">getServerPath⁠(⁠ ⁠)</a></li>
+<li id="id2562524"><a href="ch06s03.html#gethttppath_open_parenthesis_close_paren">getHTTPpath⁠(⁠ ⁠)</a></li></ol></li>
+<li id="id2562597"><a href="ch06s03.html#api_configuration_functions">API Configuration Functions</a><ol>
+<li id="id2562676"><a href="ch06s03.html#prepapi_open_parenthesis_close_parenthes">prepAPI⁠(⁠ ⁠)</a></li>
+<li id="id2562801"><a href="ch06s03.html#preprequest_open_parenthesis_close_paren">prepRequest⁠(⁠ ⁠)</a></li>
+<li id="id2563166"><a href="ch06s03.html#apirequest_open_parenthesis_close_parent">apiRequest⁠(⁠ ⁠)</a></li></ol></li>
+<li id="id2563291"><a href="ch06s03.html#database_functions">Database Functions</a><ol>
+<li id="id2563326"><a href="ch06s03.html#getdbconfiguration_open_parenthesis_clos">getDBconfiguration⁠(⁠ ⁠)</a></li>
+<li id="id2563406"><a href="ch06s03.html#opendb_open_parenthesis_close_parenthesi">openDB⁠(⁠ ⁠)</a></li>
+<li id="id2563462"><a href="ch06s03.html#closedb_open_parenthesis_close_parenthes">closeDB⁠(⁠ ⁠)</a></li></ol></li>
+<li id="id2563522"><a href="ch06s03.html#sql_queries">SQL Queries</a><ol>
+<li id="id2563563"><a href="ch06s03.html#getqueries_open_parenthesis_close_parent">getQueries⁠(⁠ ⁠)</a></li></ol></li>
+<li id="id2563885"><a href="ch06s03.html#data_parsing_functions">Data Parsing Functions</a><ol>
+<li id="id2563925"><a href="ch06s03.html#parsefeed_open_parenthesis_close_parenth">parseFeed⁠(⁠ ⁠)</a></li>
+<li id="id2564071"><a href="ch06s03.html#parsexml_open_parenthesis_close_parenthe">parseXML⁠(⁠ ⁠)</a></li>
+<li id="id2564232"><a href="ch06s03.html#createdomfromurl_open_parenthesis_close">createDOMfromURL⁠(⁠ ⁠)</a></li>
+<li id="id2564308"><a href="ch06s03.html#createparserfromstring_open_parenthesis">createParserFromString⁠(⁠ ⁠)</a></li>
+<li id="id2564361"><a href="ch06s03.html#createxmlshell_open_parenthesis_close_pa">createXMLshell⁠(⁠ ⁠)</a></li>
+<li id="id2564416"><a href="ch06s03.html#createrssshell_open_parenthesis_close_pa">createRSSshell⁠(⁠ ⁠)</a></li>
+<li id="id2564509"><a href="ch06s03.html#formattweetasxhtml_open_parenthesis_clos">formatTweetAsXHTML⁠(⁠ ⁠)</a></li>
+<li id="id2564580"><a href="ch06s03.html#additem_open_parenthesis_close_parenthes">addItem⁠(⁠ ⁠)</a></li></ol></li>
+<li id="id2564671"><a href="ch06s03.html#password_management_functions">Password Management Functions</a><ol>
+<li id="id2564745"><a href="ch06s03.html#securepassword_open_parenthesis_close_pa">securePassword⁠(⁠ ⁠)</a></li>
+<li id="id2564857"><a href="ch06s03.html#comparepassword_open_parenthesis_close_p">comparePassword⁠(⁠ ⁠)</a></li>
+<li id="id2564930"><a href="ch06s03.html#scramblepassword_open_parenthesis_close">scramblePassword⁠(⁠ ⁠)</a></li>
+<li id="id2565018"><a href="ch06s03.html#unscramblepassword_open_parenthesis_clos">unscramblePassword⁠(⁠ ⁠)</a></li></ol></li>
+<li id="id2565137"><a href="ch06s03.html#data_validation_functions">Data Validation Functions</a><ol>
+<li id="id2565177"><a href="ch06s03.html#checkinput_open_parenthesis_close_parent">checkInput⁠(⁠ ⁠)</a></li>
+<li id="id2565282"><a href="ch06s03.html#issubmitted_open_parenthesis_close_paren">isSubmitted⁠(⁠ ⁠)</a></li>
+<li id="id2565363"><a href="ch06s03.html#isvalidtweet_open_parenthesis_close_pare">isValidTweet⁠(⁠ ⁠)</a></li>
+<li id="id2565471"><a href="ch06s03.html#hascredentials_open_parenthesis_close_pa">hasCredentials⁠(⁠ ⁠)</a></li>
+<li id="id2565550"><a href="ch06s03.html#hasaccess_open_parenthesis_close_parenth">hasAccess⁠(⁠ ⁠)</a></li></ol></li>
+<li id="id2565646"><a href="ch06s03.html#data_sorting_functions">Data Sorting Functions</a><ol>
+<li id="id2565691"><a href="ch06s03.html#sortdata_open_parenthesis_close_parenthe">sortData⁠(⁠ ⁠)</a></li>
+<li id="id2565762"><a href="ch06s03.html#comparefollownet_open_parenthesis_close">compareFollowNet⁠(⁠ ⁠)</a></li></ol></li>
+<li id="id2565859"><a href="ch06s03.html#statistics_functions">Statistics Functions</a><ol>
+<li id="id2565902"><a href="ch06s03.html#groupstats_open_parenthesis_close_parent">groupStats⁠(⁠ ⁠)</a></li></ol></li>
+<li id="id2565989"><a href="ch06s03.html#log_management_functions">Log Management Functions</a><ol>
+<li id="id2566030"><a href="ch06s03.html#openfile_open_parenthesis_close_parenthe">openFile⁠(⁠ ⁠)</a></li>
+<li id="id2566110"><a href="ch06s03.html#writefile_open_parenthesis_close_parenth">writeFile⁠(⁠ ⁠)</a></li>
+<li id="id2566165"><a href="ch06s03.html#closefile_open_parenthesis_close_parenth">closeFile⁠(⁠ ⁠)</a></li>
+<li id="id2566254"><a href="ch06s03.html#deletefile_open_parenthesis_close_parent">deleteFile⁠(⁠ ⁠)</a></li></ol></li>
+<li id="id2566328"><a href="ch06s03.html#status_messages">Status Messages</a><ol>
+<li id="id2566356"><a href="ch06s03.html#getresponse_open_parenthesis_close_paren">getResponse⁠(⁠ ⁠)</a></li></ol></li>
+<li id="id2566567"><a href="ch06s03.html#html_template_functions">HTML Template Functions</a><ol>
+<li id="id2566605"><a href="ch06s03.html#getheader_open_parenthesis_close_parenth">getHeader⁠(⁠ ⁠)</a></li>
+<li id="id2566679"><a href="ch06s03.html#getinterface_open_parenthesis_close_pare">getInterface⁠(⁠ ⁠)</a></li>
+<li id="id2566776"><a href="ch06s03.html#getfooter_open_parenthesis_close_parenth">getFooter⁠(⁠ ⁠)</a></li></ol></li></ol></li>
+<li id="id2566834"><a href="ch06s04.html">CSS</a></li></ol></li>
+<li id="id2566979"><a href="ch07.html">7. Sample Applications</a><ol>
+<li id="id2567059"><a href="ch07.html#meet_the_sample_apps">Meet the Sample Apps</a><ol>
+<li id="id2567480"><a href="ch07.html#why_are_you_asking_for_my_password_quest">Why Are You Asking for My Password?</a></li></ol></li>
+<li id="id2567671"><a href="ch07s02.html">Administration Tool</a><ol>
+<li id="id2567735"><a href="ch07s02.html#take_the_app_for_a_spin">Take the App for a Spin</a></li>
+<li id="id2567868"><a href="ch07s02.html#check_under_the_hood">Check Under the Hood</a><ol>
+<li id="id2568037"><a href="ch07s02.html#include_external_functions">Include external functions</a></li>
+<li id="id2568223"><a href="ch07s02.html#initialize_values">Initialize values</a></li>
+<li id="id2568311"><a href="ch07s02.html#parse_input">Parse input</a></li>
+<li id="id2568384"><a href="ch07s02.html#configure_api_requests">Configure API requests</a></li>
+<li id="id2568444"><a href="ch07s02.html#initiate_curl">Initiate cURL</a></li>
+<li id="id2568527"><a href="ch07s02.html#prepare_database_interaction">Prepare database interaction</a></li>
+<li id="id2568672"><a href="ch07s02.html#validate_access">Validate access</a></li>
+<li id="id2568754"><a href="ch07s02.html#save_data">Save data</a></li>
+<li id="id2568872"><a href="ch07s02.html#determine_feedback_response">Determine feedback response</a></li>
+<li id="id2568955"><a href="ch07s02.html#clean_up">Clean up</a></li>
+<li id="id2569007"><a href="ch07s02.html#render_interface">Render interface</a></li></ol></li>
+<li id="id2569110"><a href="ch07s02.html#shifting_gears">Shifting Gears</a></li></ol></li>
+<li id="id2569353"><a href="ch07s03.html">Tweet Publisher</a><ol>
+<li id="id2569434"><a href="ch07s03.html#take_the_app_for_a_spin-id1">Take the App for a Spin</a></li>
+<li id="id2569582"><a href="ch07s03.html#check_under_the_hood-id1">Check Under the Hood</a><ol>
+<li id="id2569731"><a href="ch07s03.html#parse_input-id1">Parse input</a></li>
+<li id="id2569773"><a href="ch07s03.html#post_message">Post message</a></li>
+<li id="id2569932"><a href="ch07s03.html#render_interface-id1">Render interface</a></li></ol></li>
+<li id="id2570012"><a href="ch07s03.html#shifting_gears-id1">Shifting Gears</a></li></ol></li>
+<li id="id2570099"><a href="ch07s04.html">Auto Tweet</a><ol>
+<li id="id2570174"><a href="ch07s04.html#take_the_app_for_a_spin-id2">Take the App for a Spin</a></li>
+<li id="id2570345"><a href="ch07s04.html#check_under_the_hood-id2">Check Under the Hood</a><ol>
+<li id="id2531268"><a href="ch07s04.html#parse_input-id2">Parse input</a></li>
+<li id="id2531344"><a href="ch07s04.html#disable_profile">Disable profile</a></li>
+<li id="id2531417"><a href="ch07s04.html#retrieve_stored_data">Retrieve stored data</a></li>
+<li id="id2531564"><a href="ch07s04.html#process_deletion_request">Process deletion request</a></li>
+<li id="id2531649"><a href="ch07s04.html#check_feed">Check feed</a></li>
+<li id="id2531747"><a href="ch07s04.html#save_profile">Save profile</a></li></ol></li>
+<li id="id2531783"><a href="ch07s04.html#shifting_gears-id2">Shifting Gears</a></li></ol></li>
+<li id="id2531925"><a href="ch07s05.html">Tweet Broadcast</a><ol>
+<li id="id2532022"><a href="ch07s05.html#take_the_app_for_a_spin-id3">Take the App for a Spin</a></li>
+<li id="id2532232"><a href="ch07s05.html#check_under_the_hood-id3">Check Under the Hood</a><ol>
+<li id="id2532416"><a href="ch07s05.html#retrieve_stored_data-id1">Retrieve stored data</a></li>
+<li id="id2532528"><a href="ch07s05.html#process_deletion_request-id1">Process deletion request</a></li>
+<li id="id2532582"><a href="ch07s05.html#compare_groups">Compare groups</a></li>
+<li id="id2532742"><a href="ch07s05.html#save_group">Save group</a></li>
+<li id="id2532896"><a href="ch07s05.html#render_interface-id2">Render interface</a></li></ol></li>
+<li id="id2532953"><a href="ch07s05.html#shifting_gears-id3">Shifting Gears</a></li></ol></li>
+<li id="id2533050"><a href="ch07s06.html">Broadcast Feed</a><ol>
+<li id="id2533087"><a href="ch07s06.html#take_the_app_for_a_spin-id4">Take the App for a Spin</a></li>
+<li id="id2533129"><a href="ch07s06.html#check_under_the_hood-id4">Check Under the Hood</a><ol>
+<li id="id2533281"><a href="ch07s06.html#parse_input-id3">Parse input</a></li>
+<li id="id2533350"><a href="ch07s06.html#retrieve_update_timestamp">Retrieve update timestamp</a></li>
+<li id="id2533400"><a href="ch07s06.html#initiate_xml">Initiate XML</a></li>
+<li id="id2533460"><a href="ch07s06.html#add_daily_updates">Add daily updates</a></li>
+<li id="id2533612"><a href="ch07s06.html#render_rss_feed">Render RSS feed</a></li></ol></li>
+<li id="id2533666"><a href="ch07s06.html#shifting_gears-id4">Shifting Gears</a></li></ol></li>
+<li id="id2533796"><a href="ch07s07.html">Tweet Alert</a><ol>
+<li id="id2533920"><a href="ch07s07.html#take_the_app_for_a_spin-id5">Take the App for a Spin</a></li>
+<li id="id2534161"><a href="ch07s07.html#check_under_the_hood-id5">Check Under the Hood</a><ol>
+<li id="id2534457"><a href="ch07s07.html#confirm_follower_status">Confirm follower status</a></li></ol></li>
+<li id="id2534622"><a href="ch07s07.html#shifting_gears-id5">Shifting Gears</a></li></ol></li>
+<li id="id2534713"><a href="ch07s08.html">Network Viewer</a><ol>
+<li id="id2534822"><a href="ch07s08.html#take_the_app_for_a_spin-id6">Take the App for a Spin</a></li>
+<li id="id2534972"><a href="ch07s08.html#check_under_the_hood-id6">Check Under the Hood</a><ol>
+<li id="id2535234"><a href="ch07s08.html#get_user_profile">Get user profile</a></li>
+<li id="id2535412"><a href="ch07s08.html#get_follow_network">Get follow network</a></li>
+<li id="id2535546"><a href="ch07s08.html#sort_follow_network">Sort follow network</a></li>
+<li id="id2535660"><a href="ch07s08.html#format_follow_network">Format follow network</a></li>
+<li id="id2535793"><a href="ch07s08.html#render_interface-id3">Render interface</a></li></ol></li>
+<li id="id2535856"><a href="ch07s08.html#shifting_gears-id6">Shifting Gears</a></li></ol></li>
+<li id="id2536009"><a href="ch07s09.html">Best of Twitter API</a><ol>
+<li id="id2536163"><a href="ch07s09.html#take_the_app_for_a_spin-id7">Take the App for a Spin</a></li>
+<li id="id2536284"><a href="ch07s09.html#check_under_the_hood-id7">Check Under the Hood</a><ol>
+<li id="id2536412"><a href="ch07s09.html#parse_input-id4">Parse input</a></li>
+<li id="id2536539"><a href="ch07s09.html#add_bookmarks">Add bookmarks</a></li></ol></li>
+<li id="id2536635"><a href="ch07s09.html#shifting_gears-id7">Shifting Gears</a></li></ol></li></ol></li>
+<li id="id2536778"><a href="ch08.html">8. Automated Tasks</a><ol>
+<li id="id2537109"><a href="ch08.html#rss_to_tweet">RSS to Tweet</a><ol>
+<li id="id2537242"><a href="ch08.html#check_under_the_hood-id8">Check Under the Hood</a><ol>
+<li id="id2537449"><a href="ch08.html#include_external_functions-id1">Include external functions</a></li>
+<li id="id2537563"><a href="ch08.html#initiate_logging">Initiate logging</a></li>
+<li id="id2537660"><a href="ch08.html#prepare_database_interaction-id1">Prepare database interaction</a></li>
+<li id="id2537760"><a href="ch08.html#retrieve_stored_data-id2">Retrieve stored data</a></li>
+<li id="id2537854"><a href="ch08.html#post_message-id1">Post message</a></li>
+<li id="id2537901"><a href="ch08.html#clean_up-id1">Clean up</a></li>
+<li id="id2537935"><a href="ch08.html#log_output">Log output</a></li></ol></li></ol></li>
+<li id="id2538039"><a href="ch08s02.html">Aggregate Broadcast</a><ol>
+<li id="id2538143"><a href="ch08s02.html#check_under_the_hood-id9">Check Under the Hood</a><ol>
+<li id="id2538321"><a href="ch08s02.html#retrieve_stored_data-id3">Retrieve stored data</a></li>
+<li id="id2538394"><a href="ch08s02.html#purge_old_stored_data">Purge old stored data</a></li>
+<li id="id2538437"><a href="ch08s02.html#log_output-id1">Log output</a></li></ol></li></ol></li>
+<li id="id2538544"><a href="ch08s03.html">Scan Tweets</a><ol>
+<li id="id2538642"><a href="ch08s03.html#check_under_the_hood-id10">Check Under the Hood</a><ol>
+<li id="id2538997"><a href="ch08s03.html#retrieve_master_password">Retrieve master password</a></li>
+<li id="id2539103"><a href="ch08s03.html#retrieve_last_id">Retrieve last ID</a></li>
+<li id="id2539161"><a href="ch08s03.html#check_for_matching_tweets">Check for matching tweets</a></li>
+<li id="id2539288"><a href="ch08s03.html#format_message">Format message</a></li>
+<li id="id2539322"><a href="ch08s03.html#retrieve_users">Retrieve users</a></li>
+<li id="id2539357"><a href="ch08s03.html#confirm_follower_status-id1">Confirm follower status</a></li>
+<li id="id2539424"><a href="ch08s03.html#notify_users">Notify users</a></li>
+<li id="id2539474"><a href="ch08s03.html#log_activity">Log activity</a></li>
+<li id="id2539539"><a href="ch08s03.html#log_output-id2">Log output</a></li></ol></li></ol></li>
+<li id="id2539665"><a href="ch08s04.html">Queue Users</a><ol>
+<li id="id2539779"><a href="ch08s04.html#check_under_the_hood-id11">Check Under the Hood</a><ol>
+<li id="id2539895"><a href="ch08s04.html#mine_new_users">Mine new users</a></li></ol></li></ol></li>
+<li id="id2539962"><a href="ch08s05.html">Collect Favorites</a><ol>
+<li id="id2540083"><a href="ch08s05.html#check_under_the_hood-id12">Check Under the Hood</a><ol>
+<li id="id2540363"><a href="ch08s05.html#retrieve_master_password-id1">Retrieve master password</a></li>
+<li id="id2540434"><a href="ch08s05.html#retrieve_queue">Retrieve queue</a></li>
+<li id="id2540497"><a href="ch08s05.html#retrieve_favorites">Retrieve favorites</a></li>
+<li id="id2540698"><a href="ch08s05.html#update_queue">Update queue</a></li>
+<li id="id2540736"><a href="ch08s05.html#log_output-id3">Log output</a></li></ol></li></ol></li></ol></li>
+<li id="id2540868"><a href="apa.html">A. Twitter API Reference</a><ol>
+<li id="id2540968"><a href="apa.html#status_methods">Status Methods</a><ol>
+<li id="id2540974"><a href="apa.html#delete_a_tweet-id1">Delete a Tweet</a></li>
+<li id="id2541225"><a href="apa.html#view_followers-id1">View Followers</a></li>
+<li id="id2541480"><a href="apa.html#view_members_being_followed-id1">View Members Being Followed</a></li>
+<li id="id2541741"><a href="apa.html#view_a_friends_timeline-id1">View a Friends Timeline</a></li>
+<li id="id2542046"><a href="apa.html#view_the_public_timeline-id1">View the Public Timeline</a></li>
+<li id="id2542210"><a href="apa.html#view_replies-id1">View Replies</a></li>
+<li id="id2542500"><a href="apa.html#show_a_tweet-id1">Show a Tweet</a></li>
+<li id="id2542715"><a href="apa.html#post_a_tweet-id1">Post a Tweet</a></li>
+<li id="id2543010"><a href="apa.html#view_an_individual_timeline-id1">View an Individual Timeline</a></li></ol></li>
+<li id="id2511487"><a href="apas02.html">Users Methods</a><ol>
+<li id="id2511493"><a href="apas02.html#show_member_profile-id1">Show Member Profile</a></li></ol></li>
+<li id="id2511798"><a href="apas03.html">Direct Message Methods</a><ol>
+<li id="id2511804"><a href="apas03.html#list_received_messages-id1">List Received Messages</a></li>
+<li id="id2512109"><a href="apas03.html#delete_a_message-id1">Delete a Message</a></li>
+<li id="id2512326"><a href="apas03.html#create_a_message-id1">Create a Message</a></li>
+<li id="id2512565"><a href="apas03.html#list_sent_messages-id1">List Sent Messages</a></li></ol></li>
+<li id="id2512867"><a href="apas04.html">Friendship Methods</a><ol>
+<li id="id2512873"><a href="apas04.html#follow_a_member-id1">Follow a Member</a></li>
+<li id="id2513140"><a href="apas04.html#unfollow_a_member-id1">Unfollow a Member</a></li>
+<li id="id2513366"><a href="apas04.html#confirm_a_follow-id1">Confirm a Follow</a></li></ol></li>
+<li id="id2513617"><a href="apas05.html">Social Graph Methods</a><ol>
+<li id="id2513623"><a href="apas05.html#get_all_friends-id1">Get All Friends</a></li>
+<li id="id2513862"><a href="apas05.html#get_all_followers-id1">Get All Followers</a></li></ol></li>
+<li id="id2514083"><a href="apas06.html">Account Methods</a><ol>
+<li id="id2514089"><a href="apas06.html#end_a_member_session-id1">End a Member Session</a></li>
+<li id="id2514252"><a href="apas06.html#check_rate_limit_status-id1">Check Rate Limit Status</a></li>
+<li id="id2514392"><a href="apas06.html#update_the_delivery_device-id1">Update the Delivery Device</a></li>
+<li id="id2514623"><a href="apas06.html#update_member_location-id1">Update Member Location</a></li>
+<li id="id2514865"><a href="apas06.html#update_member_profile-id1">Update Member Profile</a></li>
+<li id="id2515233"><a href="apas06.html#update_background_image-id1">Update Background Image</a></li>
+<li id="id2515447"><a href="apas06.html#update_profile_colors-id1">Update Profile Colors</a></li>
+<li id="id2515818"><a href="apas06.html#update_profile_image-id1">Update Profile Image</a></li>
+<li id="id2516032"><a href="apas06.html#verify_credentials-id1">Verify Credentials</a></li></ol></li>
+<li id="id2516191"><a href="apas07.html">Favorite Methods</a><ol>
+<li id="id2516197"><a href="apas07.html#view_bookmarks">View Favorites</a></li>
+<li id="id2516470"><a href="apas07.html#create_a_bookmark">Create a Favorite</a></li>
+<li id="id2516682"><a href="apas07.html#delete_a_bookmark">Delete a Favorite</a></li></ol></li>
+<li id="id2516908"><a href="apas08.html">Notification Methods</a><ol>
+<li id="id2516914"><a href="apas08.html#turn_on_notification">Turn On Notification</a></li>
+<li id="id2517150"><a href="apas08.html#turn_off_notification">Turn Off Notification</a></li></ol></li>
+<li id="id2517364"><a href="apas09.html">Block Methods</a><ol>
+<li id="id2517370"><a href="apas09.html#block_a_member-id1">Block a Member</a></li>
+<li id="id2517596"><a href="apas09.html#remove_a_block-id1">Remove a Block</a></li></ol></li>
+<li id="id2517820"><a href="apas10.html">Help Methods</a><ol>
+<li id="id2517826"><a href="apas10.html#test-id1">Test</a></li></ol></li>
+<li id="id2517982"><a href="apas11.html">Search Methods</a><ol>
+<li id="id2517988"><a href="apas11.html#keyword_search-id1">Keyword Search</a></li>
+<li id="id2518513"><a href="apas11.html#monitor_trends-id1">Monitor Trends</a></li></ol></li></ol></li>
+<li id="id2518667"><a href="ix01.html">Index</a></li>
+<li id="id2518668"><a href="co01.html">Colophon</a></li></ol></li></ol></nav>
+</body></html>

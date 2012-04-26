@@ -1,0 +1,472 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"><head><title>RESTful Web Services</title></head><body>
+  
+  
+  <nav id="toc" epub:type="toc"><h1>Contents</h1><ol>
+<li id="id2886535"><a href="index.html">RESTful Web Services</a><ol>
+<li id="id2806916"><a href="pr01.html">Foreword</a></li>
+<li id="id2806954"><a href="pr02.html">Preface</a><ol>
+<li id="id2807069"><a href="pr02.html#I_sect1_tt3">The Web Is Simple</a></li>
+<li id="id2807542"><a href="pr02s02.html">Big Web Services Are Not Simple</a></li>
+<li id="id2807660"><a href="pr02s03.html">The Story of the REST</a></li>
+<li id="id2807822"><a href="pr02s04.html">Reuniting the Webs</a></li>
+<li id="id2807912"><a href="pr02s05.html">What’s in This Book?</a></li>
+<li id="id2819055"><a href="pr02s06.html">Administrative Notes</a></li>
+<li id="id2819152"><a href="pr02s07.html">Conventions Used in This Book</a></li>
+<li id="id2819221"><a href="pr02s08.html">Using Code Examples</a></li>
+<li id="id2819273"><a href="pr02s09.html">Safari® Enabled</a></li>
+<li id="id2819312"><a href="pr02s10.html">How to Contact Us</a></li>
+<li id="id2819382"><a href="pr02s11.html">Acknowledgments</a></li></ol></li>
+<li id="id2819464"><a href="ch01.html">1. The Programmable Web and Its Inhabitants</a><ol>
+<li id="id2810292"><a href="ch01.html#I_sect11_tt26">Kinds of Things on the Programmable Web</a></li>
+<li id="id2810477"><a href="ch01s02.html">HTTP: Documents in Envelopes</a></li>
+<li id="id2808869"><a href="ch01s03.html">Method Information</a></li>
+<li id="id2809459"><a href="ch01s04.html">Scoping Information</a></li>
+<li id="id2809693"><a href="ch01s05.html">The Competing Architectures</a><ol>
+<li id="id2809707"><a href="ch01s05.html#id2809707">RESTful, Resource-Oriented Architectures</a></li>
+<li id="id2810924"><a href="ch01s05.html#id2810924">RPC-Style Architectures</a></li>
+<li id="id2811247"><a href="ch01s05.html#id2811247">REST-RPC Hybrid Architectures</a></li>
+<li id="id2811500"><a href="ch01s05.html#id2811500">The Human Web Is on the Programmable Web</a></li></ol></li>
+<li id="id2811546"><a href="ch01s06.html">Technologies on the Programmable Web</a><ol>
+<li id="id2811572"><a href="ch01s06.html#id2811572">HTTP</a></li>
+<li id="id2811595"><a href="ch01s06.html#id2811595">URI</a></li>
+<li id="id2811649"><a href="ch01s06.html#id2811649">XML-RPC</a></li>
+<li id="id2811670"><a href="ch01s06.html#id2811670">SOAP</a></li>
+<li id="id2811757"><a href="ch01s06.html#id2811757">WS-*</a></li>
+<li id="id2811776"><a href="ch01s06.html#id2811776">WSDL</a></li>
+<li id="id2811806"><a href="ch01s06.html#id2811806">WADL</a></li></ol></li>
+<li id="id2811863"><a href="ch01s07.html">Leftover Terminology</a></li></ol></li>
+<li id="id2812129"><a href="ch02.html">2. Writing Web Service Clients</a><ol>
+<li id="id2812135"><a href="ch02.html#I_sect12_tt98">Web Services Are Web Sites</a><ol>
+<li id="id2819671"><a href="ch02.html#id2819671">Wrappers, WADL, and ActiveResource</a></li></ol></li>
+<li id="id2819850"><a href="ch02s02.html">del.icio.us: The Sample Application</a><ol>
+<li id="id2820184"><a href="ch02s02.html#id2820184">What the Sample Clients Do</a></li></ol></li>
+<li id="id2820412"><a href="ch02s03.html">Making the Request: HTTP Libraries</a><ol>
+<li id="id2820614"><a href="ch02s03.html#id2820614">Optional Features</a></li>
+<li id="id2820917"><a href="ch02s03.html#id2820917">Ruby: rest-open-uri and net/http</a></li>
+<li id="id2821473"><a href="ch02s03.html#id2821473">Python: httplib2</a></li>
+<li id="id2821743"><a href="ch02s03.html#id2821743">Java: HttpClient</a></li>
+<li id="id2822080"><a href="ch02s03.html#id2822080">C#: System.Web.HTTPWebRequest</a></li>
+<li id="id2822192"><a href="ch02s03.html#id2822192">PHP: libcurl</a></li>
+<li id="id2822250"><a href="ch02s03.html#id2822250">JavaScript: XMLHttpRequest</a></li>
+<li id="id2822293"><a href="ch02s03.html#id2822293">The Command Line: curl</a></li>
+<li id="id2822381"><a href="ch02s03.html#id2822381">Other Languages</a></li></ol></li>
+<li id="id2822676"><a href="ch02s04.html">Processing the Response: XML Parsers</a><ol>
+<li id="id2822996"><a href="ch02s04.html#rubyparser">Ruby: REXML, I Guess</a></li>
+<li id="id2823305"><a href="ch02s04.html#pythonparser">Python: ElementTree</a></li>
+<li id="id2823457"><a href="ch02s04.html#javaparser">Java: javax.xml, Xerces, or XMLPull</a></li>
+<li id="id2823613"><a href="ch02s04.html#id2823613">C#: System.Xml.XmlReader</a></li>
+<li id="id2812761"><a href="ch02s04.html#id2812761">PHP</a></li>
+<li id="id2812858"><a href="ch02s04.html#id2812858">JavaScript: responseXML</a></li>
+<li id="id2812966"><a href="ch02s04.html#otherlangparser">Other Languages</a></li></ol></li>
+<li id="id2813205"><a href="ch02s05.html">JSON Parsers: Handling Serialized Data</a></li>
+<li id="id2813584"><a href="ch02s06.html">Clients Made Easy with WADL</a></li></ol></li>
+<li id="id2813782"><a href="ch03.html">3. What Makes RESTful Services Different?</a><ol>
+<li id="id2813849"><a href="ch03.html#I_sect13_tt253">Introducing the Simple Storage Service</a></li>
+<li id="id2814036"><a href="ch03s02.html">Object-Oriented Design of S3</a><ol>
+<li id="id2814100"><a href="ch03s02.html#id2814100">A Few Words About Buckets</a></li>
+<li id="id2814119"><a href="ch03s02.html#id2814119">A Few Words About Objects</a></li>
+<li id="id2814210"><a href="ch03s02.html#id2814210">What If S3 Was a Standalone Library?</a></li></ol></li>
+<li id="id2814304"><a href="ch03s03.html">Resources</a></li>
+<li id="id2814774"><a href="ch03s04.html">HTTP Response Codes</a></li>
+<li id="id2815000"><a href="ch03s05.html">An S3 Client</a><ol>
+<li id="id2815224"><a href="ch03s05.html#id2815224">The Bucket List</a></li>
+<li id="id2815481"><a href="ch03s05.html#id2815481">The Bucket</a></li>
+<li id="id2815900"><a href="ch03s05.html#id2815900">The S3 Object</a></li></ol></li>
+<li id="id2816329"><a href="ch03s06.html">Request Signing and Access Control</a><ol>
+<li id="id2816878"><a href="ch03s06.html#id2816878">Signing a URI</a></li>
+<li id="id2817105"><a href="ch03s06.html#s3accesspolicy">Setting Access Policy</a></li></ol></li>
+<li id="id2817428"><a href="ch03s07.html">Using the S3 Client Library</a></li>
+<li id="id2817572"><a href="ch03s08.html">Clients Made Transparent with ActiveResource</a><ol>
+<li id="id2817670"><a href="ch03s08.html#id2817670">Creating a Simple Service</a></li>
+<li id="id2817854"><a href="ch03s08.html#id2817854">An ActiveResource Client</a></li>
+<li id="id2818272"><a href="ch03s08.html#id2818272">A Python Client for the Simple Service</a></li></ol></li>
+<li id="id2818371"><a href="ch03s09.html">Parting Words</a></li></ol></li>
+<li id="id2818502"><a href="ch04.html">4. The Resource-Oriented Architecture</a><ol>
+<li id="id2818607"><a href="ch04.html#I_sect14_tt348">Resource-Oriented What Now?</a></li>
+<li id="id2869001"><a href="ch04s02.html">What’s a Resource?</a></li>
+<li id="id2869122"><a href="ch04s03.html">URIs</a><ol>
+<li id="id2869331"><a href="ch04s03.html#id2869331">URIs Should Be Descriptive</a></li>
+<li id="id2869468"><a href="ch04s03.html#urisandresources">The Relationship Between URIs and Resources</a></li></ol></li>
+<li id="id2869641"><a href="ch04s04.html">Addressability</a></li>
+<li id="id2870038"><a href="ch04s05.html">Statelessness</a><ol>
+<li id="id2870518"><a href="ch04s05.html#id2870518">Application State Versus Resource State</a></li></ol></li>
+<li id="id2870782"><a href="ch04s06.html">Representations</a><ol>
+<li id="id2870953"><a href="ch04s06.html#id2870953">Deciding Between Representations</a></li></ol></li>
+<li id="id2871235"><a href="ch04s07.html">Links and Connectedness</a></li>
+<li id="id2871658"><a href="ch04s08.html">The Uniform Interface</a><ol>
+<li id="id2871725"><a href="ch04s08.html#id2871725">GET, PUT, and DELETE</a></li>
+<li id="id2871826"><a href="ch04s08.html#head-and-options">HEAD and OPTIONS</a></li>
+<li id="id2872000"><a href="ch04s08.html#httppost">POST</a><ol>
+<li id="id2872064"><a href="ch04s08.html#id2872064">Creating subordinate resources</a></li>
+<li id="id2872308"><a href="ch04s08.html#id2872308">Appending to the resource state</a></li>
+<li id="id2872380"><a href="ch04s08.html#overloaded-post">Overloaded POST: The not-so-uniform interface</a></li></ol></li>
+<li id="id2872552"><a href="ch04s08.html#id2872552">Safety and Idempotence</a><ol>
+<li id="id2872636"><a href="ch04s08.html#id2872636">Safety</a></li>
+<li id="id2872682"><a href="ch04s08.html#id2872682">Idempotence</a></li>
+<li id="id2872806"><a href="ch04s08.html#safety-and-idempotence-matter">Why safety and idempotence matter</a></li></ol></li>
+<li id="id2872964"><a href="ch04s08.html#id2872964">Why the Uniform Interface Matters</a></li></ol></li>
+<li id="id2873116"><a href="ch04s09.html">That’s It!</a></li></ol></li>
+<li id="id2873188"><a href="ch05.html">5. Designing Read-Only Resource-Oriented Services</a><ol>
+<li id="id2873413"><a href="ch05.html#I_sect15_tt421">Resource Design</a></li>
+<li id="id2873529"><a href="ch05s02.html">Turning Requirements Into Read-Only Resources</a></li>
+<li id="id2873663"><a href="ch05s03.html">Figure Out the Data Set</a><ol>
+<li id="id2873924"><a href="ch05s03.html#id2873924">General Lessons</a></li></ol></li>
+<li id="id2873999"><a href="ch05s04.html">Split the Data Set into Resources</a><ol>
+<li id="id2874602"><a href="ch05s04.html#id2874602">General Lessons</a></li></ol></li>
+<li id="id2874637"><a href="ch05s05.html">Name the Resources</a><ol>
+<li id="id2874763"><a href="ch05s05.html#id2874763">Encode Hierarchy into Path Variables</a></li>
+<li id="id2874903"><a href="ch05s05.html#id2874903">No Hierarchy? Use Commas or Semicolons</a><ol>
+<li id="id2875158"><a href="ch05s05.html#id2875158">Map URIs</a></li>
+<li id="id2875208"><a href="ch05s05.html#id2875208">Scale</a></li></ol></li>
+<li id="id2875456"><a href="ch05s05.html#id2875456">Algorithmic Resource? Use Query Variables</a></li>
+<li id="id2875800"><a href="ch05s05.html#id2875800">URI Recap</a></li></ol></li>
+<li id="id2875919"><a href="ch05s06.html">Design Your Representations</a><ol>
+<li id="id2875960"><a href="ch05s06.html#id2875960">The Representation Talks About the State of the Resource</a></li>
+<li id="id2875996"><a href="ch05s06.html#id2875996">The Representation Links to Other States</a></li>
+<li id="id2876067"><a href="ch05s06.html#representingthemaplist">Representing the List of Planets</a></li>
+<li id="id2876303"><a href="ch05s06.html#representing-maps">Representing Maps and Points on Maps</a></li>
+<li id="id2876556"><a href="ch05s06.html#id2876556">Representing the Map Tiles</a></li>
+<li id="id2876845"><a href="ch05s06.html#places-representation">Representing Planets and Other Places</a></li>
+<li id="id2877188"><a href="ch05s06.html#search-results-representation">Representing Lists of Search Results</a></li></ol></li>
+<li id="id2877481"><a href="ch05s07.html">Link the Resources to Each Other</a></li>
+<li id="id2877843"><a href="ch05s08.html">The HTTP Response</a><ol>
+<li id="id2877875"><a href="ch05s08.html#id2877875">What’s Supposed to Happen?</a><ol>
+<li id="id2878002"><a href="ch05s08.html#conditional-get-basic-roa">Conditional HTTP GET</a></li></ol></li>
+<li id="id2878225"><a href="ch05s08.html#id2878225">What Might Go Wrong?</a></li></ol></li>
+<li id="id2878567"><a href="ch05s09.html">Conclusion</a></li></ol></li>
+<li id="id2878615"><a href="ch06.html">6. Designing Read/Write Resource-Oriented Services</a><ol>
+<li id="id2878798"><a href="ch06.html#user-accounts-as-resources">User Accounts as Resources</a><ol>
+<li id="id2878925"><a href="ch06.html#id2878925">Why Should User Accounts Be Resources?</a></li>
+<li id="id2879008"><a href="ch06.html#id2879008">Authentication, Authorization, Privacy, and Trust</a></li>
+<li id="id2879415"><a href="ch06.html#turning_reqs">Turning Requirements into Read/Write Resources</a></li>
+<li id="id2879488"><a href="ch06.html#id2879488">Figure Out the Data Set</a></li>
+<li id="id2879553"><a href="ch06.html#id2879553">Split the Data Set into Resources</a></li>
+<li id="id2879588"><a href="ch06.html#id2879588">Name the Resources with URIs</a></li>
+<li id="id2879621"><a href="ch06.html#id2879621">Expose a Subset of the Uniform Interface</a></li>
+<li id="id2879803"><a href="ch06.html#id2879803">Design the Representation(s) Accepted from the Client</a></li>
+<li id="id2880228"><a href="ch06.html#id2880228">Design the Representation(s) to Be Served to the Client</a></li>
+<li id="id2880438"><a href="ch06.html#id2880438">Link This Resource to Existing Resources</a></li>
+<li id="id2880720"><a href="ch06.html#id2880720">What’s Supposed to Happen?</a></li>
+<li id="id2880783"><a href="ch06.html#id2880783">What Might Go Wrong?</a></li></ol></li>
+<li id="id2881028"><a href="ch06s02.html">Custom Places</a><ol>
+<li id="id2881048"><a href="ch06s02.html#id2881048">Figure Out the Data Set</a></li>
+<li id="id2881095"><a href="ch06s02.html#id2881095">Split the Data Set into Resources</a></li>
+<li id="id2881143"><a href="ch06s02.html#id2881143">Name the Resources with URIs</a></li>
+<li id="id2881279"><a href="ch06s02.html#id2881279">Expose a Subset of the Uniform Interface</a></li>
+<li id="id2881509"><a href="ch06s02.html#id2881509">Design the Representation(s) Accepted from the Client</a></li>
+<li id="id2881736"><a href="ch06s02.html#id2881736">Design the Representation(s) Served to the Client</a></li>
+<li id="id2881858"><a href="ch06s02.html#id2881858">Link This Resource to Existing Resources</a></li>
+<li id="id2882100"><a href="ch06s02.html#id2882100">What’s Supposed to Happen?</a></li>
+<li id="id2882207"><a href="ch06s02.html#id2882207">What Might Go Wrong?</a></li></ol></li>
+<li id="id2882316"><a href="ch06s03.html">A Look Back at the Map Service</a></li></ol></li>
+<li id="id2882437"><a href="ch07.html">7. A Service Implementation</a><ol>
+<li id="id2882506"><a href="ch07.html#I_sect17_tt547">A Social Bookmarking Web Service</a></li>
+<li id="id2882734"><a href="ch07s02.html">Figuring Out the Data Set</a></li>
+<li id="id2883033"><a href="ch07s03.html">Resource Design</a><ol>
+<li id="id2883411"><a href="ch07s03.html#id2883411">REST in Rails</a></li>
+<li id="id2883681"><a href="ch07s03.html#id2883681">The User Controller</a></li>
+<li id="id2884105"><a href="ch07s03.html#id2884105">The Bookmarks Controller</a></li>
+<li id="id2884519"><a href="ch07s03.html#id2884519">The User Tags Controller</a></li>
+<li id="id2884666"><a href="ch07s03.html#id2884666">The Calendar Controller</a></li>
+<li id="id2884725"><a href="ch07s03.html#id2884725">The URI Controller</a></li>
+<li id="id2884803"><a href="ch07s03.html#id2884803">The Recent Bookmarks Controller</a></li>
+<li id="id2884876"><a href="ch07s03.html#id2884876">The Bundles Controller</a></li>
+<li id="id2884972"><a href="ch07s03.html#id2884972">The Leftovers</a></li>
+<li id="id2885052"><a href="ch07s03.html#id2885052">Remodeling the REST Way</a></li>
+<li id="id2823843"><a href="ch07s03.html#id2823843">Implementation: The routes.rb File</a></li></ol></li>
+<li id="id2824004"><a href="ch07s04.html">Design the Representation(s) Accepted from the Client</a></li>
+<li id="id2824398"><a href="ch07s05.html">Design the Representation(s) Served to the Client</a></li>
+<li id="id2824586"><a href="ch07s06.html">Connect Resources to Each Other</a></li>
+<li id="id2824729"><a href="ch07s07.html">What’s Supposed to Happen?</a></li>
+<li id="id2824926"><a href="ch07s08.html">What Might Go Wrong?</a></li>
+<li id="id2825210"><a href="ch07s09.html">Controller Code</a><ol>
+<li id="id2825296"><a href="ch07s09.html#id2825296">What Rails Doesn’t Do</a><ol>
+<li id="id2825328"><a href="ch07s09.html#id2825328">Conditional GET</a></li>
+<li id="id2825437"><a href="ch07s09.html#id2825437">param[:id] for things that aren’t IDs</a></li></ol></li>
+<li id="id2825556"><a href="ch07s09.html#id2825556">The ApplicationController</a></li>
+<li id="id2826251"><a href="ch07s09.html#id2826251">The UsersController</a></li>
+<li id="id2826634"><a href="ch07s09.html#bookmarks-controller">The BookmarksController</a></li>
+<li id="id2826843"><a href="ch07s09.html#id2826843">The TagsController</a></li>
+<li id="id2827049"><a href="ch07s09.html#id2827049">The Lesser Controllers</a><ol>
+<li id="id2827071"><a href="ch07s09.html#id2827071">The CalendarController</a></li>
+<li id="id2827185"><a href="ch07s09.html#id2827185">The RecentController</a></li>
+<li id="id2827240"><a href="ch07s09.html#id2827240">The UrisController</a></li></ol></li></ol></li>
+<li id="id2827308"><a href="ch07s10.html">Model Code</a><ol>
+<li id="id2827389"><a href="ch07s10.html#id2827389">The User Model</a></li>
+<li id="id2827458"><a href="ch07s10.html#bookmark-model">The Bookmark Model</a></li></ol></li>
+<li id="id2827767"><a href="ch07s11.html">What Does the Client Need to Know?</a><ol>
+<li id="id2827864"><a href="ch07s11.html#id2827864">Natural-Language Service Description</a></li>
+<li id="id2828040"><a href="ch07s11.html#id2828040">Description Through Standardization</a></li>
+<li id="id2828126"><a href="ch07s11.html#id2828126">Hypermedia Descriptions</a></li></ol></li></ol></li>
+<li id="id2828231"><a href="ch08.html">8. REST and ROA Best Practices</a><ol>
+<li id="id2828299"><a href="ch08.html#I_sect18_tt648">Resource-Oriented Basics</a></li>
+<li id="id2828387"><a href="ch08s02.html">The Generic ROA Procedure</a></li>
+<li id="id2828484"><a href="ch08s03.html">Addressability</a><ol>
+<li id="id2828534"><a href="ch08s03.html#id2828534">Representations Should Be Addressable</a></li></ol></li>
+<li id="id2828728"><a href="ch08s04.html">State and Statelessness</a></li>
+<li id="id2828828"><a href="ch08s05.html">Connectedness</a></li>
+<li id="id2828896"><a href="ch08s06.html">The Uniform Interface</a><ol>
+<li id="id2829065"><a href="ch08s06.html#safety-bestpractices">Safety and Idempotence</a></li>
+<li id="id2829160"><a href="ch08s06.html#id2829160">New Resources: PUT Versus POST</a></li>
+<li id="id2829233"><a href="ch08s06.html#overloading_post">Overloading POST</a></li></ol></li>
+<li id="id2829480"><a href="ch08s07.html">This Stuff Matters</a><ol>
+<li id="id2829532"><a href="ch08s07.html#id2829532">Why Addressability Matters</a></li>
+<li id="id2829585"><a href="ch08s07.html#id2829585">Why Statelessness Matters</a></li>
+<li id="id2829674"><a href="ch08s07.html#uniform-interface-matters">Why the Uniform Interface Matters</a></li>
+<li id="id2829766"><a href="ch08s07.html#why_connectedness">Why Connectedness Matters</a><ol>
+<li id="id2830222"><a href="ch08s07.html#id2830222">A terrifying example</a></li></ol></li></ol></li>
+<li id="id2830371"><a href="ch08s08.html">Resource Design</a><ol>
+<li id="id2830447"><a href="ch08s08.html#relationships-between-resources">Relationships Between Resources</a></li>
+<li id="id2830508"><a href="ch08s08.html#asynchronous">Asynchronous Operations</a></li>
+<li id="id2830662"><a href="ch08s08.html#id2830662">Batch Operations</a></li>
+<li id="id2830789"><a href="ch08s08.html#transactions">Transactions</a></li>
+<li id="id2831021"><a href="ch08s08.html#id2831021">When In Doubt, Make It a Resource</a></li></ol></li>
+<li id="id2831060"><a href="ch08s09.html">URI Design</a></li>
+<li id="id2831279"><a href="ch08s10.html">Outgoing Representations</a></li>
+<li id="id2831387"><a href="ch08s11.html">Incoming Representations</a></li>
+<li id="id2831439"><a href="ch08s12.html">Service Versioning</a></li>
+<li id="id2831656"><a href="ch08s13.html">Permanent URIs Versus Readable URIs</a></li>
+<li id="id2831935"><a href="ch08s14.html">Standard Features of HTTP</a><ol>
+<li id="id2831973"><a href="ch08s14.html#http-auth">Authentication and Authorization</a><ol>
+<li id="id2832052"><a href="ch08s14.html#id2832052">Basic authentication</a></li>
+<li id="id2832315"><a href="ch08s14.html#id2832315">Digest authentication</a></li>
+<li id="id2832648"><a href="ch08s14.html#id2832648">WSSE username token</a></li></ol></li>
+<li id="id2832998"><a href="ch08s14.html#id2832998">Compression</a></li>
+<li id="id2833176"><a href="ch08s14.html#conditional-get">Conditional GET</a></li>
+<li id="id2833768"><a href="ch08s14.html#http-caching">Caching</a><ol>
+<li id="id2833889"><a href="ch08s14.html#id2833889">Please cache</a></li>
+<li id="id2834023"><a href="ch08s14.html#id2834023">Thank you for not caching</a></li>
+<li id="id2834091"><a href="ch08s14.html#id2834091">Default caching rules</a></li></ol></li>
+<li id="id2834306"><a href="ch08s14.html#look-before-you-leap">Look-Before-You-Leap Requests</a></li>
+<li id="id2834476"><a href="ch08s14.html#partial-get">Partial GET</a></li></ol></li>
+<li id="id2834624"><a href="ch08s15.html">Faking PUT and DELETE</a></li>
+<li id="id2834769"><a href="ch08s16.html">The Trouble with Cookies</a></li>
+<li id="id2834927"><a href="ch08s17.html">Why Should a User Trust the HTTP Client?</a><ol>
+<li id="id2835064"><a href="ch08s17.html#id2835064">Applications with a Web Interface</a></li>
+<li id="id2835327"><a href="ch08s17.html#id2835327">Applications with No Web Interface</a></li>
+<li id="id2835563"><a href="ch08s17.html#id2835563">What Problem Does this Solve?</a></li></ol></li></ol></li>
+<li id="id2835711"><a href="ch09.html">9. The Building Blocks of Services</a><ol>
+<li id="id2835744"><a href="ch09.html#representation-formats">Representation Formats</a><ol>
+<li id="id2835799"><a href="ch09.html#representation-xhtml">XHTML</a></li>
+<li id="id2836134"><a href="ch09.html#microformats">XHTML with Microformats</a></li>
+<li id="id2836774"><a href="ch09.html#id2836774">Atom</a><ol>
+<li id="id2837032"><a href="ch09.html#id2837032">OpenSearch</a></li></ol></li>
+<li id="id2837190"><a href="ch09.html#id2837190">SVG</a></li>
+<li id="id2837239"><a href="ch09.html#id2837239">Form-Encoded Key-Value Pairs</a></li>
+<li id="id2837310"><a href="ch09.html#id2837310">JSON</a></li>
+<li id="id2837400"><a href="ch09.html#id2837400">RDF and RDFa</a></li>
+<li id="id2837708"><a href="ch09.html#id2837708">Framework-Specific Serialization Formats</a></li>
+<li id="id2837808"><a href="ch09.html#ad-hoc-xhtml">Ad Hoc XHTML</a></li>
+<li id="id2838107"><a href="ch09.html#id2838107">Other XML Standards and Ad Hoc Vocabularies</a></li>
+<li id="id2838225"><a href="ch09.html#id2838225">Encoding Issues</a><ol>
+<li id="id2838452"><a href="ch09.html#id2838452">XML and HTTP: Battle of the encodings</a></li>
+<li id="id2838664"><a href="ch09.html#json-encoding">The character encoding of a JSON document</a></li></ol></li></ol></li>
+<li id="id2838727"><a href="ch09s02.html">Prepackaged Control Flows</a><ol>
+<li id="id2838802"><a href="ch09s02.html#id2838802">General Rules</a></li>
+<li id="id2838858"><a href="ch09s02.html#database-control-flow">Database-Backed Control Flow</a><ol>
+<li id="id2838989"><a href="ch09s02.html#id2838989">GET</a></li>
+<li id="id2839009"><a href="ch09s02.html#id2839009">PUT</a></li>
+<li id="id2839247"><a href="ch09s02.html#id2839247">POST for creating a new resource</a></li>
+<li id="id2839291"><a href="ch09s02.html#id2839291">POST for appending to a resource</a></li>
+<li id="id2839306"><a href="ch09s02.html#id2839306">DELETE</a></li></ol></li>
+<li id="id2839323"><a href="ch09s02.html#app">The Atom Publishing Protocol</a><ol>
+<li id="id2839404"><a href="ch09s02.html#id2839404">Collections</a></li>
+<li id="id2839471"><a href="ch09s02.html#app-members">Members</a></li>
+<li id="id2839580"><a href="ch09s02.html#app-service-document">Service document</a></li>
+<li id="id2839828"><a href="ch09s02.html#id2839828">Category documents</a></li>
+<li id="id2839966"><a href="ch09s02.html#binary-app">Binary documents as APP members</a></li>
+<li id="id2840219"><a href="ch09s02.html#id2840219">Summary</a></li></ol></li>
+<li id="id2840374"><a href="ch09s02.html#gdata">GData</a><ol>
+<li id="id2840430"><a href="ch09s02.html#id2840430">Querying collections</a></li>
+<li id="id2840527"><a href="ch09s02.html#id2840527">Data extensions</a></li></ol></li>
+<li id="id2840588"><a href="ch09s02.html#post-once-exactly">POST Once Exactly</a></li></ol></li>
+<li id="id2840850"><a href="ch09s03.html">Hypermedia Technologies</a><ol>
+<li id="id2841018"><a href="ch09s03.html#uri-templating">URI Templates</a></li>
+<li id="id2841122"><a href="ch09s03.html#id2841122">XHTML 4</a><ol>
+<li id="id2841152"><a href="ch09s03.html#id2841152">XHTML 4 links</a></li>
+<li id="id2841471"><a href="ch09s03.html#id2841471">XHTML 4 forms</a></li>
+<li id="id2841640"><a href="ch09s03.html#id2841640">Shortcomings of XHTML 4</a></li></ol></li>
+<li id="id2841871"><a href="ch09s03.html#id2841871">XHTML 5</a></li>
+<li id="id2842066"><a href="ch09s03.html#servicedescription">WADL</a><ol>
+<li id="id2842243"><a href="ch09s03.html#id2842243">Describing a del.icio.us resource</a></li>
+<li id="id2842890"><a href="ch09s03.html#id2842890">Describing an APP collection</a></li>
+<li id="id2843236"><a href="ch09s03.html#id2843236">Is WADL evil?</a></li></ol></li></ol></li></ol></li>
+<li id="id2843363"><a href="ch10.html">10. The Resource-Oriented Architecture Versus Big Web Services</a><ol>
+<li id="id2843476"><a href="ch10.html#grains">What Problems Are Big Web Services Trying to Solve?</a></li>
+<li id="id2843592"><a href="ch10s02.html">SOAP</a><ol>
+<li id="id2843982"><a href="ch10s02.html#id2843982">The Resource-Oriented Alternative</a></li></ol></li>
+<li id="id2844175"><a href="ch10s03.html">WSDL</a><ol>
+<li id="id2844679"><a href="ch10s03.html#id2844679">The Resource-Oriented Alternative</a></li></ol></li>
+<li id="id2844777"><a href="ch10s04.html">UDDI</a><ol>
+<li id="id2844857"><a href="ch10s04.html#id2844857">The Resource-Oriented Alternative</a></li></ol></li>
+<li id="id2844911"><a href="ch10s05.html">Security</a><ol>
+<li id="id2845116"><a href="ch10s05.html#id2845116">The Resource-Oriented Alternative</a></li></ol></li>
+<li id="id2845201"><a href="ch10s06.html">Reliable Messaging</a><ol>
+<li id="id2845232"><a href="ch10s06.html#id2845232">The Resource-Oriented Alternative</a></li></ol></li>
+<li id="id2845292"><a href="ch10s07.html">Transactions</a><ol>
+<li id="id2845365"><a href="ch10s07.html#id2845365">The Resource-Oriented Alternative</a></li></ol></li>
+<li id="id2845435"><a href="ch10s08.html">BPEL, ESB, and SOA</a></li>
+<li id="id2845586"><a href="ch10s09.html">Conclusion</a></li></ol></li>
+<li id="id2845667"><a href="ch11.html">11. Ajax Applications as REST Clients</a><ol>
+<li id="id2845806"><a href="ch11.html#I_sect111_tt975">From AJAX to Ajax</a></li>
+<li id="id2845932"><a href="ch11s02.html">The Ajax Architecture</a></li>
+<li id="id2846054"><a href="ch11s03.html">A del.icio.us Example</a></li>
+<li id="id2846432"><a href="ch11s04.html">The Advantages of Ajax</a></li>
+<li id="id2846568"><a href="ch11s05.html">The Disadvantages of Ajax</a></li>
+<li id="id2846725"><a href="ch11s06.html">REST Goes Better</a></li>
+<li id="id2846866"><a href="ch11s07.html">Making the Request</a></li>
+<li id="id2847145"><a href="ch11s08.html">Handling the Response</a></li>
+<li id="id2847350"><a href="ch11s09.html">JSON</a></li>
+<li id="id2847485"><a href="ch11s10.html">Don’t Bogart the Benefits of REST</a></li>
+<li id="id2847680"><a href="ch11s11.html">Cross-Browser Issues and Ajax Libraries</a><ol>
+<li id="id2847897"><a href="ch11s11.html#id2847897">Prototype</a></li>
+<li id="id2848107"><a href="ch11s11.html#id2848107">Dojo</a></li></ol></li>
+<li id="id2848265"><a href="ch11s12.html">Subverting the Browser Security Model</a><ol>
+<li id="id2848428"><a href="ch11s12.html#id2848428">Request Proxying</a></li>
+<li id="id2848801"><a href="ch11s12.html#id2848801">JavaScript on Demand</a><ol>
+<li id="id2849088"><a href="ch11s12.html#id2849088">Dynamically writing the script tag</a></li>
+<li id="id2849299"><a href="ch11s12.html#id2849299">Library support</a></li></ol></li></ol></li></ol></li>
+<li id="id2849509"><a href="ch12.html">12. Frameworks for RESTful Services</a><ol>
+<li id="id2849593"><a href="ch12.html#I_sect112_tt1026">Ruby on Rails</a><ol>
+<li id="id2849665"><a href="ch12.html#id2849665">Routing</a></li>
+<li id="id2849857"><a href="ch12.html#id2849857">Resources, Controllers, and Views</a></li>
+<li id="id2850127"><a href="ch12.html#id2850127">Outgoing Representations</a></li>
+<li id="id2850252"><a href="ch12.html#id2850252">Incoming Representations</a></li>
+<li id="id2850306"><a href="ch12.html#id2850306">Web Applications as Web Services</a></li>
+<li id="id2850431"><a href="ch12.html#id2850431">The Rails/ROA Design Procedure</a></li></ol></li>
+<li id="id2850540"><a href="ch12s02.html">Restlet</a><ol>
+<li id="id2850752"><a href="ch12s02.html#id2850752">Basic Concepts</a></li>
+<li id="id2851100"><a href="ch12s02.html#restlet-clients">Writing Restlet Clients</a></li>
+<li id="id2851484"><a href="ch12s02.html#restlet-services">Writing Restlet Services</a><ol>
+<li id="id2851627"><a href="ch12s02.html#id2851627">Resource and URI design</a></li>
+<li id="id2851790"><a href="ch12s02.html#id2851790">Request handling and representations</a></li>
+<li id="id2852120"><a href="ch12s02.html#id2852120">Compiling, running, and testing</a></li></ol></li>
+<li id="id2852275"><a href="ch12s02.html#id2852275">Conclusion</a></li></ol></li>
+<li id="id2852331"><a href="ch12s03.html">Django</a><ol>
+<li id="id2852405"><a href="ch12s03.html#id2852405">Create the Data Model</a></li>
+<li id="id2852588"><a href="ch12s03.html#id2852588">Define Resources and Give Them URIs</a></li>
+<li id="id2852892"><a href="ch12s03.html#id2852892">Implement Resources as Django Views</a><ol>
+<li id="id2852962"><a href="ch12s03.html#id2852962">The bookmark list view</a></li>
+<li id="id2853261"><a href="ch12s03.html#id2853261">The bookmark detail view</a></li>
+<li id="id2853711"><a href="ch12s03.html#id2853711">Further directions</a></li></ol></li>
+<li id="id2853758"><a href="ch12s03.html#id2853758">Conclusion</a></li></ol></li></ol></li>
+<li id="id2853812"><a href="apa.html">A. Some Resources for REST and Some RESTful Resources</a><ol>
+<li id="id2853832"><a href="apa.html#I_sect1_tt1079">Standards and Guides</a><ol>
+<li id="id2853842"><a href="apa.html#id2853842">HTTP and URI</a></li>
+<li id="id2853898"><a href="apa.html#id2853898">RESTful Architectures</a></li>
+<li id="id2854003"><a href="apa.html#id2854003">Hypermedia Formats</a></li>
+<li id="id2854086"><a href="apa.html#id2854086">Frameworks for RESTful Development</a></li>
+<li id="id2854161"><a href="apa.html#id2854161">Weblogs on REST</a></li></ol></li>
+<li id="id2854222"><a href="apas02.html">Services You Can Use</a><ol>
+<li id="id2854272"><a href="apas02.html#id2854272">Service Directories</a></li>
+<li id="id2854335"><a href="apas02.html#id2854335">Read-Only Services</a></li>
+<li id="id2854391"><a href="apas02.html#id2854391">Read/Write Services</a></li></ol></li></ol></li>
+<li id="id2854739"><a href="apb.html">B. The HTTP Response Code Top 42</a><ol>
+<li id="id2854874"><a href="apb.html#I_sect1_tt1082">Three to Seven Status Codes: The Bare Minimum</a></li>
+<li id="id2855109"><a href="apbs02.html">1xx: Meta</a><ol>
+<li id="id2855118"><a href="apbs02.html#id2855118">100 (“Continue”)</a></li>
+<li id="id2855183"><a href="apbs02.html#id2855183">101 (“Switching Protocols”)</a></li></ol></li>
+<li id="id2855287"><a href="apbs03.html">2xx: Success</a><ol>
+<li id="id2855296"><a href="apbs03.html#id2855296">200 (“OK”)</a></li>
+<li id="id2855342"><a href="apbs03.html#id2855342">201 (“Created”)</a></li>
+<li id="id2855410"><a href="apbs03.html#id2855410">202 (“Accepted”)</a></li>
+<li id="id2855492"><a href="apbs03.html#id2855492">203 (“Non-Authoritative Information”)</a></li>
+<li id="id2855542"><a href="apbs03.html#id2855542">204 (“No Content”)</a></li>
+<li id="id2855597"><a href="apbs03.html#id2855597">205 (“Reset Content”)</a></li>
+<li id="id2855640"><a href="apbs03.html#id2855640">206 (“Partial Content”)</a></li>
+<li id="id2855752"><a href="apbs03.html#id2855752">207 (“Multi-Status”)</a></li></ol></li>
+<li id="id2855824"><a href="apbs04.html">3xx: Redirection</a><ol>
+<li id="id2855894"><a href="apbs04.html#id2855894">300 (“Multiple Choices”)</a></li>
+<li id="id2855980"><a href="apbs04.html#id2855980">301 (“Moved Permanently”)</a></li>
+<li id="id2856045"><a href="apbs04.html#id2856045">302 (“Found”)</a></li>
+<li id="id2856135"><a href="apbs04.html#id2856135">303 (“See Other”)</a></li>
+<li id="id2856240"><a href="apbs04.html#id2856240">304 (“Not Modified”)</a></li>
+<li id="id2856371"><a href="apbs04.html#id2856371">305 (“Use Proxy”)</a></li>
+<li id="id2856476"><a href="apbs04.html#id2856476">306: Unused</a></li>
+<li id="id2856517"><a href="apbs04.html#id2856517">307 (“Temporary Redirect”)</a></li></ol></li>
+<li id="id2856638"><a href="apbs05.html">4xx: Client-Side Error</a><ol>
+<li id="id2856681"><a href="apbs05.html#id2856681">400 (“Bad Request”)</a></li>
+<li id="id2856733"><a href="apbs05.html#id2856733">401 (“Unauthorized”)</a></li>
+<li id="id2856835"><a href="apbs05.html#id2856835">402 (“Payment Required”)</a></li>
+<li id="id2856889"><a href="apbs05.html#id2856889">403 (“Forbidden”)</a></li>
+<li id="id2856960"><a href="apbs05.html#id2856960">404 (“Not Found”)</a></li>
+<li id="id2857012"><a href="apbs05.html#id2857012">405 (“Method Not Allowed”)</a></li>
+<li id="id2857075"><a href="apbs05.html#id2857075">406 (“Not Acceptable”)</a></li>
+<li id="id2857132"><a href="apbs05.html#id2857132">407 (“Proxy Authentication Required”)</a></li>
+<li id="id2857238"><a href="apbs05.html#id2857238">408 (“Request Timeout”)</a></li>
+<li id="id2857275"><a href="apbs05.html#id2857275">409 (“Conflict”)</a></li>
+<li id="id2857339"><a href="apbs05.html#id2857339">410 (“Gone”)</a></li>
+<li id="id2857408"><a href="apbs05.html#id2857408">411 (“Length Required”)</a></li>
+<li id="id2857491"><a href="apbs05.html#id2857491">412 (“Precondition Failed”)</a></li>
+<li id="id2857617"><a href="apbs05.html#id2857617">413 (“Request Entity Too Large”)</a></li>
+<li id="id2857691"><a href="apbs05.html#id2857691">414 (“Request-URI Too Long”)</a></li>
+<li id="id2857741"><a href="apbs05.html#id2857741">415 (“Unsupported Media Type”)</a></li>
+<li id="id2857788"><a href="apbs05.html#id2857788">416 (“Requested Range Not Satisfiable”)</a></li>
+<li id="id2857863"><a href="apbs05.html#id2857863">417 (“Expectation Failed”)</a></li></ol></li>
+<li id="id2857927"><a href="apbs06.html">5xx: Server-Side Error</a><ol>
+<li id="id2857978"><a href="apbs06.html#id2857978">500 (“Internal Server Error”)</a></li>
+<li id="id2858014"><a href="apbs06.html#id2858014">501 (“Not Implemented”)</a></li>
+<li id="id2858061"><a href="apbs06.html#id2858061">502 (“Bad Gateway”)</a></li>
+<li id="id2858104"><a href="apbs06.html#id2858104">503 (“Service Unavailable”)</a></li>
+<li id="id2858172"><a href="apbs06.html#id2858172">504 (“Gateway Timeout”)</a></li>
+<li id="id2858210"><a href="apbs06.html#id2858210">505 (“HTTP Version Not Supported”)</a></li></ol></li></ol></li>
+<li id="id2858269"><a href="apc.html">C. The HTTP Header Top Infinity</a><ol>
+<li id="id2858416"><a href="apc.html#I_sect1_tt1187">Standard Headers</a><ol>
+<li id="id2858439"><a href="apc.html#id2858439">Accept</a></li>
+<li id="id2858505"><a href="apc.html#id2858505">Accept-Charset</a></li>
+<li id="id2858551"><a href="apc.html#id2858551">Accept-Encoding</a></li>
+<li id="id2858609"><a href="apc.html#id2858609">Accept-Language</a></li>
+<li id="id2858659"><a href="apc.html#id2858659">Accept-Ranges</a></li>
+<li id="id2858699"><a href="apc.html#id2858699">Age</a></li>
+<li id="id2858732"><a href="apc.html#id2858732">Allow</a></li>
+<li id="id2858775"><a href="apc.html#id2858775">Authorization</a></li>
+<li id="id2858843"><a href="apc.html#id2858843">Cache-Control</a></li>
+<li id="id2858883"><a href="apc.html#id2858883">Connection</a></li>
+<li id="id2858996"><a href="apc.html#id2858996">Content-Encoding</a></li>
+<li id="id2859031"><a href="apc.html#id2859031">Content-Language</a></li>
+<li id="id2859095"><a href="apc.html#id2859095">Content-Length</a></li>
+<li id="id2859140"><a href="apc.html#id2859140">Content-Location</a></li>
+<li id="id2859206"><a href="apc.html#id2859206">Content-MD5</a></li>
+<li id="id2859244"><a href="apc.html#id2859244">Content-Range</a></li>
+<li id="id2859277"><a href="apc.html#id2859277">Content-Type</a></li>
+<li id="id2859309"><a href="apc.html#id2859309">Date</a></li>
+<li id="id2859347"><a href="apc.html#id2859347">ETag</a></li>
+<li id="id2859444"><a href="apc.html#id2859444">Expect</a></li>
+<li id="id2859481"><a href="apc.html#id2859481">Expires</a></li>
+<li id="id2859533"><a href="apc.html#id2859533">From</a></li>
+<li id="id2859575"><a href="apc.html#id2859575">Host</a></li>
+<li id="id2859644"><a href="apc.html#id2859644">If-Match</a></li>
+<li id="id2859723"><a href="apc.html#id2859723">If-Modified-Since</a></li>
+<li id="id2859822"><a href="apc.html#id2859822">If-None-Match</a></li>
+<li id="id2859867"><a href="apc.html#id2859867">If-Range</a></li>
+<li id="id2859934"><a href="apc.html#id2859934">If-Unmodified-Since</a></li>
+<li id="id2860023"><a href="apc.html#id2860023">Last-Modified</a></li>
+<li id="id2860080"><a href="apc.html#id2860080">Location</a></li>
+<li id="id2860170"><a href="apc.html#id2860170">Max-Forwards</a></li>
+<li id="id2860210"><a href="apc.html#id2860210">Pragma</a></li>
+<li id="id2860269"><a href="apc.html#id2860269">Proxy-Authenticate</a></li>
+<li id="id2860365"><a href="apc.html#id2860365">Proxy-Authorization</a></li>
+<li id="id2860416"><a href="apc.html#id2860416">Range</a></li>
+<li id="id2860464"><a href="apc.html#id2860464">Referer</a></li>
+<li id="id2860510"><a href="apc.html#id2860510">Retry-After</a></li>
+<li id="id2860571"><a href="apc.html#id2860571">TE</a></li>
+<li id="id2860624"><a href="apc.html#id2860624">Trailer</a></li>
+<li id="id2860690"><a href="apc.html#id2860690">Transfer-Encoding</a></li>
+<li id="id2860762"><a href="apc.html#id2860762">Upgrade</a></li>
+<li id="id2860820"><a href="apc.html#id2860820">User-Agent</a></li>
+<li id="id2860949"><a href="apc.html#id2860949">Vary</a></li>
+<li id="id2861031"><a href="apc.html#id2861031">Via</a></li>
+<li id="id2861078"><a href="apc.html#id2861078">Warning</a></li>
+<li id="id2861149"><a href="apc.html#id2861149">WWW-Authenticate</a></li></ol></li>
+<li id="id2861198"><a href="apcs02.html">Nonstandard Headers</a><ol>
+<li id="id2861232"><a href="apcs02.html#id2861232">Cookie</a></li>
+<li id="id2861320"><a href="apcs02.html#id2861320">POE</a></li>
+<li id="id2861355"><a href="apcs02.html#id2861355">POE-Links</a></li>
+<li id="id2861393"><a href="apcs02.html#id2861393">Set-Cookie</a></li>
+<li id="id2861444"><a href="apcs02.html#id2861444">Slug</a></li>
+<li id="id2861487"><a href="apcs02.html#id2861487">X-HTTP-Method-Override</a></li>
+<li id="id2861536"><a href="apcs02.html#id2861536">X-WSSE</a></li></ol></li></ol></li>
+<li id="id2861653"><a href="ix01.html">Index</a></li>
+<li id="id2861656"><a href="co01.html">Colophon</a></li></ol></li></ol></nav>
+</body></html>

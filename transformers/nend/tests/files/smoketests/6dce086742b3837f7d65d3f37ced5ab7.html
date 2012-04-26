@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"><head><title>JavaScript Patterns</title></head><body>
+  
+  
+  <nav id="toc" epub:type="toc"><h1>Contents</h1><ol>
+<li id="id2597700"><a href="index.html">JavaScript Patterns</a><ol>
+<li id="id2554068"><a href="pr01.html">Preface</a><ol>
+<li id="id2554396"><a href="pr01.html#target_audience">Target Audience</a></li>
+<li id="id2604247"><a href="pr01s02.html">Conventions Used in This Book</a></li>
+<li id="id2495485"><a href="pr01s03.html">Using Code Examples</a></li>
+<li id="id2604862"><a href="pr01s04.html">Safari® Books Online</a></li>
+<li id="id2494804"><a href="pr01s05.html">How to Contact Us</a></li>
+<li id="id2603137"><a href="pr01s06.html">Acknowledgments</a></li>
+<li id="id2577583"><a href="pr01s07.html">Credits</a></li>
+<li id="id2603742"><a href="pr01s08.html">Reading</a></li></ol></li>
+<li id="id2603801"><a href="ch01.html">1. Introduction</a><ol>
+<li id="id2604724"><a href="ch01.html#patterns">Patterns</a></li>
+<li id="id2597461"><a href="ch01s02.html">JavaScript: Concepts</a><ol>
+<li id="id2597539"><a href="ch01s02.html#object-oriented">Object-Oriented</a></li>
+<li id="id2604719"><a href="ch01s02.html#no_classes">No Classes</a></li>
+<li id="id2604661"><a href="ch01s02.html#prototypes">Prototypes</a></li>
+<li id="id2636805"><a href="ch01s02.html#environment">Environment</a></li></ol></li>
+<li id="id2636884"><a href="ch01s03.html">ECMAScript 5</a></li>
+<li id="id2637034"><a href="ch01s04.html">JSLint</a></li>
+<li id="id2637530"><a href="ch01s05.html">The Console</a></li></ol></li>
+<li id="id2637699"><a href="ch02.html">2. Essentials</a><ol>
+<li id="id2637732"><a href="ch02.html#writing_maintainable_code">Writing Maintainable Code</a></li>
+<li id="id2637883"><a href="ch02s02.html">Minimizing Globals</a><ol>
+<li id="id2638040"><a href="ch02s02.html#the_problem_with_globals">The Problem with Globals</a></li>
+<li id="id2647911"><a href="ch02s02.html#side_effects_when_forgetting_var">Side Effects When Forgetting var</a></li>
+<li id="id2648049"><a href="ch02s02.html#access_to_the_global_object">Access to the Global Object</a></li>
+<li id="id2648184"><a href="ch02s02.html#single_var">Single var Pattern</a></li>
+<li id="id2648330"><a href="ch02s02.html#hoisting_colon_a_problem_with_scattered">Hoisting: A Problem with Scattered vars</a></li></ol></li>
+<li id="id2648533"><a href="ch02s03.html">for Loops</a></li>
+<li id="id2649081"><a href="ch02s04.html">for-in Loops</a></li>
+<li id="id2649474"><a href="ch02s05.html">(Not) Augmenting Built-in Prototypes</a></li>
+<li id="id2649621"><a href="ch02s06.html">switch Pattern</a></li>
+<li id="id2649745"><a href="ch02s07.html">Avoiding Implied Typecasting</a><ol>
+<li id="id2649854"><a href="ch02s07.html#avoiding_eval_open_parenthesis_close_par">Avoiding eval()</a></li></ol></li>
+<li id="id2650225"><a href="ch02s08.html">Number Conversions with parseInt()</a></li>
+<li id="id2650347"><a href="ch02s09.html">Coding Conventions</a><ol>
+<li id="id2650398"><a href="ch02s09.html#indentation">Indentation</a></li>
+<li id="id2650518"><a href="ch02s09.html#curly_braces">Curly Braces</a></li>
+<li id="id2650640"><a href="ch02s09.html#opening_brace_location">Opening Brace Location</a></li>
+<li id="id2650789"><a href="ch02s09.html#white_space">White Space</a></li></ol></li>
+<li id="id2651109"><a href="ch02s10.html">Naming Conventions</a><ol>
+<li id="id2651140"><a href="ch02s10.html#capitalizing_constructors">Capitalizing Constructors</a></li>
+<li id="id2651243"><a href="ch02s10.html#separating_words">Separating Words</a></li>
+<li id="id2651420"><a href="ch02s10.html#other_naming_patterns">Other Naming Patterns</a></li></ol></li>
+<li id="id2651609"><a href="ch02s11.html">Writing Comments</a></li>
+<li id="id2651710"><a href="ch02s12.html">Writing API Docs</a><ol>
+<li id="id2651874"><a href="ch02s12.html#yuidoc_example">YUIDoc Example</a></li></ol></li>
+<li id="id2652389"><a href="ch02s13.html">Writing to Be Read</a></li>
+<li id="id2652498"><a href="ch02s14.html">Peer Reviews</a></li>
+<li id="id2652596"><a href="ch02s15.html">Minify…In Production</a></li>
+<li id="id2652792"><a href="ch02s16.html">Run JSLint</a></li>
+<li id="id2652908"><a href="ch02s17.html">Summary</a></li></ol></li>
+<li id="id2653003"><a href="ch03.html">3. Literals and Constructors</a><ol>
+<li id="id2653070"><a href="ch03.html#object_literal">Object Literal</a><ol>
+<li id="id2653297"><a href="ch03.html#the_object_literal_syntax">The Object Literal Syntax</a></li>
+<li id="id2653355"><a href="ch03.html#objects_from_a_constructor">Objects from a Constructor</a></li>
+<li id="id2653513"><a href="ch03.html#object_constructor_catch">Object Constructor Catch</a></li></ol></li>
+<li id="id2653637"><a href="ch03s02.html">Custom Constructor Functions</a><ol>
+<li id="id2653887"><a href="ch03s02.html#constructor_apostrophy_s_return_values">Constructor’s Return Values</a></li></ol></li>
+<li id="id2654070"><a href="ch03s03.html">Patterns for Enforcing new</a><ol>
+<li id="id2654253"><a href="ch03s03.html#naming_convention">Naming Convention</a></li>
+<li id="id2654303"><a href="ch03s03.html#using_that">Using that</a></li>
+<li id="id2654431"><a href="ch03s03.html#self-invoking_constructor">Self-Invoking Constructor</a></li></ol></li>
+<li id="id2654614"><a href="ch03s04.html">Array Literal</a><ol>
+<li id="id2654691"><a href="ch03s04.html#array_literal_syntax">Array Literal Syntax</a></li>
+<li id="id2654734"><a href="ch03s04.html#array_constructor_curiousness">Array Constructor Curiousness</a></li>
+<li id="id2654871"><a href="ch03s04.html#check_for_array-ness">Check for Array-ness</a></li></ol></li>
+<li id="id2655062"><a href="ch03s05.html">JSON</a><ol>
+<li id="id2655124"><a href="ch03s05.html#working_with_json">Working with JSON</a></li></ol></li>
+<li id="id2655272"><a href="ch03s06.html">Regular Expression Literal</a><ol>
+<li id="id2655361"><a href="ch03s06.html#regular_expression_literal_syntax">Regular Expression Literal Syntax</a></li></ol></li>
+<li id="id2655534"><a href="ch03s07.html">Primitive Wrappers</a></li>
+<li id="id2655949"><a href="ch03s08.html">Error Objects</a></li>
+<li id="id2656165"><a href="ch03s09.html">Summary</a></li></ol></li>
+<li id="id2656502"><a href="ch04.html">4. Functions</a><ol>
+<li id="id2656542"><a href="ch04.html#background">Background</a><ol>
+<li id="id2656836"><a href="ch04.html#disambiguation_of_terminology">Disambiguation of Terminology</a></li>
+<li id="id2657136"><a href="ch04.html#declarations_versus_expressions_colon_na">Declarations Versus Expressions: Names and Hoisting</a></li>
+<li id="id2657248"><a href="ch04.html#function_apostrophy_s_name_property">Function’s name Property</a></li>
+<li id="id2657369"><a href="ch04.html#function_hoisting">Function Hoisting</a></li></ol></li>
+<li id="id2657613"><a href="ch04s02.html">Callback Pattern</a><ol>
+<li id="id2657775"><a href="ch04s02.html#a_callback_example">A Callback Example</a></li>
+<li id="id2658037"><a href="ch04s02.html#callbacks_and_scope">Callbacks and Scope</a></li>
+<li id="id2658317"><a href="ch04s02.html#asynchronous_event_listeners">Asynchronous Event Listeners</a></li>
+<li id="id2658474"><a href="ch04s02.html#timeouts">Timeouts</a></li>
+<li id="id2658581"><a href="ch04s02.html#callbacks_in_libraries">Callbacks in Libraries</a></li></ol></li>
+<li id="id2658636"><a href="ch04s03.html">Returning Functions</a></li>
+<li id="id2658742"><a href="ch04s04.html">Self-Defining Functions</a></li>
+<li id="id2658973"><a href="ch04s05.html">Immediate Functions</a><ol>
+<li id="id2659213"><a href="ch04s05.html#parameters_of_an_immediate_function">Parameters of an Immediate Function</a></li>
+<li id="id2659284"><a href="ch04s05.html#returned_values_from_immediate_functions">Returned Values from Immediate Functions</a></li>
+<li id="id2659509"><a href="ch04s05.html#benefits_and_usage">Benefits and Usage</a></li></ol></li>
+<li id="id2659641"><a href="ch04s06.html">Immediate Object Initialization</a></li>
+<li id="id2659922"><a href="ch04s07.html">Init-Time Branching</a></li>
+<li id="id2660184"><a href="ch04s08.html">Function Properties—A Memoization Pattern</a></li>
+<li id="id2660422"><a href="ch04s09.html">Configuration Objects</a></li>
+<li id="id2660642"><a href="ch04s10.html">Curry</a><ol>
+<li id="id2660662"><a href="ch04s10.html#function_application">Function Application</a></li>
+<li id="id2660875"><a href="ch04s10.html#partial_application">Partial Application</a></li>
+<li id="id2661052"><a href="ch04s10.html#currying">Currying</a></li>
+<li id="id2661485"><a href="ch04s10.html#when_to_use_currying_question">When to Use Currying</a></li></ol></li>
+<li id="id2661551"><a href="ch04s11.html">Summary</a></li></ol></li>
+<li id="id2661749"><a href="ch05.html">5. Object Creation Patterns</a><ol>
+<li id="id2661800"><a href="ch05.html#namespace_pattern">Namespace Pattern</a><ol>
+<li id="id2662002"><a href="ch05.html#general_purpose_namespace_function">General Purpose Namespace Function</a></li></ol></li>
+<li id="id2662179"><a href="ch05s02.html">Declaring Dependencies</a></li>
+<li id="id2662424"><a href="ch05s03.html">Private Properties and Methods</a><ol>
+<li id="id2662521"><a href="ch05s03.html#private_members">Private Members</a></li>
+<li id="id2662605"><a href="ch05s03.html#privileged_methods">Privileged Methods</a></li>
+<li id="id2662673"><a href="ch05s03.html#privacy_failures">Privacy Failures</a></li>
+<li id="id2662920"><a href="ch05s03.html#object_literals_and_privacy">Object Literals and Privacy</a></li>
+<li id="id2663027"><a href="ch05s03.html#prototypes_and_privacy">Prototypes and Privacy</a></li>
+<li id="id2663165"><a href="ch05s03.html#revealing_private_functions_as_public_me">Revealing Private Functions As Public Methods</a></li></ol></li>
+<li id="id2663436"><a href="ch05s04.html">Module Pattern</a><ol>
+<li id="id2663720"><a href="ch05s04.html#revealing_module_pattern">Revealing Module Pattern</a></li>
+<li id="id2663809"><a href="ch05s04.html#modules_that_create_constructors">Modules That Create Constructors</a></li>
+<li id="id2663932"><a href="ch05s04.html#importing_globals_into_a_module">Importing Globals into a Module</a></li></ol></li>
+<li id="id2664022"><a href="ch05s05.html">Sandbox Pattern</a><ol>
+<li id="id2664128"><a href="ch05s05.html#a_global_constructor">A Global Constructor</a></li>
+<li id="id2664373"><a href="ch05s05.html#adding_modules">Adding Modules</a></li>
+<li id="id2664460"><a href="ch05s05.html#implementing_the_constructor">Implementing the Constructor</a></li></ol></li>
+<li id="id2664674"><a href="ch05s06.html">Static Members</a><ol>
+<li id="id2664772"><a href="ch05s06.html#public_static_members">Public Static Members</a></li>
+<li id="id2665117"><a href="ch05s06.html#private_static_members">Private Static Members</a></li></ol></li>
+<li id="id2665363"><a href="ch05s07.html">Object Constants</a></li>
+<li id="id2665635"><a href="ch05s08.html">Chaining Pattern</a><ol>
+<li id="id2665726"><a href="ch05s08.html#pros_and_cons_of_the_chaining_pattern">Pros and Cons of the Chaining Pattern</a></li></ol></li>
+<li id="id2665844"><a href="ch05s09.html">method() Method</a></li>
+<li id="id2666119"><a href="ch05s10.html">Summary</a></li></ol></li>
+<li id="id2666191"><a href="ch06.html">6. Code Reuse Patterns</a><ol>
+<li id="id2666271"><a href="ch06.html#classical_versus_modern_inheritance_patt">Classical Versus Modern Inheritance Patterns</a></li>
+<li id="id2666448"><a href="ch06s02.html">Expected Outcome When Using Classical Inheritance</a></li>
+<li id="id2666600"><a href="ch06s03.html">Classical Pattern #1—The Default Pattern</a><ol>
+<li id="id2666728"><a href="ch06s03.html#following_the_prototype_chain">Following the Prototype Chain</a></li>
+<li id="id2667164"><a href="ch06s03.html#drawbacks_when_using_pattern_number_symb">Drawbacks When Using Pattern #1</a></li></ol></li>
+<li id="id2667245"><a href="ch06s04.html">Classical Pattern #2—Rent-a-Constructor</a><ol>
+<li id="id2667460"><a href="ch06s04.html#the_prototype_chain">The Prototype Chain</a></li>
+<li id="id2667594"><a href="ch06s04.html#multiple_inheritance_by_borrowing_constr">Multiple Inheritance by Borrowing Constructors</a></li>
+<li id="id2667681"><a href="ch06s04.html#pros_and_cons_of_the_borrowing_construct">Pros and Cons of the Borrowing Constructor Pattern</a></li></ol></li>
+<li id="id2667752"><a href="ch06s05.html">Classical Pattern #3—Rent and Set Prototype</a></li>
+<li id="id2667976"><a href="ch06s06.html">Classical Pattern #4—Share the Prototype</a></li>
+<li id="id2668111"><a href="ch06s07.html">Classical Pattern #5—A Temporary Constructor</a><ol>
+<li id="id2668336"><a href="ch06s07.html#storing_the_superclass">Storing the Superclass</a></li>
+<li id="id2668375"><a href="ch06s07.html#resetting_the_constructor_pointer">Resetting the Constructor Pointer</a></li></ol></li>
+<li id="id2668567"><a href="ch06s08.html">Klass</a></li>
+<li id="id2669116"><a href="ch06s09.html">Prototypal Inheritance</a><ol>
+<li id="id2669303"><a href="ch06s09.html#discussion">Discussion</a></li>
+<li id="id2669366"><a href="ch06s09.html#addition_to_ecmascript_5">Addition to ECMAScript 5</a></li></ol></li>
+<li id="id2669496"><a href="ch06s10.html">Inheritance by Copying Properties</a></li>
+<li id="id2669768"><a href="ch06s11.html">Mix-ins</a></li>
+<li id="id2669979"><a href="ch06s12.html">Borrowing Methods</a><ol>
+<li id="id2670158"><a href="ch06s12.html#example_colon_borrow_from_array">Example: Borrow from Array</a></li>
+<li id="id2670233"><a href="ch06s12.html#borrow_and_bind">Borrow and Bind</a></li>
+<li id="id2670546"><a href="ch06s12.html#function.prototype.bind_open_parenthesis">Function.prototype.bind()</a></li></ol></li>
+<li id="id2670732"><a href="ch06s13.html">Summary</a></li></ol></li>
+<li id="id2670793"><a href="ch07.html">7. Design Patterns</a><ol>
+<li id="id2670843"><a href="ch07.html#singleton">Singleton</a><ol>
+<li id="id2670940"><a href="ch07.html#using_new">Using new</a></li>
+<li id="id2671118"><a href="ch07.html#instance_in_a_static_property">Instance in a Static Property</a></li>
+<li id="id2671205"><a href="ch07.html#instance_in_a_closure">Instance in a Closure</a></li></ol></li>
+<li id="id2671478"><a href="ch07s02.html">Factory</a><ol>
+<li id="id2671708"><a href="ch07s02.html#built-in_object_factory">Built-in Object Factory</a></li></ol></li>
+<li id="id2671819"><a href="ch07s03.html">Iterator</a></li>
+<li id="id2672059"><a href="ch07s04.html">Decorator</a><ol>
+<li id="id2672109"><a href="ch07s04.html#usage">Usage</a></li>
+<li id="id2672198"><a href="ch07s04.html#implementation">Implementation</a></li>
+<li id="id2672518"><a href="ch07s04.html#implementation_using_a_list">Implementation Using a List</a></li></ol></li>
+<li id="id2672800"><a href="ch07s05.html">Strategy</a><ol>
+<li id="id2672876"><a href="ch07s05.html#data_validation_example">Data Validation Example</a></li></ol></li>
+<li id="id2673138"><a href="ch07s06.html">Façade</a></li>
+<li id="id2673290"><a href="ch07s07.html">Proxy</a><ol>
+<li id="id2673430"><a href="ch07s07.html#an_example">An Example</a><ol>
+<li id="id2673460"><a href="ch07s07.html#a_video_expando">A video expando</a></li>
+<li id="id2673529"><a href="ch07s07.html#without_a_proxy">Without a proxy</a></li>
+<li id="id2673624"><a href="ch07s07.html#html">HTML</a></li>
+<li id="id2673658"><a href="ch07s07.html#event_handlers">Event handlers</a></li>
+<li id="id2673801"><a href="ch07s07.html#videos_object">videos object</a></li>
+<li id="id2673884"><a href="ch07s07.html#http_object">http object</a></li>
+<li id="id2673956"><a href="ch07s07.html#enter_the_proxy">Enter the proxy</a></li></ol></li>
+<li id="id2674200"><a href="ch07s07.html#proxy_as_a_cache">Proxy As a Cache</a></li></ol></li>
+<li id="id2674301"><a href="ch07s08.html">Mediator</a><ol>
+<li id="id2674437"><a href="ch07s08.html#mediator_example">Mediator Example</a></li></ol></li>
+<li id="id2674726"><a href="ch07s09.html">Observer</a><ol>
+<li id="id2674804"><a href="ch07s09.html#example_colon_magazine_subscriptions">Example #1: Magazine Subscriptions</a></li>
+<li id="id2675321"><a href="ch07s09.html#example_number_symble_2_colon_the_keypre">Example #2: The Keypress Game</a></li></ol></li>
+<li id="id2675822"><a href="ch07s10.html">Summary</a></li></ol></li>
+<li id="id2675941"><a href="ch08.html">8. DOM and Browser Patterns</a><ol>
+<li id="id2675980"><a href="ch08.html#separation_of_concerns">Separation of Concerns</a></li>
+<li id="id2676260"><a href="ch08s02.html">DOM Scripting</a><ol>
+<li id="id2676307"><a href="ch08s02.html#dom_access">DOM Access</a></li>
+<li id="id2676448"><a href="ch08s02.html#dom_manipulation">DOM Manipulation</a></li></ol></li>
+<li id="id2676661"><a href="ch08s03.html">Events</a><ol>
+<li id="id2676696"><a href="ch08s03.html#event_handling">Event Handling</a></li>
+<li id="id2677017"><a href="ch08s03.html#event_delegation">Event Delegation</a></li></ol></li>
+<li id="id2677281"><a href="ch08s04.html">Long-Running Scripts</a><ol>
+<li id="id2677348"><a href="ch08s04.html#settimeout_open_parenthesis_close_parent">setTimeout()</a></li>
+<li id="id2677408"><a href="ch08s04.html#web_workers">Web Workers</a></li></ol></li>
+<li id="id2677541"><a href="ch08s05.html">Remote Scripting</a><ol>
+<li id="id2677586"><a href="ch08s05.html#xmlhttprequest">XMLHttpRequest</a></li>
+<li id="id2677888"><a href="ch08s05.html#jsonp">JSONP</a><ol>
+<li id="id2678022"><a href="ch08s05.html#jsonp_example_colon_tic-tac-toe">JSONP example: Tic-tac-toe</a></li></ol></li>
+<li id="id2678267"><a href="ch08s05.html#frames_and_image_beacons">Frames and Image Beacons</a></li></ol></li>
+<li id="id2678371"><a href="ch08s06.html">Deploying JavaScript</a><ol>
+<li id="id2678450"><a href="ch08s06.html#combining_scripts">Combining Scripts</a></li>
+<li id="id2678584"><a href="ch08s06.html#minifying_and_compressing">Minifying and Compressing</a></li>
+<li id="id2678702"><a href="ch08s06.html#expires_header">Expires Header</a></li>
+<li id="id2678769"><a href="ch08s06.html#using_a_cdn">Using a CDN</a></li></ol></li>
+<li id="id2678856"><a href="ch08s07.html">Loading Strategies</a><ol>
+<li id="id2679023"><a href="ch08s07.html#the_place_of_the_lscriptg_element">The Place of the &lt;script&gt; Element</a></li>
+<li id="id2679120"><a href="ch08s07.html#http_chunking">HTTP Chunking</a></li>
+<li id="id2679336"><a href="ch08s07.html#dynamic_lscriptg_element_for_nonblocking">Dynamic &lt;script&gt; Element for Nonblocking Downloads</a><ol>
+<li id="id2679547"><a href="ch08s07.html#appending_the_lscriptg_element">Appending the &lt;script&gt; element</a></li></ol></li>
+<li id="id2679738"><a href="ch08s07.html#lazy-loading">Lazy-Loading</a></li>
+<li id="id2679828"><a href="ch08s07.html#loading_on_demand">Loading on Demand</a></li>
+<li id="id2680059"><a href="ch08s07.html#preloading_javascript">Preloading JavaScript</a></li></ol></li>
+<li id="id2680363"><a href="ch08s08.html">Summary</a></li></ol></li>
+<li id="id2680467"><a href="ix01.html">Index</a></li>
+<li id="id2680479"><a href="author_bios.html">About the Author</a></li>
+<li id="id2680494"><a href="co02.html">Colophon</a></li></ol></li></ol></nav>
+</body></html>
